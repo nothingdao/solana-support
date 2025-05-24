@@ -20,7 +20,7 @@ interface ProjectSettings {
   walletAddress: string;
   goal: number | null;
   showGoal: boolean;
-  theme: string;
+  theme: 'default' | 'dark' | 'minimal';
   devFeeEnabled: boolean;
   customMessage: string | null;
   isActive: boolean;
@@ -34,13 +34,13 @@ export default function ProjectSettings() {
   const [saving, setSaving] = useState(false);
   const [isOwner, setIsOwner] = useState(false);
 
-  // Form state
+  // Form state with proper typing
   const [formData, setFormData] = useState({
     name: '',
     description: '',
     goal: '',
     showGoal: true,
-    theme: 'default',
+    theme: 'default' as 'default' | 'dark' | 'minimal',
     devFeeEnabled: false,
     customMessage: '',
     isActive: true
@@ -115,7 +115,7 @@ export default function ProjectSettings() {
 
     return `<!-- Add this to your project's README.md -->
 <a href="${window.location.origin}/project/${project.id}">
-  <img src="${window.location.origin}/api/badge/${project.id}" alt="Support ${project.name}" />
+  <img src="${window.location.origin}/.netlify/functions/badge/${project.id}" alt="Support ${project.name}" />
 </a>
 
 <!-- Or use the React component -->
@@ -136,6 +136,13 @@ import { SupportBadge } from '@solana-support/widget';
       // Redirect to projects list
     } catch (error) {
       console.error('Failed to delete project:', error);
+    }
+  };
+
+  const handleThemeChange = (selectedTheme: string) => {
+    // Type guard to ensure the theme is valid
+    if (selectedTheme === 'default' || selectedTheme === 'dark' || selectedTheme === 'minimal') {
+      setFormData({ ...formData, theme: selectedTheme });
     }
   };
 
@@ -273,12 +280,12 @@ import { SupportBadge } from '@solana-support/widget';
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="grid grid-cols-3 gap-4">
-                {['default', 'dark', 'minimal'].map((theme) => (
+                {(['default', 'dark', 'minimal'] as const).map((theme) => (
                   <div
                     key={theme}
                     className={`p-4 border rounded-lg cursor-pointer transition-colors ${formData.theme === theme ? 'border-primary bg-primary/5' : 'border-border'
                       }`}
-                    onClick={() => setFormData({ ...formData, theme })}
+                    onClick={() => handleThemeChange(theme)}
                   >
                     <div className="text-center space-y-2">
                       <div className="w-full h-8 bg-muted rounded flex items-center justify-center">
