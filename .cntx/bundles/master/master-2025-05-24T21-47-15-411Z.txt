@@ -1,0 +1,4012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bundle id="master-2025-05-24T21-47-15-411Z" created="2025-05-24T21:47:15.411Z" fileCount="40">
+  
+  <metadata>
+    <projectName>project</projectName>
+    <totalFiles>40</totalFiles>
+    <bundleType>master</bundleType>
+    <ignorePatterns>
+      <pattern>node_modules</pattern>
+      <pattern>.git</pattern>
+      <pattern>dist</pattern>
+      <pattern>build</pattern>
+      <pattern>coverage</pattern>
+      <pattern>.next</pattern>
+      <pattern>.cache</pattern>
+      <pattern>.netlify</pattern>
+      <pattern>package-lock.json</pattern>
+      <pattern>yarn.lock</pattern>
+      <pattern>.DS_Store</pattern>
+      <pattern>Thumbs.db</pattern>
+      <pattern>*.mp3</pattern>
+      <pattern>*.mp4</pattern>
+      <pattern>*.wav</pattern>
+      <pattern>*.ogg</pattern>
+      <pattern>*.m4a</pattern>
+      <pattern>*.flac</pattern>
+      <pattern>*.jpg</pattern>
+      <pattern>*.jpeg</pattern>
+      <pattern>*.png</pattern>
+      <pattern>*.gif</pattern>
+      <pattern>*.webp</pattern>
+      <pattern>*.svg</pattern>
+      <pattern>*.ico</pattern>
+      <pattern>*.pxd</pattern>
+      <pattern>*.pdf</pattern>
+      <pattern>*.doc</pattern>
+      <pattern>*.docx</pattern>
+      <pattern>*.zip</pattern>
+      <pattern>*.tar</pattern>
+      <pattern>*.gz</pattern>
+      <pattern>*.rar</pattern>
+      <pattern>example-project</pattern>
+      <pattern>issues</pattern>
+    </ignorePatterns>
+  </metadata>
+
+  <directoryTree>
+  <directory name="prisma" path="prisma">
+    <file name="schema.prisma" path="prisma/schema.prisma" size="0" lastModified="2025-05-24T21:16:03.888Z">
+      <tags>database</tags>
+    </file>
+  </directory>
+  <directory name="src" path="src">
+    <directory name="components" path="src/components">
+      <directory name="ui" path="src/components/ui">
+        <file name="badge.tsx" path="src/components/ui/badge.tsx" size="0" lastModified="2025-05-24T21:18:45.584Z">
+          <tags>ui-components,frontend</tags>
+        </file>
+        <file name="button.tsx" path="src/components/ui/button.tsx" size="0" lastModified="2025-05-24T21:17:59.209Z">
+          <tags>ui-components,frontend</tags>
+        </file>
+        <file name="card.tsx" path="src/components/ui/card.tsx" size="0" lastModified="2025-05-24T21:18:50.593Z">
+          <tags>ui-components,frontend</tags>
+        </file>
+        <file name="input.tsx" path="src/components/ui/input.tsx" size="0" lastModified="2025-05-24T21:27:21.357Z">
+          <tags>ui-components,frontend</tags>
+        </file>
+        <file name="label.tsx" path="src/components/ui/label.tsx" size="0" lastModified="2025-05-24T21:27:45.210Z">
+          <tags>ui-components,frontend</tags>
+        </file>
+        <file name="progress.tsx" path="src/components/ui/progress.tsx" size="0" lastModified="2025-05-24T21:18:33.177Z">
+          <tags>ui-components,frontend</tags>
+        </file>
+        <file name="separator.tsx" path="src/components/ui/separator.tsx" size="0" lastModified="2025-05-24T21:29:10.617Z">
+          <tags>ui-components,frontend</tags>
+        </file>
+        <file name="switch.tsx" path="src/components/ui/switch.tsx" size="0" lastModified="2025-05-24T21:28:02.858Z">
+          <tags>ui-components,frontend</tags>
+        </file>
+        <file name="tabs.tsx" path="src/components/ui/tabs.tsx" size="0" lastModified="2025-05-24T21:28:47.151Z">
+          <tags>ui-components,frontend</tags>
+        </file>
+        <file name="textarea.tsx" path="src/components/ui/textarea.tsx" size="0" lastModified="2025-05-24T21:27:30.243Z">
+          <tags>ui-components,frontend</tags>
+        </file>
+      </directory>
+      <file name="Header.tsx" path="src/components/Header.tsx" size="0" lastModified="2025-05-24T21:17:35.132Z">
+        <tags>frontend,blockchain</tags>
+      </file>
+      <file name="SupportBadge.tsx" path="src/components/SupportBadge.tsx" size="0" lastModified="2025-05-24T21:21:35.268Z">
+        <tags>frontend,widget</tags>
+      </file>
+    </directory>
+    <directory name="lib" path="src/lib">
+      <file name="utils.ts" path="src/lib/utils.ts" size="0" lastModified="2025-05-24T21:15:17.714Z">
+        <tags>utilities</tags>
+      </file>
+    </directory>
+    <directory name="pages" path="src/pages">
+      <file name="ProjectDetail.tsx" path="src/pages/ProjectDetail.tsx" size="0" lastModified="2025-05-24T21:20:42.151Z">
+        <tags>frontend,blockchain</tags>
+      </file>
+      <file name="ProjectSettings.tsx" path="src/pages/ProjectSettings.tsx" size="0" lastModified="2025-05-24T21:21:21.404Z">
+        <tags>frontend,blockchain</tags>
+      </file>
+      <file name="ProjectsList.tsx" path="src/pages/ProjectsList.tsx" size="0" lastModified="2025-05-24T21:18:18.719Z">
+        <tags>frontend</tags>
+      </file>
+    </directory>
+    <file name="App.css" path="src/App.css" size="0" lastModified="2025-05-24T21:10:50.751Z">
+      <tags>styling</tags>
+    </file>
+    <file name="App.tsx" path="src/App.tsx" size="0" lastModified="2025-05-24T21:17:13.247Z">
+      <tags>frontend,blockchain</tags>
+    </file>
+    <file name="index.css" path="src/index.css" size="0" lastModified="2025-05-24T21:15:02.867Z">
+      <tags>styling</tags>
+    </file>
+    <file name="main.tsx" path="src/main.tsx" size="0" lastModified="2025-05-24T21:10:50.755Z">
+      <tags>frontend</tags>
+    </file>
+    <file name="vite-env.d.ts" path="src/vite-env.d.ts" size="0" lastModified="2025-05-24T21:10:50.755Z">
+      <tags>types,configuration</tags>
+    </file>
+  </directory>
+  <directory name="widget" path="widget">
+    <directory name="src" path="widget/src">
+      <file name="index.ts" path="widget/src/index.ts" size="0" lastModified="2025-05-24T21:29:44.127Z">
+        <tags>widget,types</tags>
+      </file>
+      <file name="SolanaSupport.tsx" path="widget/src/SolanaSupport.tsx" size="0" lastModified="2025-05-24T21:30:52.571Z">
+        <tags>widget,blockchain,frontend</tags>
+      </file>
+      <file name="types.ts" path="widget/src/types.ts" size="0" lastModified="2025-05-24T21:29:29.013Z">
+        <tags>widget,types</tags>
+      </file>
+    </directory>
+    <file name="package.json" path="widget/package.json" size="0" lastModified="2025-05-24T21:36:29.635Z">
+      <tags>widget,configuration</tags>
+    </file>
+    <file name="rollup.config.js" path="widget/rollup.config.js" size="0" lastModified="2025-05-24T21:36:40.077Z">
+      <tags>widget,configuration</tags>
+    </file>
+    <file name="tsconfig.json" path="widget/tsconfig.json" size="0" lastModified="2025-05-24T21:30:39.034Z">
+      <tags>widget,configuration</tags>
+    </file>
+  </directory>
+  <file name=".env" path=".env" size="0" lastModified="2025-05-24T21:32:51.459Z">
+    <tags>configuration</tags>
+  </file>
+  <file name=".gitignore" path=".gitignore" size="0" lastModified="2025-05-24T21:10:50.747Z">
+    <tags>configuration</tags>
+  </file>
+  <file name="components.json" path="components.json" size="0" lastModified="2025-05-24T21:15:02.312Z">
+    <tags>configuration,ui-components</tags>
+  </file>
+  <file name="DEVELOPMENT.md" path="DEVELOPMENT.md" size="0" lastModified="2025-05-24T21:47:08.766Z">
+    <tags></tags>
+  </file>
+  <file name="eslint.config.js" path="eslint.config.js" size="0" lastModified="2025-05-24T21:10:50.747Z">
+    <tags>configuration</tags>
+  </file>
+  <file name="index.html" path="index.html" size="0" lastModified="2025-05-24T21:10:50.748Z">
+    <tags>frontend,configuration</tags>
+  </file>
+  <file name="package.json" path="package.json" size="0" lastModified="2025-05-24T21:34:39.369Z">
+    <tags>configuration</tags>
+  </file>
+  <file name="README.md" path="README.md" size="0" lastModified="2025-05-24T21:45:52.432Z">
+    <tags>documentation</tags>
+  </file>
+  <file name="tsconfig.app.json" path="tsconfig.app.json" size="0" lastModified="2025-05-24T21:13:11.953Z">
+    <tags>configuration</tags>
+  </file>
+  <file name="tsconfig.json" path="tsconfig.json" size="0" lastModified="2025-05-24T21:12:07.852Z">
+    <tags>configuration</tags>
+  </file>
+  <file name="tsconfig.node.json" path="tsconfig.node.json" size="0" lastModified="2025-05-24T21:10:50.757Z">
+    <tags>configuration</tags>
+  </file>
+  <file name="vite.config.ts" path="vite.config.ts" size="0" lastModified="2025-05-24T21:14:06.625Z">
+    <tags>configuration</tags>
+  </file>
+</directoryTree>
+
+  <asciiTree>
+project/
+├── prisma/
+│   └── schema.prisma [database]
+├── src/
+│   ├── components/
+│   │   ├── ui/
+│   │   │   ├── badge.tsx [ui-components,frontend]
+│   │   │   ├── button.tsx [ui-components,frontend]
+│   │   │   ├── card.tsx [ui-components,frontend]
+│   │   │   ├── input.tsx [ui-components,frontend]
+│   │   │   ├── label.tsx [ui-components,frontend]
+│   │   │   ├── progress.tsx [ui-components,frontend]
+│   │   │   ├── separator.tsx [ui-components,frontend]
+│   │   │   ├── switch.tsx [ui-components,frontend]
+│   │   │   ├── tabs.tsx [ui-components,frontend]
+│   │   │   └── textarea.tsx [ui-components,frontend]
+│   │   ├── Header.tsx [frontend,blockchain]
+│   │   └── SupportBadge.tsx [frontend,widget]
+│   ├── lib/
+│   │   └── utils.ts [utilities]
+│   ├── pages/
+│   │   ├── ProjectDetail.tsx [frontend,blockchain]
+│   │   ├── ProjectSettings.tsx [frontend,blockchain]
+│   │   └── ProjectsList.tsx [frontend]
+│   ├── App.css [styling]
+│   ├── App.tsx [frontend,blockchain]
+│   ├── index.css [styling]
+│   ├── main.tsx [frontend]
+│   └── vite-env.d.ts [types,configuration]
+├── widget/
+│   ├── src/
+│   │   ├── index.ts [widget,types]
+│   │   ├── SolanaSupport.tsx [widget,blockchain,frontend]
+│   │   └── types.ts [widget,types]
+│   ├── package.json [widget,configuration]
+│   ├── rollup.config.js [widget,configuration]
+│   └── tsconfig.json [widget,configuration]
+├── .env [configuration]
+├── .gitignore [configuration]
+├── components.json [configuration,ui-components]
+├── DEVELOPMENT.md
+├── eslint.config.js [configuration]
+├── index.html [frontend,configuration]
+├── package.json [configuration]
+├── README.md [documentation]
+├── tsconfig.app.json [configuration]
+├── tsconfig.json [configuration]
+├── tsconfig.node.json [configuration]
+└── vite.config.ts [configuration]
+
+40 files, 8 directories
+  </asciiTree>
+
+  <documents>
+    
+    <document>
+      <source>widget/src/index.ts</source>
+      <tags>widget,types</tags>
+      <metadata>
+        <size>322</size>
+        <lastModified>2025-05-24T21:29:44.127Z</lastModified>
+        <extension>ts</extension>
+        <directory>widget/src</directory>
+      </metadata>
+      <content>export { SolanaSupport as default, SolanaSupport } from &#39;./SolanaSupport&#39;
+export type { SolanaSupportProps, ProjectData, DonationRequest } from &#39;./types&#39;
+
+// Additional exports for convenience
+export { SolanaSupport as SupportBadge } from &#39;./SolanaSupport&#39;
+export { SolanaSupport as SupportWidget } from &#39;./SolanaSupport&#39;
+</content>
+    </document>
+
+    <document>
+      <source>widget/src/SolanaSupport.tsx</source>
+      <tags>widget,blockchain,frontend</tags>
+      <metadata>
+        <size>8282</size>
+        <lastModified>2025-05-24T21:30:52.571Z</lastModified>
+        <extension>tsx</extension>
+        <directory>widget/src</directory>
+      </metadata>
+      <content>import React, { useState, useEffect } from &#39;react&#39;;
+import { Connection, PublicKey, Transaction, SystemProgram, LAMPORTS_PER_SOL } from &#39;@solana/web3.js&#39;;
+import type { SolanaSupportProps, ProjectData } from &#39;./types&#39;;
+
+export const SolanaSupport: React.FC&lt;SolanaSupportProps&gt; = ({
+  projectId,
+  apiUrl = &#39;https://api.solana-support.dev&#39;,
+  theme = &#39;default&#39;,
+  size = &#39;md&#39;,
+  showAmount = true,
+  showGoal = false,
+  className = &#39;&#39;
+}) =&gt; {
+  const [project, setProject] = useState&lt;ProjectData | null&gt;(null);
+  const [loading, setLoading] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [donationAmount, setDonationAmount] = useState(&#39;&#39;);
+  const [donating, setDonating] = useState(false);
+
+  useEffect(() =&gt; {
+    fetchProjectData();
+  }, [projectId]);
+
+  const fetchProjectData = async () =&gt; {
+    try {
+      const response = await fetch(`${apiUrl}/api/projects/${projectId}`);
+      if (response.ok) {
+        const data = await response.json();
+        setProject(data);
+      }
+    } catch (error) {
+      console.error(&#39;Failed to fetch project data:&#39;, error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleDonate = async () =&gt; {
+    if (!project || !donationAmount || !window.solana) {
+      alert(&#39;Please install a Solana wallet extension&#39;);
+      return;
+    }
+
+    setDonating(true);
+    try {
+      const connection = new Connection(&#39;https://api.devnet.solana.com&#39;);
+      const walletResponse = await window.solana.connect();
+      const publicKey = new PublicKey(walletResponse.publicKey.toString());
+      const recipientKey = new PublicKey(project.walletAddress);
+
+      const lamports = parseFloat(donationAmount) * LAMPORTS_PER_SOL;
+
+      const transaction = new Transaction().add(
+        SystemProgram.transfer({
+          fromPubkey: publicKey,
+          toPubkey: recipientKey,
+          lamports: lamports,
+        })
+      );
+
+      // Add dev fee if enabled
+      if (project.devFeeEnabled) {
+        const devFee = Math.floor(lamports * 0.02); // 2% fee
+        const devWallet = new PublicKey(&#39;YOUR_DEV_WALLET_ADDRESS&#39;); // Replace with actual dev wallet
+
+        transaction.add(
+          SystemProgram.transfer({
+            fromPubkey: publicKey,
+            toPubkey: devWallet,
+            lamports: devFee,
+          })
+        );
+      }
+
+      const { blockhash } = await connection.getLatestBlockhash();
+      transaction.recentBlockhash = blockhash;
+      transaction.feePayer = publicKey;
+
+      const signed = await window.solana.signTransaction(transaction);
+      const signature = await connection.sendRawTransaction(signed.serialize());
+
+      // Record the donation
+      await fetch(`${apiUrl}/api/donations`, {
+        method: &#39;POST&#39;,
+        headers: { &#39;Content-Type&#39;: &#39;application/json&#39; },
+        body: JSON.stringify({
+          projectId,
+          donorWallet: publicKey.toString(),
+          amount: parseFloat(donationAmount),
+          txSignature: signature,
+        }),
+      });
+
+      alert(&#39;Donation sent successfully!&#39;);
+      setDonationAmount(&#39;&#39;);
+      setIsExpanded(false);
+      fetchProjectData(); // Refresh data
+    } catch (error) {
+      console.error(&#39;Donation failed:&#39;, error);
+      alert(&#39;Donation failed. Please try again.&#39;);
+    } finally {
+      setDonating(false);
+    }
+  };
+
+  const getThemeStyles = () =&gt; {
+    const baseStyles = &#39;font-sans transition-all duration-200 border rounded-full&#39;;
+
+    switch (theme) {
+      case &#39;dark&#39;:
+        return `${baseStyles} bg-gray-900 text-white border-gray-700 hover:bg-gray-800`;
+      case &#39;minimal&#39;:
+        return `${baseStyles} bg-white text-gray-700 border-gray-200 hover:bg-gray-50`;
+      default:
+        return `${baseStyles} bg-blue-50 text-blue-800 border-blue-200 hover:bg-blue-100`;
+    }
+  };
+
+  const getSizeStyles = () =&gt; {
+    switch (size) {
+      case &#39;sm&#39;:
+        return &#39;px-2 py-1 text-xs&#39;;
+      case &#39;lg&#39;:
+        return &#39;px-4 py-2 text-base&#39;;
+      default:
+        return &#39;px-3 py-1.5 text-sm&#39;;
+    }
+  };
+
+  if (loading) {
+    return (
+      &lt;div className={`inline-flex items-center ${getSizeStyles()} ${getThemeStyles()} animate-pulse ${className}`}&gt;
+        &lt;div className=&quot;w-4 h-4 bg-current opacity-20 rounded-full mr-2&quot;&gt;&lt;/div&gt;
+        &lt;span className=&quot;opacity-60&quot;&gt;Loading...&lt;/span&gt;
+      &lt;/div&gt;
+    );
+  }
+
+  if (!project || !project.isActive) {
+    return null;
+  }
+
+  const progressPercentage = project.goal &amp;&amp; project.showGoal ?
+    Math.min((project.raised / project.goal) * 100, 100) : 0;
+
+  return (
+    &lt;div className={`inline-block ${className}`}&gt;
+      &lt;button
+        onClick={() =&gt; setIsExpanded(!isExpanded)}
+        className={`inline-flex items-center space-x-2 ${getSizeStyles()} ${getThemeStyles()} cursor-pointer hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50`}
+      &gt;
+        &lt;svg className=&quot;w-4 h-4 text-red-500&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+          &lt;path fillRule=&quot;evenodd&quot; d=&quot;M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z&quot; clipRule=&quot;evenodd&quot; /&gt;
+        &lt;/svg&gt;
+        &lt;span&gt;Support&lt;/span&gt;
+        {showAmount &amp;&amp; (
+          &lt;span className=&quot;font-semibold&quot;&gt;
+            {project.raised.toFixed(1)} SOL
+          &lt;/span&gt;
+        )}
+        {showGoal &amp;&amp; project.showGoal &amp;&amp; project.goal &amp;&amp; (
+          &lt;span className=&quot;text-xs opacity-70&quot;&gt;
+            / {project.goal} SOL
+          &lt;/span&gt;
+        )}
+      &lt;/button&gt;
+
+      {isExpanded &amp;&amp; (
+        &lt;div className=&quot;absolute z-50 mt-2 p-4 bg-white border border-gray-200 rounded-lg shadow-xl min-w-80&quot;&gt;
+          &lt;div className=&quot;space-y-3&quot;&gt;
+            &lt;div className=&quot;flex items-center justify-between&quot;&gt;
+              &lt;h3 className=&quot;font-semibold text-gray-900&quot;&gt;{project.name}&lt;/h3&gt;
+              &lt;button
+                onClick={() =&gt; setIsExpanded(false)}
+                className=&quot;text-gray-400 hover:text-gray-600&quot;
+              &gt;
+                ✕
+              &lt;/button&gt;
+            &lt;/div&gt;
+
+            {project.showGoal &amp;&amp; project.goal &amp;&amp; (
+              &lt;div className=&quot;space-y-1&quot;&gt;
+                &lt;div className=&quot;flex justify-between text-sm text-gray-600&quot;&gt;
+                  &lt;span&gt;{project.raised.toFixed(2)} SOL raised&lt;/span&gt;
+                  &lt;span&gt;Goal: {project.goal} SOL&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div className=&quot;w-full bg-gray-200 rounded-full h-2&quot;&gt;
+                  &lt;div
+                    className=&quot;bg-blue-500 h-2 rounded-full transition-all duration-300&quot;
+                    style={{ width: `${progressPercentage}%` }}
+                  &gt;&lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            )}
+
+            &lt;div className=&quot;space-y-2&quot;&gt;
+              &lt;label className=&quot;block text-sm font-medium text-gray-700&quot;&gt;
+                Donation Amount (SOL)
+              &lt;/label&gt;
+              &lt;input
+                type=&quot;number&quot;
+                step=&quot;0.01&quot;
+                min=&quot;0.01&quot;
+                value={donationAmount}
+                onChange={(e) =&gt; setDonationAmount(e.target.value)}
+                className=&quot;w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500&quot;
+                placeholder=&quot;0.00&quot;
+              /&gt;
+            &lt;/div&gt;
+
+            &lt;div className=&quot;flex space-x-2&quot;&gt;
+              {[&#39;0.1&#39;, &#39;0.5&#39;, &#39;1.0&#39;, &#39;5.0&#39;].map((amount) =&gt; (
+                &lt;button
+                  key={amount}
+                  onClick={() =&gt; setDonationAmount(amount)}
+                  className=&quot;px-2 py-1 text-xs bg-gray-100 hover:bg-gray-200 rounded transition-colors&quot;
+                &gt;
+                  {amount} SOL
+                &lt;/button&gt;
+              ))}
+            &lt;/div&gt;
+
+            &lt;button
+              onClick={handleDonate}
+              disabled={!donationAmount || donating}
+              className=&quot;w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors&quot;
+            &gt;
+              {donating ? &#39;Processing...&#39; : `Donate ${donationAmount || &#39;0&#39;} SOL`}
+            &lt;/button&gt;
+
+            &lt;p className=&quot;text-xs text-gray-500 text-center&quot;&gt;
+              Powered by Solana Support
+            &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      )}
+    &lt;/div&gt;
+  );
+};
+
+export default SolanaSupport;
+</content>
+    </document>
+
+    <document>
+      <source>widget/src/types.ts</source>
+      <tags>widget,types</tags>
+      <metadata>
+        <size>837</size>
+        <lastModified>2025-05-24T21:29:29.013Z</lastModified>
+        <extension>ts</extension>
+        <directory>widget/src</directory>
+      </metadata>
+      <content>export interface SolanaSupportProps {
+  projectId: string
+  apiUrl?: string
+  theme?: &#39;default&#39; | &#39;dark&#39; | &#39;minimal&#39;
+  size?: &#39;sm&#39; | &#39;md&#39; | &#39;lg&#39;
+  showAmount?: boolean
+  showGoal?: boolean
+  className?: string
+}
+
+export interface ProjectData {
+  id: string
+  name: string
+  walletAddress: string
+  raised: number
+  goal: number | null
+  showGoal: boolean
+  isActive: boolean
+  devFeeEnabled: boolean
+}
+
+export interface DonationRequest {
+  projectId: string
+  donorWallet: string
+  amount: number
+  message?: string
+  txSignature: string
+}
+
+declare global {
+  interface Window {
+    solana?: {
+      isPhantom?: boolean
+      connect: () =&gt; Promise&lt;{ publicKey: { toString(): string } }&gt;
+      disconnect: () =&gt; Promise&lt;void&gt;
+      signTransaction: (transaction: any) =&gt; Promise&lt;any&gt;
+      publicKey?: { toString(): string }
+    }
+  }
+}
+</content>
+    </document>
+
+    <document>
+      <source>widget/package.json</source>
+      <tags>widget,configuration</tags>
+      <metadata>
+        <size>1561</size>
+        <lastModified>2025-05-24T21:36:29.635Z</lastModified>
+        <extension>json</extension>
+        <directory>widget</directory>
+      </metadata>
+      <content>{
+  &quot;name&quot;: &quot;@solana-support/widget&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;A lightweight React widget for accepting Solana donations in your projects&quot;,
+  &quot;main&quot;: &quot;dist/index.js&quot;,
+  &quot;module&quot;: &quot;dist/index.esm.js&quot;,
+  &quot;types&quot;: &quot;dist/index.d.ts&quot;,
+  &quot;type&quot;: &quot;module&quot;,
+  &quot;files&quot;: [
+    &quot;dist&quot;,
+    &quot;README.md&quot;
+  ],
+  &quot;scripts&quot;: {
+    &quot;build&quot;: &quot;rollup -c&quot;,
+    &quot;dev&quot;: &quot;rollup -c -w&quot;,
+    &quot;prepublishOnly&quot;: &quot;npm run build&quot;
+  },
+  &quot;keywords&quot;: [
+    &quot;solana&quot;,
+    &quot;donations&quot;,
+    &quot;crypto&quot;,
+    &quot;react&quot;,
+    &quot;widget&quot;,
+    &quot;support&quot;,
+    &quot;funding&quot;
+  ],
+  &quot;author&quot;: &quot;Your Name&quot;,
+  &quot;license&quot;: &quot;MIT&quot;,
+  &quot;peerDependencies&quot;: {
+    &quot;react&quot;: &quot;&gt;=16.8.0&quot;,
+    &quot;react-dom&quot;: &quot;&gt;=16.8.0&quot;
+  },
+  &quot;dependencies&quot;: {
+    &quot;@solana/wallet-adapter-base&quot;: &quot;^0.9.23&quot;,
+    &quot;@solana/wallet-adapter-react&quot;: &quot;^0.15.35&quot;,
+    &quot;@solana/web3.js&quot;: &quot;^1.87.6&quot;
+  },
+  &quot;devDependencies&quot;: {
+    &quot;@rollup/plugin-commonjs&quot;: &quot;^25.0.7&quot;,
+    &quot;@rollup/plugin-node-resolve&quot;: &quot;^15.2.3&quot;,
+    &quot;@rollup/plugin-typescript&quot;: &quot;^11.1.5&quot;,
+    &quot;@types/react&quot;: &quot;^18.2.43&quot;,
+    &quot;@types/react-dom&quot;: &quot;^18.2.17&quot;,
+    &quot;react&quot;: &quot;^18.2.0&quot;,
+    &quot;react-dom&quot;: &quot;^18.2.0&quot;,
+    &quot;rollup&quot;: &quot;^4.9.4&quot;,
+    &quot;rollup-plugin-dts&quot;: &quot;^6.1.0&quot;,
+    &quot;rollup-plugin-peer-deps-external&quot;: &quot;^2.2.4&quot;,
+    &quot;rollup-plugin-postcss&quot;: &quot;^4.0.2&quot;,
+    &quot;typescript&quot;: &quot;^5.2.2&quot;
+  },
+  &quot;repository&quot;: {
+    &quot;type&quot;: &quot;git&quot;,
+    &quot;url&quot;: &quot;https://github.com/yourusername/solana-support-widget.git&quot;
+  },
+  &quot;bugs&quot;: {
+    &quot;url&quot;: &quot;https://github.com/yourusername/solana-support-widget/issues&quot;
+  },
+  &quot;homepage&quot;: &quot;https://github.com/yourusername/solana-support-widget#readme&quot;
+}
+</content>
+    </document>
+
+    <document>
+      <source>widget/rollup.config.js</source>
+      <tags>widget,configuration</tags>
+      <metadata>
+        <size>1288</size>
+        <lastModified>2025-05-24T21:36:40.077Z</lastModified>
+        <extension>js</extension>
+        <directory>widget</directory>
+      </metadata>
+      <content>import resolve from &#39;@rollup/plugin-node-resolve&#39;;
+import commonjs from &#39;@rollup/plugin-commonjs&#39;;
+import typescript from &#39;@rollup/plugin-typescript&#39;;
+import peerDepsExternal from &#39;rollup-plugin-peer-deps-external&#39;;
+import postcss from &#39;rollup-plugin-postcss&#39;;
+import dts from &#39;rollup-plugin-dts&#39;;
+import { readFileSync } from &#39;fs&#39;;
+
+const packageJson = JSON.parse(readFileSync(&#39;./package.json&#39;, &#39;utf8&#39;));
+
+export default [
+  {
+    input: &#39;src/index.ts&#39;,
+    output: [
+      {
+        file: packageJson.main,
+        format: &#39;cjs&#39;,
+        sourcemap: true,
+      },
+      {
+        file: packageJson.module,
+        format: &#39;esm&#39;,
+        sourcemap: true,
+      },
+    ],
+    plugins: [
+      peerDepsExternal(),
+      resolve({
+        browser: true,
+        preferBuiltins: false,
+      }),
+      commonjs(),
+      typescript({
+        tsconfig: &#39;./tsconfig.json&#39;,
+        exclude: [&#39;**/*.test.tsx&#39;, &#39;**/*.test.ts&#39;, &#39;**/*.stories.ts&#39;],
+      }),
+      postcss({
+        extensions: [&#39;.css&#39;],
+        minimize: true,
+        inject: {
+          insertAt: &#39;top&#39;,
+        },
+      }),
+    ],
+    external: [&#39;react&#39;, &#39;react-dom&#39;],
+  },
+  {
+    input: &#39;dist/types/index.d.ts&#39;,
+    output: [{ file: &#39;dist/index.d.ts&#39;, format: &#39;esm&#39; }],
+    plugins: [dts()],
+    external: [/\.css$/],
+  },
+];
+</content>
+    </document>
+
+    <document>
+      <source>widget/tsconfig.json</source>
+      <tags>widget,configuration</tags>
+      <metadata>
+        <size>862</size>
+        <lastModified>2025-05-24T21:30:39.034Z</lastModified>
+        <extension>json</extension>
+        <directory>widget</directory>
+      </metadata>
+      <content>{
+  &quot;compilerOptions&quot;: {
+    &quot;target&quot;: &quot;ES2020&quot;,
+      &quot;lib&quot;: [&quot;DOM&quot;, &quot;DOM.Iterable&quot;, &quot;ES6&quot;],
+        &quot;allowJs&quot;: false,
+          &quot;skipLibCheck&quot;: true,
+            &quot;esModuleInterop&quot;: false,
+              &quot;allowSyntheticDefaultImports&quot;: true,
+                &quot;strict&quot;: true,
+                  &quot;forceConsistentCasingInFileNames&quot;: true,
+                    &quot;module&quot;: &quot;ESNext&quot;,
+                      &quot;moduleResolution&quot;: &quot;node&quot;,
+                        &quot;resolveJsonModule&quot;: true,
+                          &quot;isolatedModules&quot;: true,
+                            &quot;noEmit&quot;: false,
+                              &quot;jsx&quot;: &quot;react-jsx&quot;,
+                                &quot;declaration&quot;: true,
+                                  &quot;outDir&quot;: &quot;dist&quot;,
+                                    &quot;declarationDir&quot;: &quot;dist/types&quot;
+  },
+  &quot;include&quot;: [&quot;src&quot;],
+    &quot;exclude&quot;: [&quot;node_modules&quot;, &quot;dist&quot;]
+}
+</content>
+    </document>
+
+    <document>
+      <source>prisma/schema.prisma</source>
+      <tags>database</tags>
+      <metadata>
+        <size>1802</size>
+        <lastModified>2025-05-24T21:16:03.888Z</lastModified>
+        <extension>prisma</extension>
+        <directory>prisma</directory>
+      </metadata>
+      <content>// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = &quot;prisma-client-js&quot;
+}
+
+datasource db {
+  provider = &quot;postgresql&quot;
+  url      = env(&quot;DATABASE_URL&quot;)
+}
+
+model Project {
+  id          String @id @default(cuid())
+  name        String
+  description String?
+  walletAddress String @unique @map(&quot;wallet_address&quot;)
+  goal        Float? // SOL amount
+  raised      Float @default(0) // SOL amount
+  isActive    Boolean @default(true) @map(&quot;is_active&quot;)
+  createdAt   DateTime @default(now()) @map(&quot;created_at&quot;)
+  updatedAt   DateTime @updatedAt @map(&quot;updated_at&quot;)
+  
+  // Configuration
+  showGoal       Boolean @default(true) @map(&quot;show_goal&quot;)
+  theme          String @default(&quot;default&quot;) // default, dark, minimal
+  devFeeEnabled  Boolean @default(false) @map(&quot;dev_fee_enabled&quot;)
+  customMessage  String? @map(&quot;custom_message&quot;)
+  
+  // Relations
+  donations Donation[]
+  
+  @@map(&quot;projects&quot;)
+}
+
+model Donation {
+  id            String @id @default(cuid())
+  projectId     String @map(&quot;project_id&quot;)
+  donorWallet   String @map(&quot;donor_wallet&quot;)
+  amount        Float // SOL amount
+  message       String?
+  txSignature   String @unique @map(&quot;tx_signature&quot;) // Solana transaction signature
+  isConfirmed   Boolean @default(false) @map(&quot;is_confirmed&quot;)
+  createdAt     DateTime @default(now()) @map(&quot;created_at&quot;)
+  
+  // Relations
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  
+  @@map(&quot;donations&quot;)
+}
+
+model DevFee {
+  id          String @id @default(cuid())
+  donationId  String @map(&quot;donation_id&quot;)
+  amount      Float // SOL amount (percentage of donation)
+  txSignature String @unique @map(&quot;tx_signature&quot;)
+  createdAt   DateTime @default(now()) @map(&quot;created_at&quot;)
+  
+  @@map(&quot;dev_fees&quot;)
+}
+</content>
+    </document>
+
+    <document>
+      <source>src/components/ui/tabs.tsx</source>
+      <tags>ui-components,frontend</tags>
+      <metadata>
+        <size>1955</size>
+        <lastModified>2025-05-24T21:28:47.151Z</lastModified>
+        <extension>tsx</extension>
+        <directory>src/components/ui</directory>
+      </metadata>
+      <content>import * as React from &quot;react&quot;
+import * as TabsPrimitive from &quot;@radix-ui/react-tabs&quot;
+
+import { cn } from &quot;@/lib/utils&quot;
+
+function Tabs({
+  className,
+  ...props
+}: React.ComponentProps&lt;typeof TabsPrimitive.Root&gt;) {
+  return (
+    &lt;TabsPrimitive.Root
+      data-slot=&quot;tabs&quot;
+      className={cn(&quot;flex flex-col gap-2&quot;, className)}
+      {...props}
+    /&gt;
+  )
+}
+
+function TabsList({
+  className,
+  ...props
+}: React.ComponentProps&lt;typeof TabsPrimitive.List&gt;) {
+  return (
+    &lt;TabsPrimitive.List
+      data-slot=&quot;tabs-list&quot;
+      className={cn(
+        &quot;bg-muted text-muted-foreground inline-flex h-9 w-fit items-center justify-center rounded-lg p-[3px]&quot;,
+        className
+      )}
+      {...props}
+    /&gt;
+  )
+}
+
+function TabsTrigger({
+  className,
+  ...props
+}: React.ComponentProps&lt;typeof TabsPrimitive.Trigger&gt;) {
+  return (
+    &lt;TabsPrimitive.Trigger
+      data-slot=&quot;tabs-trigger&quot;
+      className={cn(
+        &quot;data-[state=active]:bg-background dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 text-foreground dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4&quot;,
+        className
+      )}
+      {...props}
+    /&gt;
+  )
+}
+
+function TabsContent({
+  className,
+  ...props
+}: React.ComponentProps&lt;typeof TabsPrimitive.Content&gt;) {
+  return (
+    &lt;TabsPrimitive.Content
+      data-slot=&quot;tabs-content&quot;
+      className={cn(&quot;flex-1 outline-none&quot;, className)}
+      {...props}
+    /&gt;
+  )
+}
+
+export { Tabs, TabsList, TabsTrigger, TabsContent }
+</content>
+    </document>
+
+    <document>
+      <source>src/components/ui/separator.tsx</source>
+      <tags>ui-components,frontend</tags>
+      <metadata>
+        <size>690</size>
+        <lastModified>2025-05-24T21:29:10.617Z</lastModified>
+        <extension>tsx</extension>
+        <directory>src/components/ui</directory>
+      </metadata>
+      <content>import * as React from &quot;react&quot;
+import * as SeparatorPrimitive from &quot;@radix-ui/react-separator&quot;
+
+import { cn } from &quot;@/lib/utils&quot;
+
+function Separator({
+  className,
+  orientation = &quot;horizontal&quot;,
+  decorative = true,
+  ...props
+}: React.ComponentProps&lt;typeof SeparatorPrimitive.Root&gt;) {
+  return (
+    &lt;SeparatorPrimitive.Root
+      data-slot=&quot;separator-root&quot;
+      decorative={decorative}
+      orientation={orientation}
+      className={cn(
+        &quot;bg-border shrink-0 data-[orientation=horizontal]:h-px data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-px&quot;,
+        className
+      )}
+      {...props}
+    /&gt;
+  )
+}
+
+export { Separator }
+</content>
+    </document>
+
+    <document>
+      <source>src/components/ui/badge.tsx</source>
+      <tags>ui-components,frontend</tags>
+      <metadata>
+        <size>1631</size>
+        <lastModified>2025-05-24T21:18:45.584Z</lastModified>
+        <extension>tsx</extension>
+        <directory>src/components/ui</directory>
+      </metadata>
+      <content>import * as React from &quot;react&quot;
+import { Slot } from &quot;@radix-ui/react-slot&quot;
+import { cva, type VariantProps } from &quot;class-variance-authority&quot;
+
+import { cn } from &quot;@/lib/utils&quot;
+
+const badgeVariants = cva(
+  &quot;inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&amp;&gt;svg]:size-3 gap-1 [&amp;&gt;svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden&quot;,
+  {
+    variants: {
+      variant: {
+        default:
+          &quot;border-transparent bg-primary text-primary-foreground [a&amp;]:hover:bg-primary/90&quot;,
+        secondary:
+          &quot;border-transparent bg-secondary text-secondary-foreground [a&amp;]:hover:bg-secondary/90&quot;,
+        destructive:
+          &quot;border-transparent bg-destructive text-white [a&amp;]:hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60&quot;,
+        outline:
+          &quot;text-foreground [a&amp;]:hover:bg-accent [a&amp;]:hover:text-accent-foreground&quot;,
+      },
+    },
+    defaultVariants: {
+      variant: &quot;default&quot;,
+    },
+  }
+)
+
+function Badge({
+  className,
+  variant,
+  asChild = false,
+  ...props
+}: React.ComponentProps&lt;&quot;span&quot;&gt; &amp;
+  VariantProps&lt;typeof badgeVariants&gt; &amp; { asChild?: boolean }) {
+  const Comp = asChild ? Slot : &quot;span&quot;
+
+  return (
+    &lt;Comp
+      data-slot=&quot;badge&quot;
+      className={cn(badgeVariants({ variant }), className)}
+      {...props}
+    /&gt;
+  )
+}
+
+export { Badge, badgeVariants }
+</content>
+    </document>
+
+    <document>
+      <source>src/components/ui/button.tsx</source>
+      <tags>ui-components,frontend</tags>
+      <metadata>
+        <size>2123</size>
+        <lastModified>2025-05-24T21:17:59.209Z</lastModified>
+        <extension>tsx</extension>
+        <directory>src/components/ui</directory>
+      </metadata>
+      <content>import * as React from &quot;react&quot;
+import { Slot } from &quot;@radix-ui/react-slot&quot;
+import { cva, type VariantProps } from &quot;class-variance-authority&quot;
+
+import { cn } from &quot;@/lib/utils&quot;
+
+const buttonVariants = cva(
+  &quot;inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#39;size-&#39;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive&quot;,
+  {
+    variants: {
+      variant: {
+        default:
+          &quot;bg-primary text-primary-foreground shadow-xs hover:bg-primary/90&quot;,
+        destructive:
+          &quot;bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60&quot;,
+        outline:
+          &quot;border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50&quot;,
+        secondary:
+          &quot;bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80&quot;,
+        ghost:
+          &quot;hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50&quot;,
+        link: &quot;text-primary underline-offset-4 hover:underline&quot;,
+      },
+      size: {
+        default: &quot;h-9 px-4 py-2 has-[&gt;svg]:px-3&quot;,
+        sm: &quot;h-8 rounded-md gap-1.5 px-3 has-[&gt;svg]:px-2.5&quot;,
+        lg: &quot;h-10 rounded-md px-6 has-[&gt;svg]:px-4&quot;,
+        icon: &quot;size-9&quot;,
+      },
+    },
+    defaultVariants: {
+      variant: &quot;default&quot;,
+      size: &quot;default&quot;,
+    },
+  }
+)
+
+function Button({
+  className,
+  variant,
+  size,
+  asChild = false,
+  ...props
+}: React.ComponentProps&lt;&quot;button&quot;&gt; &amp;
+  VariantProps&lt;typeof buttonVariants&gt; &amp; {
+    asChild?: boolean
+  }) {
+  const Comp = asChild ? Slot : &quot;button&quot;
+
+  return (
+    &lt;Comp
+      data-slot=&quot;button&quot;
+      className={cn(buttonVariants({ variant, size, className }))}
+      {...props}
+    /&gt;
+  )
+}
+
+export { Button, buttonVariants }
+</content>
+    </document>
+
+    <document>
+      <source>src/components/ui/card.tsx</source>
+      <tags>ui-components,frontend</tags>
+      <metadata>
+        <size>1989</size>
+        <lastModified>2025-05-24T21:18:50.593Z</lastModified>
+        <extension>tsx</extension>
+        <directory>src/components/ui</directory>
+      </metadata>
+      <content>import * as React from &quot;react&quot;
+
+import { cn } from &quot;@/lib/utils&quot;
+
+function Card({ className, ...props }: React.ComponentProps&lt;&quot;div&quot;&gt;) {
+  return (
+    &lt;div
+      data-slot=&quot;card&quot;
+      className={cn(
+        &quot;bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm&quot;,
+        className
+      )}
+      {...props}
+    /&gt;
+  )
+}
+
+function CardHeader({ className, ...props }: React.ComponentProps&lt;&quot;div&quot;&gt;) {
+  return (
+    &lt;div
+      data-slot=&quot;card-header&quot;
+      className={cn(
+        &quot;@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6&quot;,
+        className
+      )}
+      {...props}
+    /&gt;
+  )
+}
+
+function CardTitle({ className, ...props }: React.ComponentProps&lt;&quot;div&quot;&gt;) {
+  return (
+    &lt;div
+      data-slot=&quot;card-title&quot;
+      className={cn(&quot;leading-none font-semibold&quot;, className)}
+      {...props}
+    /&gt;
+  )
+}
+
+function CardDescription({ className, ...props }: React.ComponentProps&lt;&quot;div&quot;&gt;) {
+  return (
+    &lt;div
+      data-slot=&quot;card-description&quot;
+      className={cn(&quot;text-muted-foreground text-sm&quot;, className)}
+      {...props}
+    /&gt;
+  )
+}
+
+function CardAction({ className, ...props }: React.ComponentProps&lt;&quot;div&quot;&gt;) {
+  return (
+    &lt;div
+      data-slot=&quot;card-action&quot;
+      className={cn(
+        &quot;col-start-2 row-span-2 row-start-1 self-start justify-self-end&quot;,
+        className
+      )}
+      {...props}
+    /&gt;
+  )
+}
+
+function CardContent({ className, ...props }: React.ComponentProps&lt;&quot;div&quot;&gt;) {
+  return (
+    &lt;div
+      data-slot=&quot;card-content&quot;
+      className={cn(&quot;px-6&quot;, className)}
+      {...props}
+    /&gt;
+  )
+}
+
+function CardFooter({ className, ...props }: React.ComponentProps&lt;&quot;div&quot;&gt;) {
+  return (
+    &lt;div
+      data-slot=&quot;card-footer&quot;
+      className={cn(&quot;flex items-center px-6 [.border-t]:pt-6&quot;, className)}
+      {...props}
+    /&gt;
+  )
+}
+
+export {
+  Card,
+  CardHeader,
+  CardFooter,
+  CardTitle,
+  CardAction,
+  CardDescription,
+  CardContent,
+}
+</content>
+    </document>
+
+    <document>
+      <source>src/components/ui/progress.tsx</source>
+      <tags>ui-components,frontend</tags>
+      <metadata>
+        <size>726</size>
+        <lastModified>2025-05-24T21:18:33.177Z</lastModified>
+        <extension>tsx</extension>
+        <directory>src/components/ui</directory>
+      </metadata>
+      <content>import * as React from &quot;react&quot;
+import * as ProgressPrimitive from &quot;@radix-ui/react-progress&quot;
+
+import { cn } from &quot;@/lib/utils&quot;
+
+function Progress({
+  className,
+  value,
+  ...props
+}: React.ComponentProps&lt;typeof ProgressPrimitive.Root&gt;) {
+  return (
+    &lt;ProgressPrimitive.Root
+      data-slot=&quot;progress&quot;
+      className={cn(
+        &quot;bg-primary/20 relative h-2 w-full overflow-hidden rounded-full&quot;,
+        className
+      )}
+      {...props}
+    &gt;
+      &lt;ProgressPrimitive.Indicator
+        data-slot=&quot;progress-indicator&quot;
+        className=&quot;bg-primary h-full w-full flex-1 transition-all&quot;
+        style={{ transform: `translateX(-${100 - (value || 0)}%)` }}
+      /&gt;
+    &lt;/ProgressPrimitive.Root&gt;
+  )
+}
+
+export { Progress }
+</content>
+    </document>
+
+    <document>
+      <source>src/components/ui/switch.tsx</source>
+      <tags>ui-components,frontend</tags>
+      <metadata>
+        <size>1163</size>
+        <lastModified>2025-05-24T21:28:02.858Z</lastModified>
+        <extension>tsx</extension>
+        <directory>src/components/ui</directory>
+      </metadata>
+      <content>import * as React from &quot;react&quot;
+import * as SwitchPrimitive from &quot;@radix-ui/react-switch&quot;
+
+import { cn } from &quot;@/lib/utils&quot;
+
+function Switch({
+  className,
+  ...props
+}: React.ComponentProps&lt;typeof SwitchPrimitive.Root&gt;) {
+  return (
+    &lt;SwitchPrimitive.Root
+      data-slot=&quot;switch&quot;
+      className={cn(
+        &quot;peer data-[state=checked]:bg-primary data-[state=unchecked]:bg-input focus-visible:border-ring focus-visible:ring-ring/50 dark:data-[state=unchecked]:bg-input/80 inline-flex h-[1.15rem] w-8 shrink-0 items-center rounded-full border border-transparent shadow-xs transition-all outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50&quot;,
+        className
+      )}
+      {...props}
+    &gt;
+      &lt;SwitchPrimitive.Thumb
+        data-slot=&quot;switch-thumb&quot;
+        className={cn(
+          &quot;bg-background dark:data-[state=unchecked]:bg-foreground dark:data-[state=checked]:bg-primary-foreground pointer-events-none block size-4 rounded-full ring-0 transition-transform data-[state=checked]:translate-x-[calc(100%-2px)] data-[state=unchecked]:translate-x-0&quot;
+        )}
+      /&gt;
+    &lt;/SwitchPrimitive.Root&gt;
+  )
+}
+
+export { Switch }
+</content>
+    </document>
+
+    <document>
+      <source>src/components/ui/textarea.tsx</source>
+      <tags>ui-components,frontend</tags>
+      <metadata>
+        <size>759</size>
+        <lastModified>2025-05-24T21:27:30.243Z</lastModified>
+        <extension>tsx</extension>
+        <directory>src/components/ui</directory>
+      </metadata>
+      <content>import * as React from &quot;react&quot;
+
+import { cn } from &quot;@/lib/utils&quot;
+
+function Textarea({ className, ...props }: React.ComponentProps&lt;&quot;textarea&quot;&gt;) {
+  return (
+    &lt;textarea
+      data-slot=&quot;textarea&quot;
+      className={cn(
+        &quot;border-input placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 flex field-sizing-content min-h-16 w-full rounded-md border bg-transparent px-3 py-2 text-base shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 md:text-sm&quot;,
+        className
+      )}
+      {...props}
+    /&gt;
+  )
+}
+
+export { Textarea }
+</content>
+    </document>
+
+    <document>
+      <source>src/components/ui/label.tsx</source>
+      <tags>ui-components,frontend</tags>
+      <metadata>
+        <size>597</size>
+        <lastModified>2025-05-24T21:27:45.210Z</lastModified>
+        <extension>tsx</extension>
+        <directory>src/components/ui</directory>
+      </metadata>
+      <content>import * as React from &quot;react&quot;
+import * as LabelPrimitive from &quot;@radix-ui/react-label&quot;
+
+import { cn } from &quot;@/lib/utils&quot;
+
+function Label({
+  className,
+  ...props
+}: React.ComponentProps&lt;typeof LabelPrimitive.Root&gt;) {
+  return (
+    &lt;LabelPrimitive.Root
+      data-slot=&quot;label&quot;
+      className={cn(
+        &quot;flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50&quot;,
+        className
+      )}
+      {...props}
+    /&gt;
+  )
+}
+
+export { Label }
+</content>
+    </document>
+
+    <document>
+      <source>src/components/ui/input.tsx</source>
+      <tags>ui-components,frontend</tags>
+      <metadata>
+        <size>967</size>
+        <lastModified>2025-05-24T21:27:21.357Z</lastModified>
+        <extension>tsx</extension>
+        <directory>src/components/ui</directory>
+      </metadata>
+      <content>import * as React from &quot;react&quot;
+
+import { cn } from &quot;@/lib/utils&quot;
+
+function Input({ className, type, ...props }: React.ComponentProps&lt;&quot;input&quot;&gt;) {
+  return (
+    &lt;input
+      type={type}
+      data-slot=&quot;input&quot;
+      className={cn(
+        &quot;file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm&quot;,
+        &quot;focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]&quot;,
+        &quot;aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive&quot;,
+        className
+      )}
+      {...props}
+    /&gt;
+  )
+}
+
+export { Input }
+</content>
+    </document>
+
+    <document>
+      <source>src/components/SupportBadge.tsx</source>
+      <tags>frontend,widget</tags>
+      <metadata>
+        <size>3441</size>
+        <lastModified>2025-05-24T21:21:35.268Z</lastModified>
+        <extension>tsx</extension>
+        <directory>src/components</directory>
+      </metadata>
+      <content>import { useState, useEffect } from &#39;react&#39;;
+import { Heart, ExternalLink } from &#39;lucide-react&#39;;
+
+interface SupportBadgeProps {
+  projectId: string;
+  theme?: &#39;default&#39; | &#39;dark&#39; | &#39;minimal&#39;;
+  showAmount?: boolean;
+  size?: &#39;sm&#39; | &#39;md&#39; | &#39;lg&#39;;
+}
+
+interface ProjectData {
+  name: string;
+  raised: number;
+  goal: number | null;
+  showGoal: boolean;
+}
+
+export function SupportBadge({
+  projectId,
+  theme = &#39;default&#39;,
+  showAmount = true,
+  size = &#39;md&#39;
+}: SupportBadgeProps) {
+  const [project, setProject] = useState&lt;ProjectData | null&gt;(null);
+  const [isHovered, setIsHovered] = useState(false);
+
+  useEffect(() =&gt; {
+    fetchProjectData();
+  }, [projectId]);
+
+  const fetchProjectData = async () =&gt; {
+    try {
+      // In a real implementation, this would fetch from your API
+      const mockData: ProjectData = {
+        name: &#39;Solana DeFi Analytics&#39;,
+        raised: 45.5,
+        goal: 100,
+        showGoal: true
+      };
+      setProject(mockData);
+    } catch (error) {
+      console.error(&#39;Failed to fetch project data:&#39;, error);
+    }
+  };
+
+  const handleClick = () =&gt; {
+    const baseUrl = import.meta.env.VITE_APP_URL || window.location.origin;
+    window.open(`${baseUrl}/project/${projectId}`, &#39;_blank&#39;);
+  };
+
+  if (!project) {
+    return (
+      &lt;div className=&quot;inline-flex items-center px-3 py-1 rounded-full bg-gray-100 animate-pulse&quot;&gt;
+        &lt;div className=&quot;w-4 h-4 bg-gray-300 rounded-full mr-2&quot;&gt;&lt;/div&gt;
+        &lt;div className=&quot;w-20 h-4 bg-gray-300 rounded&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    );
+  }
+
+  const getThemeClasses = () =&gt; {
+    switch (theme) {
+      case &#39;dark&#39;:
+        return {
+          container: &#39;bg-gray-900 text-white border-gray-700 hover:bg-gray-800&#39;,
+          heart: &#39;text-red-400&#39;,
+          text: &#39;text-gray-100&#39;
+        };
+      case &#39;minimal&#39;:
+        return {
+          container: &#39;bg-white text-gray-700 border-gray-200 hover:bg-gray-50&#39;,
+          heart: &#39;text-gray-500&#39;,
+          text: &#39;text-gray-600&#39;
+        };
+      default:
+        return {
+          container: &#39;bg-blue-50 text-blue-800 border-blue-200 hover:bg-blue-100&#39;,
+          heart: &#39;text-red-500&#39;,
+          text: &#39;text-blue-700&#39;
+        };
+    }
+  };
+
+  const getSizeClasses = () =&gt; {
+    switch (size) {
+      case &#39;sm&#39;:
+        return &#39;px-2 py-1 text-xs&#39;;
+      case &#39;lg&#39;:
+        return &#39;px-4 py-2 text-base&#39;;
+      default:
+        return &#39;px-3 py-1.5 text-sm&#39;;
+    }
+  };
+
+  const themeClasses = getThemeClasses();
+  const sizeClasses = getSizeClasses();
+
+  return (
+    &lt;button
+      onClick={handleClick}
+      onMouseEnter={() =&gt; setIsHovered(true)}
+      onMouseLeave={() =&gt; setIsHovered(false)}
+      className={`
+        inline-flex items-center space-x-2 rounded-full border font-medium 
+        transition-all duration-200 cursor-pointer
+        ${themeClasses.container} ${sizeClasses}
+        ${isHovered ? &#39;transform scale-105 shadow-lg&#39; : &#39;shadow-sm&#39;}
+      `}
+      title={`Support ${project.name}`}
+    &gt;
+      &lt;Heart
+        className={`w-4 h-4 ${themeClasses.heart} ${isHovered ? &#39;animate-pulse&#39; : &#39;&#39;}`}
+        fill={isHovered ? &#39;currentColor&#39; : &#39;none&#39;}
+      /&gt;
+
+      &lt;span className={themeClasses.text}&gt;
+        Support
+      &lt;/span&gt;
+
+      {showAmount &amp;&amp; (
+        &lt;span className={`font-semibold ${themeClasses.text}`}&gt;
+          {project.raised.toFixed(1)} SOL
+        &lt;/span&gt;
+      )}
+
+      {isHovered &amp;&amp; (
+        &lt;ExternalLink className={`w-3 h-3 ${themeClasses.text}`} /&gt;
+      )}
+    &lt;/button&gt;
+  );
+}
+</content>
+    </document>
+
+    <document>
+      <source>src/components/Header.tsx</source>
+      <tags>frontend,blockchain</tags>
+      <metadata>
+        <size>1261</size>
+        <lastModified>2025-05-24T21:17:35.132Z</lastModified>
+        <extension>tsx</extension>
+        <directory>src/components</directory>
+      </metadata>
+      <content>import { Link } from &#39;react-router-dom&#39;;
+import { WalletMultiButton } from &#39;@solana/wallet-adapter-react-ui&#39;;
+import { Button } from &#39;./ui/button&#39;;
+import { Heart, Plus } from &#39;lucide-react&#39;;
+
+export default function Header() {
+  return (
+    &lt;header className=&quot;border-b&quot;&gt;
+      &lt;div className=&quot;container mx-auto px-4 py-4 flex items-center justify-between&quot;&gt;
+        &lt;Link to=&quot;/&quot; className=&quot;flex items-center space-x-2&quot;&gt;
+          &lt;Heart className=&quot;h-6 w-6 text-primary&quot; /&gt;
+          &lt;span className=&quot;text-xl font-bold&quot;&gt;Solana Support&lt;/span&gt;
+        &lt;/Link&gt;
+
+        &lt;nav className=&quot;hidden md:flex items-center space-x-6&quot;&gt;
+          &lt;Link to=&quot;/&quot; className=&quot;text-muted-foreground hover:text-foreground transition-colors&quot;&gt;
+            Projects
+          &lt;/Link&gt;
+          &lt;Link to=&quot;/docs&quot; className=&quot;text-muted-foreground hover:text-foreground transition-colors&quot;&gt;
+            Documentation
+          &lt;/Link&gt;
+        &lt;/nav&gt;
+
+        &lt;div className=&quot;flex items-center space-x-4&quot;&gt;
+          &lt;Button variant=&quot;outline&quot; size=&quot;sm&quot; asChild&gt;
+            &lt;Link to=&quot;/create&quot;&gt;
+              &lt;Plus className=&quot;h-4 w-4 mr-2&quot; /&gt;
+              Create Project
+            &lt;/Link&gt;
+          &lt;/Button&gt;
+          &lt;WalletMultiButton /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+  );
+}
+</content>
+    </document>
+
+    <document>
+      <source>src/lib/utils.ts</source>
+      <tags>utilities</tags>
+      <metadata>
+        <size>166</size>
+        <lastModified>2025-05-24T21:15:17.714Z</lastModified>
+        <extension>ts</extension>
+        <directory>src/lib</directory>
+      </metadata>
+      <content>import { clsx, type ClassValue } from &quot;clsx&quot;
+import { twMerge } from &quot;tailwind-merge&quot;
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
+}
+</content>
+    </document>
+
+    <document>
+      <source>src/pages/ProjectDetail.tsx</source>
+      <tags>frontend,blockchain</tags>
+      <metadata>
+        <size>12339</size>
+        <lastModified>2025-05-24T21:20:42.151Z</lastModified>
+        <extension>tsx</extension>
+        <directory>src/pages</directory>
+      </metadata>
+      <content>import { useState, useEffect } from &#39;react&#39;;
+import { useParams, Link } from &#39;react-router-dom&#39;;
+import { useWallet } from &#39;@solana/wallet-adapter-react&#39;;
+import { Card, CardContent, CardHeader, CardTitle } from &#39;../components/ui/card&#39;;
+import { Button } from &#39;../components/ui/button&#39;;
+import { Progress } from &#39;../components/ui/progress&#39;;
+import { Badge } from &#39;../components/ui/badge&#39;;
+import { Textarea } from &#39;../components/ui/textarea&#39;;
+import { Input } from &#39;../components/ui/input&#39;;
+import { Label } from &#39;../components/ui/label&#39;;
+import { Separator } from &#39;../components/ui/separator&#39;;
+import { Settings, Heart, Copy, Calendar, Wallet } from &#39;lucide-react&#39;;
+import { SupportBadge } from &#39;../components/SupportBadge&#39;;
+
+interface Project {
+  id: string;
+  name: string;
+  description: string | null;
+  walletAddress: string;
+  goal: number | null;
+  raised: number;
+  isActive: boolean;
+  createdAt: string;
+  showGoal: boolean;
+  customMessage: string | null;
+}
+
+interface Donation {
+  id: string;
+  donorWallet: string;
+  amount: number;
+  message: string | null;
+  createdAt: string;
+  isConfirmed: boolean;
+}
+
+export default function ProjectDetail() {
+  const { id } = useParams&lt;{ id: string }&gt;();
+  const { publicKey, connected } = useWallet();
+  const [project, setProject] = useState&lt;Project | null&gt;(null);
+  const [donations, setDonations] = useState&lt;Donation[]&gt;([]);
+  const [loading, setLoading] = useState(true);
+  const [donationAmount, setDonationAmount] = useState(&#39;&#39;);
+  const [donationMessage, setDonationMessage] = useState(&#39;&#39;);
+  const [isOwner, setIsOwner] = useState(false);
+
+  useEffect(() =&gt; {
+    if (id) {
+      fetchProjectData();
+    }
+  }, [id, publicKey]);
+
+  const fetchProjectData = async () =&gt; {
+    try {
+      // Mock data - replace with actual API calls
+      const mockProject: Project = {
+        id: id!,
+        name: &#39;Solana DeFi Analytics&#39;,
+        description: &#39;Building comprehensive analytics tools for Solana DeFi protocols. This project aims to provide developers and traders with real-time insights into the Solana ecosystem.&#39;,
+        walletAddress: &#39;ABC123def456GHI789jkl012MNO345pqr678STU901vwx234YZ&#39;,
+        goal: 100,
+        raised: 45.5,
+        isActive: true,
+        createdAt: &#39;2024-01-15T10:00:00Z&#39;,
+        showGoal: true,
+        customMessage: &#39;Support open-source DeFi tools for Solana!&#39;
+      };
+
+      const mockDonations: Donation[] = [
+        {
+          id: &#39;1&#39;,
+          donorWallet: &#39;XYZ789...ABC123&#39;,
+          amount: 5.0,
+          message: &#39;Great work on the analytics dashboard!&#39;,
+          createdAt: &#39;2024-01-20T15:30:00Z&#39;,
+          isConfirmed: true
+        },
+        {
+          id: &#39;2&#39;,
+          donorWallet: &#39;DEF456...GHI789&#39;,
+          amount: 2.5,
+          message: null,
+          createdAt: &#39;2024-01-18T09:15:00Z&#39;,
+          isConfirmed: true
+        }
+      ];
+
+      setProject(mockProject);
+      setDonations(mockDonations);
+
+      // Check if current user is the project owner
+      if (connected &amp;&amp; publicKey) {
+        setIsOwner(publicKey.toString() === mockProject.walletAddress);
+      }
+    } catch (error) {
+      console.error(&#39;Failed to fetch project data:&#39;, error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleDonate = async () =&gt; {
+    if (!connected || !publicKey || !donationAmount) return;
+
+    // Here you would implement the actual Solana transaction
+    console.log(&#39;Donating:&#39;, { amount: donationAmount, message: donationMessage });
+
+    // Mock success - in real app, handle transaction
+    alert(&#39;Donation sent! (This is a demo)&#39;);
+    setDonationAmount(&#39;&#39;);
+    setDonationMessage(&#39;&#39;);
+  };
+
+  const copyWalletAddress = () =&gt; {
+    if (project) {
+      navigator.clipboard.writeText(project.walletAddress);
+      // You could add a toast notification here
+      alert(&#39;Wallet address copied!&#39;);
+    }
+  };
+
+  const formatSOL = (amount: number) =&gt; `${amount.toFixed(2)} SOL`;
+  const formatWalletAddress = (address: string) =&gt;
+    `${address.slice(0, 4)}...${address.slice(-4)}`;
+
+  if (loading) {
+    return (
+      &lt;div className=&quot;flex justify-center items-center min-h-[400px]&quot;&gt;
+        &lt;div className=&quot;animate-pulse text-muted-foreground&quot;&gt;Loading project...&lt;/div&gt;
+      &lt;/div&gt;
+    );
+  }
+
+  if (!project) {
+    return (
+      &lt;div className=&quot;text-center py-12&quot;&gt;
+        &lt;p className=&quot;text-muted-foreground&quot;&gt;Project not found&lt;/p&gt;
+        &lt;Button className=&quot;mt-4&quot; asChild&gt;
+          &lt;Link to=&quot;/&quot;&gt;Back to Projects&lt;/Link&gt;
+        &lt;/Button&gt;
+      &lt;/div&gt;
+    );
+  }
+
+  const progressPercentage = project.goal ?
+    Math.min((project.raised / project.goal) * 100, 100) : 0;
+
+  return (
+    &lt;div className=&quot;max-w-4xl mx-auto space-y-6&quot;&gt;
+      {/* Header */}
+      &lt;div className=&quot;flex items-start justify-between&quot;&gt;
+        &lt;div className=&quot;space-y-2&quot;&gt;
+          &lt;h1 className=&quot;text-3xl font-bold&quot;&gt;{project.name}&lt;/h1&gt;
+          &lt;div className=&quot;flex items-center space-x-4 text-sm text-muted-foreground&quot;&gt;
+            &lt;div className=&quot;flex items-center space-x-1&quot;&gt;
+              &lt;Calendar className=&quot;h-4 w-4&quot; /&gt;
+              &lt;span&gt;Created {new Date(project.createdAt).toLocaleDateString()}&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div className=&quot;flex items-center space-x-1&quot;&gt;
+              &lt;Wallet className=&quot;h-4 w-4&quot; /&gt;
+              &lt;span&gt;{formatWalletAddress(project.walletAddress)}&lt;/span&gt;
+              &lt;Button variant=&quot;ghost&quot; size=&quot;sm&quot; onClick={copyWalletAddress}&gt;
+                &lt;Copy className=&quot;h-3 w-3&quot; /&gt;
+              &lt;/Button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        {isOwner &amp;&amp; (
+          &lt;Button variant=&quot;outline&quot; asChild&gt;
+            &lt;Link to={`/settings/${project.id}`}&gt;
+              &lt;Settings className=&quot;h-4 w-4 mr-2&quot; /&gt;
+              Settings
+            &lt;/Link&gt;
+          &lt;/Button&gt;
+        )}
+      &lt;/div&gt;
+
+      &lt;div className=&quot;grid gap-6 lg:grid-cols-3&quot;&gt;
+        {/* Main Content */}
+        &lt;div className=&quot;lg:col-span-2 space-y-6&quot;&gt;
+          {/* Description */}
+          &lt;Card&gt;
+            &lt;CardHeader&gt;
+              &lt;CardTitle&gt;About&lt;/CardTitle&gt;
+            &lt;/CardHeader&gt;
+            &lt;CardContent&gt;
+              &lt;p className=&quot;text-muted-foreground leading-relaxed&quot;&gt;
+                {project.description || &#39;No description provided.&#39;}
+              &lt;/p&gt;
+              {project.customMessage &amp;&amp; (
+                &lt;div className=&quot;mt-4 p-3 bg-primary/5 rounded-lg border-l-4 border-primary&quot;&gt;
+                  &lt;p className=&quot;text-sm font-medium&quot;&gt;{project.customMessage}&lt;/p&gt;
+                &lt;/div&gt;
+              )}
+            &lt;/CardContent&gt;
+          &lt;/Card&gt;
+
+          {/* Widget Preview */}
+          &lt;Card&gt;
+            &lt;CardHeader&gt;
+              &lt;CardTitle&gt;Widget Preview&lt;/CardTitle&gt;
+            &lt;/CardHeader&gt;
+            &lt;CardContent&gt;
+              &lt;p className=&quot;text-sm text-muted-foreground mb-4&quot;&gt;
+                This is how your support badge will appear in projects:
+              &lt;/p&gt;
+              &lt;div className=&quot;flex justify-center p-6 bg-muted/30 rounded-lg&quot;&gt;
+                &lt;SupportBadge projectId={project.id} /&gt;
+              &lt;/div&gt;
+            &lt;/CardContent&gt;
+          &lt;/Card&gt;
+
+          {/* Recent Donations */}
+          &lt;Card&gt;
+            &lt;CardHeader&gt;
+              &lt;CardTitle&gt;Recent Donations&lt;/CardTitle&gt;
+            &lt;/CardHeader&gt;
+            &lt;CardContent&gt;
+              {donations.length &gt; 0 ? (
+                &lt;div className=&quot;space-y-4&quot;&gt;
+                  {donations.map((donation) =&gt; (
+                    &lt;div key={donation.id} className=&quot;flex items-start space-x-3 p-3 rounded-lg bg-muted/30&quot;&gt;
+                      &lt;div className=&quot;flex-1 space-y-1&quot;&gt;
+                        &lt;div className=&quot;flex items-center justify-between&quot;&gt;
+                          &lt;span className=&quot;font-medium&quot;&gt;{formatSOL(donation.amount)}&lt;/span&gt;
+                          &lt;span className=&quot;text-xs text-muted-foreground&quot;&gt;
+                            {new Date(donation.createdAt).toLocaleDateString()}
+                          &lt;/span&gt;
+                        &lt;/div&gt;
+                        &lt;p className=&quot;text-xs text-muted-foreground&quot;&gt;
+                          From {formatWalletAddress(donation.donorWallet)}
+                        &lt;/p&gt;
+                        {donation.message &amp;&amp; (
+                          &lt;p className=&quot;text-sm text-muted-foreground italic&quot;&gt;
+                            &quot;{donation.message}&quot;
+                          &lt;/p&gt;
+                        )}
+                      &lt;/div&gt;
+                      {donation.isConfirmed &amp;&amp; (
+                        &lt;Badge variant=&quot;secondary&quot; className=&quot;text-xs&quot;&gt;
+                          Confirmed
+                        &lt;/Badge&gt;
+                      )}
+                    &lt;/div&gt;
+                  ))}
+                &lt;/div&gt;
+              ) : (
+                &lt;p className=&quot;text-center text-muted-foreground py-6&quot;&gt;
+                  No donations yet. Be the first to support this project!
+                &lt;/p&gt;
+              )}
+            &lt;/CardContent&gt;
+          &lt;/Card&gt;
+        &lt;/div&gt;
+
+        {/* Sidebar */}
+        &lt;div className=&quot;space-y-6&quot;&gt;
+          {/* Funding Progress */}
+          &lt;Card&gt;
+            &lt;CardHeader&gt;
+              &lt;CardTitle className=&quot;flex items-center space-x-2&quot;&gt;
+                &lt;Heart className=&quot;h-5 w-5 text-red-500&quot; /&gt;
+                &lt;span&gt;Support Progress&lt;/span&gt;
+              &lt;/CardTitle&gt;
+            &lt;/CardHeader&gt;
+            &lt;CardContent className=&quot;space-y-4&quot;&gt;
+              &lt;div className=&quot;space-y-2&quot;&gt;
+                &lt;div className=&quot;flex justify-between text-sm&quot;&gt;
+                  &lt;span className=&quot;font-medium&quot;&gt;{formatSOL(project.raised)} raised&lt;/span&gt;
+                  {project.showGoal &amp;&amp; project.goal &amp;&amp; (
+                    &lt;span className=&quot;text-muted-foreground&quot;&gt;
+                      of {formatSOL(project.goal)}
+                    &lt;/span&gt;
+                  )}
+                &lt;/div&gt;
+                {project.showGoal &amp;&amp; project.goal &amp;&amp; (
+                  &lt;Progress value={progressPercentage} className=&quot;h-2&quot; /&gt;
+                )}
+              &lt;/div&gt;
+
+              &lt;div className=&quot;pt-2 border-t&quot;&gt;
+                &lt;p className=&quot;text-sm text-muted-foreground&quot;&gt;
+                  {donations.filter(d =&gt; d.isConfirmed).length} supporters
+                &lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/CardContent&gt;
+          &lt;/Card&gt;
+
+          {/* Donation Form */}
+          {connected ? (
+            &lt;Card&gt;
+              &lt;CardHeader&gt;
+                &lt;CardTitle&gt;Make a Donation&lt;/CardTitle&gt;
+              &lt;/CardHeader&gt;
+              &lt;CardContent className=&quot;space-y-4&quot;&gt;
+                &lt;div className=&quot;space-y-2&quot;&gt;
+                  &lt;Label htmlFor=&quot;amount&quot;&gt;Amount (SOL)&lt;/Label&gt;
+                  &lt;Input
+                    id=&quot;amount&quot;
+                    type=&quot;number&quot;
+                    step=&quot;0.01&quot;
+                    min=&quot;0.01&quot;
+                    placeholder=&quot;0.00&quot;
+                    value={donationAmount}
+                    onChange={(e) =&gt; setDonationAmount(e.target.value)}
+                  /&gt;
+                &lt;/div&gt;
+
+                &lt;div className=&quot;space-y-2&quot;&gt;
+                  &lt;Label htmlFor=&quot;message&quot;&gt;Message (optional)&lt;/Label&gt;
+                  &lt;Textarea
+                    id=&quot;message&quot;
+                    rows={3}
+                    placeholder=&quot;Leave a message for the project owner...&quot;
+                    value={donationMessage}
+                    onChange={(e) =&gt; setDonationMessage(e.target.value)}
+                  /&gt;
+                &lt;/div&gt;
+
+                &lt;Button
+                  className=&quot;w-full&quot;
+                  onClick={handleDonate}
+                  disabled={!donationAmount || parseFloat(donationAmount) &lt;= 0}
+                &gt;
+                  &lt;Heart className=&quot;h-4 w-4 mr-2&quot; /&gt;
+                  Donate {donationAmount || &#39;0&#39;} SOL
+                &lt;/Button&gt;
+
+                &lt;p className=&quot;text-xs text-muted-foreground text-center&quot;&gt;
+                  Transactions are processed on Solana Devnet
+                &lt;/p&gt;
+              &lt;/CardContent&gt;
+            &lt;/Card&gt;
+          ) : (
+            &lt;Card&gt;
+              &lt;CardContent className=&quot;pt-6 text-center&quot;&gt;
+                &lt;p className=&quot;text-muted-foreground mb-4&quot;&gt;
+                  Connect your wallet to support this project
+                &lt;/p&gt;
+                &lt;Button className=&quot;w-full&quot;&gt;
+                  Connect Wallet
+                &lt;/Button&gt;
+              &lt;/CardContent&gt;
+            &lt;/Card&gt;
+          )}
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  );
+}
+</content>
+    </document>
+
+    <document>
+      <source>src/pages/ProjectSettings.tsx</source>
+      <tags>frontend,blockchain</tags>
+      <metadata>
+        <size>14356</size>
+        <lastModified>2025-05-24T21:21:21.404Z</lastModified>
+        <extension>tsx</extension>
+        <directory>src/pages</directory>
+      </metadata>
+      <content>import { useState, useEffect } from &#39;react&#39;;
+import { useParams, Link } from &#39;react-router-dom&#39;;
+import { useWallet } from &#39;@solana/wallet-adapter-react&#39;;
+import { Card, CardContent, CardHeader, CardTitle } from &#39;../components/ui/card&#39;;
+import { Button } from &#39;../components/ui/button&#39;;
+import { Input } from &#39;../components/ui/input&#39;;
+import { Label } from &#39;../components/ui/label&#39;;
+import { Textarea } from &#39;../components/ui/textarea&#39;;
+import { Switch } from &#39;../components/ui/switch&#39;;
+import { Tabs, TabsContent, TabsList, TabsTrigger } from &#39;../components/ui/tabs&#39;;
+import { Badge } from &#39;../components/ui/badge&#39;;
+import { Separator } from &#39;../components/ui/separator&#39;;
+import { ArrowLeft, Save, Code, Trash2, AlertTriangle } from &#39;lucide-react&#39;;
+import { SupportBadge } from &#39;../components/SupportBadge&#39;;
+
+interface ProjectSettings {
+  id: string;
+  name: string;
+  description: string | null;
+  walletAddress: string;
+  goal: number | null;
+  showGoal: boolean;
+  theme: string;
+  devFeeEnabled: boolean;
+  customMessage: string | null;
+  isActive: boolean;
+}
+
+export default function ProjectSettings() {
+  const { id } = useParams&lt;{ id: string }&gt;();
+  const { publicKey, connected } = useWallet();
+  const [project, setProject] = useState&lt;ProjectSettings | null&gt;(null);
+  const [loading, setLoading] = useState(true);
+  const [saving, setSaving] = useState(false);
+  const [isOwner, setIsOwner] = useState(false);
+
+  // Form state
+  const [formData, setFormData] = useState({
+    name: &#39;&#39;,
+    description: &#39;&#39;,
+    goal: &#39;&#39;,
+    showGoal: true,
+    theme: &#39;default&#39;,
+    devFeeEnabled: false,
+    customMessage: &#39;&#39;,
+    isActive: true
+  });
+
+  useEffect(() =&gt; {
+    if (id) {
+      fetchProjectSettings();
+    }
+  }, [id, publicKey]);
+
+  const fetchProjectSettings = async () =&gt; {
+    try {
+      // Mock data - replace with actual API call
+      const mockProject: ProjectSettings = {
+        id: id!,
+        name: &#39;Solana DeFi Analytics&#39;,
+        description: &#39;Building comprehensive analytics tools for Solana DeFi protocols&#39;,
+        walletAddress: &#39;ABC123def456GHI789jkl012MNO345pqr678STU901vwx234YZ&#39;,
+        goal: 100,
+        showGoal: true,
+        theme: &#39;default&#39;,
+        devFeeEnabled: true,
+        customMessage: &#39;Support open-source DeFi tools for Solana!&#39;,
+        isActive: true
+      };
+
+      setProject(mockProject);
+      setFormData({
+        name: mockProject.name,
+        description: mockProject.description || &#39;&#39;,
+        goal: mockProject.goal?.toString() || &#39;&#39;,
+        showGoal: mockProject.showGoal,
+        theme: mockProject.theme,
+        devFeeEnabled: mockProject.devFeeEnabled,
+        customMessage: mockProject.customMessage || &#39;&#39;,
+        isActive: mockProject.isActive
+      });
+
+      // Check if current user is the project owner
+      if (connected &amp;&amp; publicKey) {
+        setIsOwner(publicKey.toString() === mockProject.walletAddress);
+      }
+    } catch (error) {
+      console.error(&#39;Failed to fetch project settings:&#39;, error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleSave = async () =&gt; {
+    if (!isOwner) return;
+
+    setSaving(true);
+    try {
+      // Here you would make the actual API call to update the project
+      console.log(&#39;Saving project settings:&#39;, formData);
+
+      // Mock success
+      setTimeout(() =&gt; {
+        setSaving(false);
+        alert(&#39;Settings saved successfully!&#39;);
+      }, 1000);
+    } catch (error) {
+      console.error(&#39;Failed to save settings:&#39;, error);
+      setSaving(false);
+    }
+  };
+
+  const generateEmbedCode = () =&gt; {
+    if (!project) return &#39;&#39;;
+
+    return `&lt;!-- Add this to your project&#39;s README.md --&gt;
+&lt;a href=&quot;${window.location.origin}/project/${project.id}&quot;&gt;
+  &lt;img src=&quot;${window.location.origin}/api/badge/${project.id}&quot; alt=&quot;Support ${project.name}&quot; /&gt;
+&lt;/a&gt;
+
+&lt;!-- Or use the React component --&gt;
+import { SupportBadge } from &#39;@solana-support/widget&#39;;
+
+&lt;SupportBadge projectId=&quot;${project.id}&quot; /&gt;`;
+  };
+
+  const handleDeleteProject = async () =&gt; {
+    if (!confirm(&#39;Are you sure you want to delete this project? This action cannot be undone.&#39;)) {
+      return;
+    }
+
+    try {
+      // Here you would make the API call to delete the project
+      console.log(&#39;Deleting project:&#39;, project?.id);
+      alert(&#39;Project deleted successfully!&#39;);
+      // Redirect to projects list
+    } catch (error) {
+      console.error(&#39;Failed to delete project:&#39;, error);
+    }
+  };
+
+  if (loading) {
+    return (
+      &lt;div className=&quot;flex justify-center items-center min-h-[400px]&quot;&gt;
+        &lt;div className=&quot;animate-pulse text-muted-foreground&quot;&gt;Loading settings...&lt;/div&gt;
+      &lt;/div&gt;
+    );
+  }
+
+  if (!project || !isOwner) {
+    return (
+      &lt;div className=&quot;text-center py-12&quot;&gt;
+        &lt;AlertTriangle className=&quot;h-12 w-12 text-yellow-500 mx-auto mb-4&quot; /&gt;
+        &lt;p className=&quot;text-muted-foreground&quot;&gt;
+          {!project ? &#39;Project not found&#39; : &#39;You do not have permission to edit this project&#39;}
+        &lt;/p&gt;
+        &lt;Button className=&quot;mt-4&quot; asChild&gt;
+          &lt;Link to=&quot;/&quot;&gt;Back to Projects&lt;/Link&gt;
+        &lt;/Button&gt;
+      &lt;/div&gt;
+    );
+  }
+
+  return (
+    &lt;div className=&quot;max-w-4xl mx-auto space-y-6&quot;&gt;
+      {/* Header */}
+      &lt;div className=&quot;flex items-center justify-between&quot;&gt;
+        &lt;div className=&quot;flex items-center space-x-4&quot;&gt;
+          &lt;Button variant=&quot;ghost&quot; size=&quot;sm&quot; asChild&gt;
+            &lt;Link to={`/project/${project.id}`}&gt;
+              &lt;ArrowLeft className=&quot;h-4 w-4 mr-2&quot; /&gt;
+              Back to Project
+            &lt;/Link&gt;
+          &lt;/Button&gt;
+          &lt;div&gt;
+            &lt;h1 className=&quot;text-2xl font-bold&quot;&gt;Project Settings&lt;/h1&gt;
+            &lt;p className=&quot;text-muted-foreground&quot;&gt;{project.name}&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;Button onClick={handleSave} disabled={saving}&gt;
+          &lt;Save className=&quot;h-4 w-4 mr-2&quot; /&gt;
+          {saving ? &#39;Saving...&#39; : &#39;Save Changes&#39;}
+        &lt;/Button&gt;
+      &lt;/div&gt;
+
+      &lt;Tabs defaultValue=&quot;general&quot; className=&quot;space-y-6&quot;&gt;
+        &lt;TabsList&gt;
+          &lt;TabsTrigger value=&quot;general&quot;&gt;General&lt;/TabsTrigger&gt;
+          &lt;TabsTrigger value=&quot;appearance&quot;&gt;Appearance&lt;/TabsTrigger&gt;
+          &lt;TabsTrigger value=&quot;embed&quot;&gt;Embed Code&lt;/TabsTrigger&gt;
+          &lt;TabsTrigger value=&quot;advanced&quot;&gt;Advanced&lt;/TabsTrigger&gt;
+        &lt;/TabsList&gt;
+
+        {/* General Settings */}
+        &lt;TabsContent value=&quot;general&quot; className=&quot;space-y-6&quot;&gt;
+          &lt;Card&gt;
+            &lt;CardHeader&gt;
+              &lt;CardTitle&gt;Basic Information&lt;/CardTitle&gt;
+            &lt;/CardHeader&gt;
+            &lt;CardContent className=&quot;space-y-4&quot;&gt;
+              &lt;div className=&quot;space-y-2&quot;&gt;
+                &lt;Label htmlFor=&quot;name&quot;&gt;Project Name&lt;/Label&gt;
+                &lt;Input
+                  id=&quot;name&quot;
+                  value={formData.name}
+                  onChange={(e) =&gt; setFormData({ ...formData, name: e.target.value })}
+                  placeholder=&quot;Enter project name&quot;
+                /&gt;
+              &lt;/div&gt;
+
+              &lt;div className=&quot;space-y-2&quot;&gt;
+                &lt;Label htmlFor=&quot;description&quot;&gt;Description&lt;/Label&gt;
+                &lt;Textarea
+                  id=&quot;description&quot;
+                  rows={4}
+                  value={formData.description}
+                  onChange={(e) =&gt; setFormData({ ...formData, description: e.target.value })}
+                  placeholder=&quot;Describe your project...&quot;
+                /&gt;
+              &lt;/div&gt;
+
+              &lt;div className=&quot;space-y-2&quot;&gt;
+                &lt;Label htmlFor=&quot;customMessage&quot;&gt;Custom Message&lt;/Label&gt;
+                &lt;Input
+                  id=&quot;customMessage&quot;
+                  value={formData.customMessage}
+                  onChange={(e) =&gt; setFormData({ ...formData, customMessage: e.target.value })}
+                  placeholder=&quot;A custom message for supporters&quot;
+                /&gt;
+                &lt;p className=&quot;text-xs text-muted-foreground&quot;&gt;
+                  This message will be displayed prominently on your project page
+                &lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/CardContent&gt;
+          &lt;/Card&gt;
+
+          &lt;Card&gt;
+            &lt;CardHeader&gt;
+              &lt;CardTitle&gt;Funding Goal&lt;/CardTitle&gt;
+            &lt;/CardHeader&gt;
+            &lt;CardContent className=&quot;space-y-4&quot;&gt;
+              &lt;div className=&quot;space-y-2&quot;&gt;
+                &lt;Label htmlFor=&quot;goal&quot;&gt;Goal Amount (SOL)&lt;/Label&gt;
+                &lt;Input
+                  id=&quot;goal&quot;
+                  type=&quot;number&quot;
+                  step=&quot;0.01&quot;
+                  min=&quot;0&quot;
+                  value={formData.goal}
+                  onChange={(e) =&gt; setFormData({ ...formData, goal: e.target.value })}
+                  placeholder=&quot;100.00&quot;
+                /&gt;
+              &lt;/div&gt;
+
+              &lt;div className=&quot;flex items-center space-x-2&quot;&gt;
+                &lt;Switch
+                  id=&quot;showGoal&quot;
+                  checked={formData.showGoal}
+                  onCheckedChange={(checked) =&gt; setFormData({ ...formData, showGoal: checked })}
+                /&gt;
+                &lt;Label htmlFor=&quot;showGoal&quot;&gt;Show goal progress publicly&lt;/Label&gt;
+              &lt;/div&gt;
+            &lt;/CardContent&gt;
+          &lt;/Card&gt;
+        &lt;/TabsContent&gt;
+
+        {/* Appearance Settings */}
+        &lt;TabsContent value=&quot;appearance&quot; className=&quot;space-y-6&quot;&gt;
+          &lt;Card&gt;
+            &lt;CardHeader&gt;
+              &lt;CardTitle&gt;Widget Theme&lt;/CardTitle&gt;
+            &lt;/CardHeader&gt;
+            &lt;CardContent className=&quot;space-y-4&quot;&gt;
+              &lt;div className=&quot;grid grid-cols-3 gap-4&quot;&gt;
+                {[&#39;default&#39;, &#39;dark&#39;, &#39;minimal&#39;].map((theme) =&gt; (
+                  &lt;div
+                    key={theme}
+                    className={`p-4 border rounded-lg cursor-pointer transition-colors ${formData.theme === theme ? &#39;border-primary bg-primary/5&#39; : &#39;border-border&#39;
+                      }`}
+                    onClick={() =&gt; setFormData({ ...formData, theme })}
+                  &gt;
+                    &lt;div className=&quot;text-center space-y-2&quot;&gt;
+                      &lt;div className=&quot;w-full h-8 bg-muted rounded flex items-center justify-center&quot;&gt;
+                        &lt;Badge variant=&quot;secondary&quot; className=&quot;text-xs capitalize&quot;&gt;
+                          {theme}
+                        &lt;/Badge&gt;
+                      &lt;/div&gt;
+                      &lt;p className=&quot;text-sm font-medium capitalize&quot;&gt;{theme}&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                ))}
+              &lt;/div&gt;
+
+              &lt;Separator /&gt;
+
+              &lt;div&gt;
+                &lt;Label className=&quot;text-sm font-medium mb-2 block&quot;&gt;Preview&lt;/Label&gt;
+                &lt;div className=&quot;flex justify-center p-6 bg-muted/30 rounded-lg&quot;&gt;
+                  &lt;SupportBadge projectId={project.id} theme={formData.theme} /&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/CardContent&gt;
+          &lt;/Card&gt;
+        &lt;/TabsContent&gt;
+
+        {/* Embed Code */}
+        &lt;TabsContent value=&quot;embed&quot; className=&quot;space-y-6&quot;&gt;
+          &lt;Card&gt;
+            &lt;CardHeader&gt;
+              &lt;CardTitle className=&quot;flex items-center space-x-2&quot;&gt;
+                &lt;Code className=&quot;h-5 w-5&quot; /&gt;
+                &lt;span&gt;Embed Code&lt;/span&gt;
+              &lt;/CardTitle&gt;
+            &lt;/CardHeader&gt;
+            &lt;CardContent className=&quot;space-y-4&quot;&gt;
+              &lt;p className=&quot;text-sm text-muted-foreground&quot;&gt;
+                Copy and paste this code into your project&#39;s README.md or website:
+              &lt;/p&gt;
+
+              &lt;div className=&quot;relative&quot;&gt;
+                &lt;pre className=&quot;bg-muted p-4 rounded-lg text-sm overflow-x-auto&quot;&gt;
+                  &lt;code&gt;{generateEmbedCode()}&lt;/code&gt;
+                &lt;/pre&gt;
+                &lt;Button
+                  size=&quot;sm&quot;
+                  className=&quot;absolute top-2 right-2&quot;
+                  onClick={() =&gt; {
+                    navigator.clipboard.writeText(generateEmbedCode());
+                    alert(&#39;Code copied to clipboard!&#39;);
+                  }}
+                &gt;
+                  Copy
+                &lt;/Button&gt;
+              &lt;/div&gt;
+            &lt;/CardContent&gt;
+          &lt;/Card&gt;
+        &lt;/TabsContent&gt;
+
+        {/* Advanced Settings */}
+        &lt;TabsContent value=&quot;advanced&quot; className=&quot;space-y-6&quot;&gt;
+          &lt;Card&gt;
+            &lt;CardHeader&gt;
+              &lt;CardTitle&gt;Developer Settings&lt;/CardTitle&gt;
+            &lt;/CardHeader&gt;
+            &lt;CardContent className=&quot;space-y-4&quot;&gt;
+              &lt;div className=&quot;flex items-center justify-between&quot;&gt;
+                &lt;div className=&quot;space-y-1&quot;&gt;
+                  &lt;Label htmlFor=&quot;devFee&quot;&gt;Support Developer (Optional)&lt;/Label&gt;
+                  &lt;p className=&quot;text-xs text-muted-foreground&quot;&gt;
+                    Enable a small developer fee (2%) to help maintain this service
+                  &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;Switch
+                  id=&quot;devFee&quot;
+                  checked={formData.devFeeEnabled}
+                  onCheckedChange={(checked) =&gt; setFormData({ ...formData, devFeeEnabled: checked })}
+                /&gt;
+              &lt;/div&gt;
+
+              &lt;Separator /&gt;
+
+              &lt;div className=&quot;flex items-center justify-between&quot;&gt;
+                &lt;div className=&quot;space-y-1&quot;&gt;
+                  &lt;Label htmlFor=&quot;isActive&quot;&gt;Project Status&lt;/Label&gt;
+                  &lt;p className=&quot;text-xs text-muted-foreground&quot;&gt;
+                    Inactive projects won&#39;t accept new donations
+                  &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;Switch
+                  id=&quot;isActive&quot;
+                  checked={formData.isActive}
+                  onCheckedChange={(checked) =&gt; setFormData({ ...formData, isActive: checked })}
+                /&gt;
+              &lt;/div&gt;
+            &lt;/CardContent&gt;
+          &lt;/Card&gt;
+
+          &lt;Card className=&quot;border-destructive/20&quot;&gt;
+            &lt;CardHeader&gt;
+              &lt;CardTitle className=&quot;text-destructive flex items-center space-x-2&quot;&gt;
+                &lt;Trash2 className=&quot;h-5 w-5&quot; /&gt;
+                &lt;span&gt;Danger Zone&lt;/span&gt;
+              &lt;/CardTitle&gt;
+            &lt;/CardHeader&gt;
+            &lt;CardContent&gt;
+              &lt;div className=&quot;flex items-center justify-between&quot;&gt;
+                &lt;div className=&quot;space-y-1&quot;&gt;
+                  &lt;p className=&quot;font-medium&quot;&gt;Delete Project&lt;/p&gt;
+                  &lt;p className=&quot;text-sm text-muted-foreground&quot;&gt;
+                    This will permanently delete your project and all associated data
+                  &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;Button variant=&quot;destructive&quot; onClick={handleDeleteProject}&gt;
+                  &lt;Trash2 className=&quot;h-4 w-4 mr-2&quot; /&gt;
+                  Delete
+                &lt;/Button&gt;
+              &lt;/div&gt;
+            &lt;/CardContent&gt;
+          &lt;/Card&gt;
+        &lt;/TabsContent&gt;
+      &lt;/Tabs&gt;
+    &lt;/div&gt;
+  );
+}
+</content>
+    </document>
+
+    <document>
+      <source>src/pages/ProjectsList.tsx</source>
+      <tags>frontend</tags>
+      <metadata>
+        <size>5598</size>
+        <lastModified>2025-05-24T21:18:18.719Z</lastModified>
+        <extension>tsx</extension>
+        <directory>src/pages</directory>
+      </metadata>
+      <content>import { useState, useEffect } from &#39;react&#39;;
+import { Link } from &#39;react-router-dom&#39;;
+import { Card, CardContent, CardHeader, CardTitle } from &#39;../components/ui/card&#39;;
+import { Button } from &#39;../components/ui/button&#39;;
+import { Progress } from &#39;../components/ui/progress&#39;;
+import { Badge } from &#39;../components/ui/badge&#39;;
+import { Settings, ExternalLink, TrendingUp } from &#39;lucide-react&#39;;
+
+interface Project {
+  id: string;
+  name: string;
+  description: string | null;
+  walletAddress: string;
+  goal: number | null;
+  raised: number;
+  isActive: boolean;
+  createdAt: string;
+  _count: {
+    donations: number;
+  };
+}
+
+export default function ProjectsList() {
+  const [projects, setProjects] = useState&lt;Project[]&gt;([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() =&gt; {
+    fetchProjects();
+  }, []);
+
+  const fetchProjects = async () =&gt; {
+    try {
+      // This would be your actual API call
+      // const response = await fetch(&#39;/api/projects&#39;);
+      // const data = await response.json();
+
+      // Mock data for now
+      const mockProjects: Project[] = [
+        {
+          id: &#39;1&#39;,
+          name: &#39;Solana DeFi Analytics&#39;,
+          description: &#39;Building comprehensive analytics tools for Solana DeFi protocols&#39;,
+          walletAddress: &#39;ABC123...XYZ789&#39;,
+          goal: 100,
+          raised: 45.5,
+          isActive: true,
+          createdAt: &#39;2024-01-15T10:00:00Z&#39;,
+          _count: { donations: 23 }
+        },
+        {
+          id: &#39;2&#39;,
+          name: &#39;NFT Marketplace SDK&#39;,
+          description: &#39;Open-source SDK for building NFT marketplaces on Solana&#39;,
+          walletAddress: &#39;DEF456...ABC123&#39;,
+          goal: 50,
+          raised: 12.8,
+          isActive: true,
+          createdAt: &#39;2024-02-01T14:30:00Z&#39;,
+          _count: { donations: 8 }
+        }
+      ];
+
+      setProjects(mockProjects);
+    } catch (error) {
+      console.error(&#39;Failed to fetch projects:&#39;, error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const formatSOL = (amount: number) =&gt; `${amount.toFixed(2)} SOL`;
+  const getProgressPercentage = (raised: number, goal: number | null) =&gt; {
+    if (!goal) return 0;
+    return Math.min((raised / goal) * 100, 100);
+  };
+
+  if (loading) {
+    return (
+      &lt;div className=&quot;flex justify-center items-center min-h-[400px]&quot;&gt;
+        &lt;div className=&quot;animate-pulse text-muted-foreground&quot;&gt;Loading projects...&lt;/div&gt;
+      &lt;/div&gt;
+    );
+  }
+
+  return (
+    &lt;div className=&quot;space-y-6&quot;&gt;
+      &lt;div className=&quot;flex items-center justify-between&quot;&gt;
+        &lt;div&gt;
+          &lt;h1 className=&quot;text-3xl font-bold&quot;&gt;Solana Support Projects&lt;/h1&gt;
+          &lt;p className=&quot;text-muted-foreground mt-2&quot;&gt;
+            Discover and support amazing Solana projects
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div className=&quot;flex items-center space-x-2&quot;&gt;
+          &lt;Badge variant=&quot;secondary&quot; className=&quot;flex items-center space-x-1&quot;&gt;
+            &lt;TrendingUp className=&quot;h-3 w-3&quot; /&gt;
+            &lt;span&gt;{projects.length} Active Projects&lt;/span&gt;
+          &lt;/Badge&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div className=&quot;grid gap-6 md:grid-cols-2 lg:grid-cols-3&quot;&gt;
+        {projects.map((project) =&gt; (
+          &lt;Card key={project.id} className=&quot;hover:shadow-lg transition-shadow&quot;&gt;
+            &lt;CardHeader&gt;
+              &lt;div className=&quot;flex items-start justify-between&quot;&gt;
+                &lt;CardTitle className=&quot;text-lg&quot;&gt;{project.name}&lt;/CardTitle&gt;
+                &lt;div className=&quot;flex space-x-2&quot;&gt;
+                  &lt;Button variant=&quot;ghost&quot; size=&quot;sm&quot; asChild&gt;
+                    &lt;Link to={`/settings/${project.id}`}&gt;
+                      &lt;Settings className=&quot;h-4 w-4&quot; /&gt;
+                    &lt;/Link&gt;
+                  &lt;/Button&gt;
+                  &lt;Button variant=&quot;ghost&quot; size=&quot;sm&quot; asChild&gt;
+                    &lt;Link to={`/project/${project.id}`}&gt;
+                      &lt;ExternalLink className=&quot;h-4 w-4&quot; /&gt;
+                    &lt;/Link&gt;
+                  &lt;/Button&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/CardHeader&gt;
+            &lt;CardContent className=&quot;space-y-4&quot;&gt;
+              &lt;p className=&quot;text-sm text-muted-foreground line-clamp-2&quot;&gt;
+                {project.description || &#39;No description provided&#39;}
+              &lt;/p&gt;
+
+              &lt;div className=&quot;space-y-2&quot;&gt;
+                &lt;div className=&quot;flex justify-between text-sm&quot;&gt;
+                  &lt;span&gt;Raised: {formatSOL(project.raised)}&lt;/span&gt;
+                  {project.goal &amp;&amp; (
+                    &lt;span className=&quot;text-muted-foreground&quot;&gt;
+                      Goal: {formatSOL(project.goal)}
+                    &lt;/span&gt;
+                  )}
+                &lt;/div&gt;
+                {project.goal &amp;&amp; (
+                  &lt;Progress value={getProgressPercentage(project.raised, project.goal)} /&gt;
+                )}
+              &lt;/div&gt;
+
+              &lt;div className=&quot;flex justify-between items-center text-sm text-muted-foreground&quot;&gt;
+                &lt;span&gt;{project._count.donations} donations&lt;/span&gt;
+                &lt;span&gt;
+                  {new Date(project.createdAt).toLocaleDateString()}
+                &lt;/span&gt;
+              &lt;/div&gt;
+
+              &lt;Button className=&quot;w-full&quot; asChild&gt;
+                &lt;Link to={`/project/${project.id}`}&gt;
+                  View Project
+                &lt;/Link&gt;
+              &lt;/Button&gt;
+            &lt;/CardContent&gt;
+          &lt;/Card&gt;
+        ))}
+      &lt;/div&gt;
+
+      {projects.length === 0 &amp;&amp; (
+        &lt;div className=&quot;text-center py-12&quot;&gt;
+          &lt;p className=&quot;text-muted-foreground&quot;&gt;No projects found&lt;/p&gt;
+          &lt;Button className=&quot;mt-4&quot; asChild&gt;
+            &lt;Link to=&quot;/create&quot;&gt;Create Your First Project&lt;/Link&gt;
+          &lt;/Button&gt;
+        &lt;/div&gt;
+      )}
+    &lt;/div&gt;
+  );
+}
+</content>
+    </document>
+
+    <document>
+      <source>src/App.css</source>
+      <tags>styling</tags>
+      <metadata>
+        <size>606</size>
+        <lastModified>2025-05-24T21:10:50.751Z</lastModified>
+        <extension>css</extension>
+        <directory>src</directory>
+      </metadata>
+      <content>#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+</content>
+    </document>
+
+    <document>
+      <source>src/App.tsx</source>
+      <tags>frontend,blockchain</tags>
+      <metadata>
+        <size>1947</size>
+        <lastModified>2025-05-24T21:17:13.247Z</lastModified>
+        <extension>tsx</extension>
+        <directory>src</directory>
+      </metadata>
+      <content>import { BrowserRouter as Router, Routes, Route } from &#39;react-router-dom&#39;;
+import { WalletAdapterNetwork } from &#39;@solana/wallet-adapter-base&#39;;
+import { ConnectionProvider, WalletProvider } from &#39;@solana/wallet-adapter-react&#39;;
+import { WalletModalProvider } from &#39;@solana/wallet-adapter-react-ui&#39;;
+import { PhantomWalletAdapter, SolflareWalletAdapter } from &#39;@solana/wallet-adapter-wallets&#39;;
+import { clusterApiUrl } from &#39;@solana/web3.js&#39;;
+import { useMemo } from &#39;react&#39;;
+
+// Import wallet adapter CSS
+import &#39;@solana/wallet-adapter-react-ui/styles.css&#39;;
+
+// Components
+import Header from &#39;./components/Header&#39;;
+import ProjectsList from &#39;./pages/ProjectsList&#39;;
+import ProjectDetail from &#39;./pages/ProjectDetail&#39;;
+import ProjectSettings from &#39;./pages/ProjectSettings&#39;;
+
+function App() {
+  // Configure Solana network
+  const network = (import.meta.env.VITE_SOLANA_NETWORK as WalletAdapterNetwork) || WalletAdapterNetwork.Devnet;
+  const endpoint = useMemo(() =&gt; {
+    return import.meta.env.VITE_SOLANA_RPC_URL || clusterApiUrl(network);
+  }, [network]);
+
+  // Configure wallets
+  const wallets = useMemo(
+    () =&gt; [
+      new PhantomWalletAdapter(),
+      new SolflareWalletAdapter(),
+    ],
+    []
+  );
+
+  return (
+    &lt;ConnectionProvider endpoint={endpoint}&gt;
+      &lt;WalletProvider wallets={wallets} autoConnect&gt;
+        &lt;WalletModalProvider&gt;
+          &lt;Router&gt;
+            &lt;div className=&quot;min-h-screen bg-background&quot;&gt;
+              &lt;Header /&gt;
+              &lt;main className=&quot;container mx-auto px-4 py-8&quot;&gt;
+                &lt;Routes&gt;
+                  &lt;Route path=&quot;/&quot; element={&lt;ProjectsList /&gt;} /&gt;
+                  &lt;Route path=&quot;/project/:id&quot; element={&lt;ProjectDetail /&gt;} /&gt;
+                  &lt;Route path=&quot;/settings/:id&quot; element={&lt;ProjectSettings /&gt;} /&gt;
+                &lt;/Routes&gt;
+              &lt;/main&gt;
+            &lt;/div&gt;
+          &lt;/Router&gt;
+        &lt;/WalletModalProvider&gt;
+      &lt;/WalletProvider&gt;
+    &lt;/ConnectionProvider&gt;
+  );
+}
+
+export default App;
+</content>
+    </document>
+
+    <document>
+      <source>src/main.tsx</source>
+      <tags>frontend</tags>
+      <metadata>
+        <size>230</size>
+        <lastModified>2025-05-24T21:10:50.755Z</lastModified>
+        <extension>tsx</extension>
+        <directory>src</directory>
+      </metadata>
+      <content>import { StrictMode } from &#39;react&#39;
+import { createRoot } from &#39;react-dom/client&#39;
+import &#39;./index.css&#39;
+import App from &#39;./App.tsx&#39;
+
+createRoot(document.getElementById(&#39;root&#39;)!).render(
+  &lt;StrictMode&gt;
+    &lt;App /&gt;
+  &lt;/StrictMode&gt;,
+)
+</content>
+    </document>
+
+    <document>
+      <source>src/vite-env.d.ts</source>
+      <tags>types,configuration</tags>
+      <metadata>
+        <size>38</size>
+        <lastModified>2025-05-24T21:10:50.755Z</lastModified>
+        <extension>ts</extension>
+        <directory>src</directory>
+      </metadata>
+      <content>/// &lt;reference types=&quot;vite/client&quot; /&gt;
+</content>
+    </document>
+
+    <document>
+      <source>src/index.css</source>
+      <tags>styling</tags>
+      <metadata>
+        <size>4090</size>
+        <lastModified>2025-05-24T21:15:02.867Z</lastModified>
+        <extension>css</extension>
+        <directory>src</directory>
+      </metadata>
+      <content>@import &quot;tailwindcss&quot;;
+@import &quot;tw-animate-css&quot;;
+
+@custom-variant dark (&amp;:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+</content>
+    </document>
+
+    <document>
+      <source>index.html</source>
+      <tags>frontend,configuration</tags>
+      <metadata>
+        <size>366</size>
+        <lastModified>2025-05-24T21:10:50.748Z</lastModified>
+        <extension>html</extension>
+        <directory>Root</directory>
+      </metadata>
+      <content>&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/svg+xml&quot; href=&quot;/vite.svg&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Vite + React + TS&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;root&quot;&gt;&lt;/div&gt;
+    &lt;script type=&quot;module&quot; src=&quot;/src/main.tsx&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</content>
+    </document>
+
+    <document>
+      <source>.gitignore</source>
+      <tags>configuration</tags>
+      <metadata>
+        <size>253</size>
+        <lastModified>2025-05-24T21:10:50.747Z</lastModified>
+        <extension>gitignore</extension>
+        <directory>Root</directory>
+      </metadata>
+      <content># Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+</content>
+    </document>
+
+    <document>
+      <source>tsconfig.app.json</source>
+      <tags>configuration</tags>
+      <metadata>
+        <size>792</size>
+        <lastModified>2025-05-24T21:13:11.953Z</lastModified>
+        <extension>json</extension>
+        <directory>Root</directory>
+      </metadata>
+      <content>{
+  &quot;compilerOptions&quot;: {
+    &quot;baseUrl&quot;: &quot;.&quot;,
+    &quot;paths&quot;: {
+      &quot;@/*&quot;: [
+        &quot;./src/*&quot;
+      ]
+    },
+
+    &quot;tsBuildInfoFile&quot;: &quot;./node_modules/.tmp/tsconfig.app.tsbuildinfo&quot;,
+    &quot;target&quot;: &quot;ES2020&quot;,
+    &quot;useDefineForClassFields&quot;: true,
+    &quot;lib&quot;: [&quot;ES2020&quot;, &quot;DOM&quot;, &quot;DOM.Iterable&quot;],
+    &quot;module&quot;: &quot;ESNext&quot;,
+    &quot;skipLibCheck&quot;: true,
+
+    /* Bundler mode */
+    &quot;moduleResolution&quot;: &quot;bundler&quot;,
+    &quot;allowImportingTsExtensions&quot;: true,
+    &quot;verbatimModuleSyntax&quot;: true,
+    &quot;moduleDetection&quot;: &quot;force&quot;,
+    &quot;noEmit&quot;: true,
+    &quot;jsx&quot;: &quot;react-jsx&quot;,
+
+    /* Linting */
+    &quot;strict&quot;: true,
+    &quot;noUnusedLocals&quot;: true,
+    &quot;noUnusedParameters&quot;: true,
+    &quot;erasableSyntaxOnly&quot;: true,
+    &quot;noFallthroughCasesInSwitch&quot;: true,
+    &quot;noUncheckedSideEffectImports&quot;: true
+
+    
+  },
+  &quot;include&quot;: [&quot;src&quot;]
+}
+</content>
+    </document>
+
+    <document>
+      <source>.env</source>
+      <tags>configuration</tags>
+      <metadata>
+        <size>353</size>
+        <lastModified>2025-05-24T21:32:51.459Z</lastModified>
+        <extension>env</extension>
+        <directory>Root</directory>
+      </metadata>
+      <content># Database
+DATABASE_URL=&quot;postgresql://neondb_owner:npg_SJop9yN6jKts@ep-summer-leaf-a6w0t6k2-pooler.us-west-2.aws.neon.tech/neondb?sslmode=require&quot;
+
+# Solana
+VITE_SOLANA_RPC_URL=&quot;https://api.devnet.solana.com&quot;
+VITE_SOLANA_NETWORK=&quot;devnet&quot;
+VITE_DEV_WALLET_ADDRESS=&quot;C8ymmYFqe4GLACzdwMHPHCmGguMsstpLGZM9hx8NNiHJ&quot;
+
+# App
+VITE_APP_URL=&quot;http://localhost:5173&quot;
+</content>
+    </document>
+
+    <document>
+      <source>eslint.config.js</source>
+      <tags>configuration</tags>
+      <metadata>
+        <size>734</size>
+        <lastModified>2025-05-24T21:10:50.747Z</lastModified>
+        <extension>js</extension>
+        <directory>Root</directory>
+      </metadata>
+      <content>import js from &#39;@eslint/js&#39;
+import globals from &#39;globals&#39;
+import reactHooks from &#39;eslint-plugin-react-hooks&#39;
+import reactRefresh from &#39;eslint-plugin-react-refresh&#39;
+import tseslint from &#39;typescript-eslint&#39;
+
+export default tseslint.config(
+  { ignores: [&#39;dist&#39;] },
+  {
+    extends: [js.configs.recommended, ...tseslint.configs.recommended],
+    files: [&#39;**/*.{ts,tsx}&#39;],
+    languageOptions: {
+      ecmaVersion: 2020,
+      globals: globals.browser,
+    },
+    plugins: {
+      &#39;react-hooks&#39;: reactHooks,
+      &#39;react-refresh&#39;: reactRefresh,
+    },
+    rules: {
+      ...reactHooks.configs.recommended.rules,
+      &#39;react-refresh/only-export-components&#39;: [
+        &#39;warn&#39;,
+        { allowConstantExport: true },
+      ],
+    },
+  },
+)
+</content>
+    </document>
+
+    <document>
+      <source>package.json</source>
+      <tags>configuration</tags>
+      <metadata>
+        <size>1644</size>
+        <lastModified>2025-05-24T21:34:39.369Z</lastModified>
+        <extension>json</extension>
+        <directory>Root</directory>
+      </metadata>
+      <content>{
+  &quot;name&quot;: &quot;solana-support&quot;,
+  &quot;private&quot;: true,
+  &quot;version&quot;: &quot;0.0.0&quot;,
+  &quot;type&quot;: &quot;module&quot;,
+  &quot;scripts&quot;: {
+    &quot;dev&quot;: &quot;vite&quot;,
+    &quot;build&quot;: &quot;tsc -b &amp;&amp; vite build&quot;,
+    &quot;lint&quot;: &quot;eslint .&quot;,
+    &quot;preview&quot;: &quot;vite preview&quot;,
+    &quot;db:generate&quot;: &quot;prisma generate&quot;,
+    &quot;db:push&quot;: &quot;prisma db push&quot;,
+    &quot;db:studio&quot;: &quot;prisma studio&quot;,
+    &quot;db:migrate&quot;: &quot;prisma migrate dev&quot;
+  },
+  &quot;dependencies&quot;: {
+    &quot;@prisma/client&quot;: &quot;^6.8.2&quot;,
+    &quot;@radix-ui/react-label&quot;: &quot;^2.1.7&quot;,
+    &quot;@radix-ui/react-progress&quot;: &quot;^1.1.7&quot;,
+    &quot;@radix-ui/react-separator&quot;: &quot;^1.1.7&quot;,
+    &quot;@radix-ui/react-slot&quot;: &quot;^1.2.3&quot;,
+    &quot;@radix-ui/react-switch&quot;: &quot;^1.2.5&quot;,
+    &quot;@radix-ui/react-tabs&quot;: &quot;^1.1.12&quot;,
+    &quot;@solana/wallet-adapter-base&quot;: &quot;^0.9.26&quot;,
+    &quot;@solana/wallet-adapter-react&quot;: &quot;^0.15.38&quot;,
+    &quot;@solana/wallet-adapter-react-ui&quot;: &quot;^0.9.38&quot;,
+    &quot;@solana/wallet-adapter-wallets&quot;: &quot;^0.19.36&quot;,
+    &quot;@solana/web3.js&quot;: &quot;^1.98.2&quot;,
+    &quot;@tailwindcss/vite&quot;: &quot;^4.1.7&quot;,
+    &quot;class-variance-authority&quot;: &quot;^0.7.1&quot;,
+    &quot;clsx&quot;: &quot;^2.1.1&quot;,
+    &quot;lucide-react&quot;: &quot;^0.511.0&quot;,
+    &quot;prisma&quot;: &quot;^6.8.2&quot;,
+    &quot;react&quot;: &quot;^19.1.0&quot;,
+    &quot;react-dom&quot;: &quot;^19.1.0&quot;,
+    &quot;react-router-dom&quot;: &quot;^7.6.0&quot;,
+    &quot;tailwind-merge&quot;: &quot;^3.3.0&quot;,
+    &quot;tailwindcss&quot;: &quot;^4.1.7&quot;
+  },
+  &quot;devDependencies&quot;: {
+    &quot;@eslint/js&quot;: &quot;^9.25.0&quot;,
+    &quot;@types/node&quot;: &quot;^22.15.21&quot;,
+    &quot;@types/react&quot;: &quot;^19.1.2&quot;,
+    &quot;@types/react-dom&quot;: &quot;^19.1.2&quot;,
+    &quot;@vitejs/plugin-react&quot;: &quot;^4.4.1&quot;,
+    &quot;eslint&quot;: &quot;^9.25.0&quot;,
+    &quot;eslint-plugin-react-hooks&quot;: &quot;^5.2.0&quot;,
+    &quot;eslint-plugin-react-refresh&quot;: &quot;^0.4.19&quot;,
+    &quot;globals&quot;: &quot;^16.0.0&quot;,
+    &quot;tw-animate-css&quot;: &quot;^1.3.0&quot;,
+    &quot;typescript&quot;: &quot;~5.8.3&quot;,
+    &quot;typescript-eslint&quot;: &quot;^8.30.1&quot;,
+    &quot;vite&quot;: &quot;^6.3.5&quot;
+  }
+}
+</content>
+    </document>
+
+    <document>
+      <source>tsconfig.json</source>
+      <tags>configuration</tags>
+      <metadata>
+        <size>213</size>
+        <lastModified>2025-05-24T21:12:07.852Z</lastModified>
+        <extension>json</extension>
+        <directory>Root</directory>
+      </metadata>
+      <content>{
+  &quot;files&quot;: [],
+  &quot;references&quot;: [
+    { &quot;path&quot;: &quot;./tsconfig.app.json&quot; },
+    { &quot;path&quot;: &quot;./tsconfig.node.json&quot; }
+  ],
+  &quot;compilerOptions&quot;: {
+    &quot;baseUrl&quot;: &quot;.&quot;,
+    &quot;paths&quot;: {
+      &quot;@/*&quot;: [&quot;./src/*&quot;]
+    }
+  }
+}
+</content>
+    </document>
+
+    <document>
+      <source>vite.config.ts</source>
+      <tags>configuration</tags>
+      <metadata>
+        <size>327</size>
+        <lastModified>2025-05-24T21:14:06.625Z</lastModified>
+        <extension>ts</extension>
+        <directory>Root</directory>
+      </metadata>
+      <content>import path from &#39;path&#39;
+import tailwindcss from &#39;@tailwindcss/vite&#39;
+import { defineConfig } from &#39;vite&#39;
+import react from &#39;@vitejs/plugin-react&#39;
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+  resolve: {
+    alias: {
+      &#39;@&#39;: path.resolve(__dirname, &#39;./src&#39;),
+    },
+  },
+})
+</content>
+    </document>
+
+    <document>
+      <source>tsconfig.node.json</source>
+      <tags>configuration</tags>
+      <metadata>
+        <size>630</size>
+        <lastModified>2025-05-24T21:10:50.757Z</lastModified>
+        <extension>json</extension>
+        <directory>Root</directory>
+      </metadata>
+      <content>{
+  &quot;compilerOptions&quot;: {
+    &quot;tsBuildInfoFile&quot;: &quot;./node_modules/.tmp/tsconfig.node.tsbuildinfo&quot;,
+    &quot;target&quot;: &quot;ES2022&quot;,
+    &quot;lib&quot;: [&quot;ES2023&quot;],
+    &quot;module&quot;: &quot;ESNext&quot;,
+    &quot;skipLibCheck&quot;: true,
+
+    /* Bundler mode */
+    &quot;moduleResolution&quot;: &quot;bundler&quot;,
+    &quot;allowImportingTsExtensions&quot;: true,
+    &quot;verbatimModuleSyntax&quot;: true,
+    &quot;moduleDetection&quot;: &quot;force&quot;,
+    &quot;noEmit&quot;: true,
+
+    /* Linting */
+    &quot;strict&quot;: true,
+    &quot;noUnusedLocals&quot;: true,
+    &quot;noUnusedParameters&quot;: true,
+    &quot;erasableSyntaxOnly&quot;: true,
+    &quot;noFallthroughCasesInSwitch&quot;: true,
+    &quot;noUncheckedSideEffectImports&quot;: true
+  },
+  &quot;include&quot;: [&quot;vite.config.ts&quot;]
+}
+</content>
+    </document>
+
+    <document>
+      <source>components.json</source>
+      <tags>configuration,ui-components</tags>
+      <metadata>
+        <size>425</size>
+        <lastModified>2025-05-24T21:15:02.312Z</lastModified>
+        <extension>json</extension>
+        <directory>Root</directory>
+      </metadata>
+      <content>{
+  &quot;$schema&quot;: &quot;https://ui.shadcn.com/schema.json&quot;,
+  &quot;style&quot;: &quot;new-york&quot;,
+  &quot;rsc&quot;: false,
+  &quot;tsx&quot;: true,
+  &quot;tailwind&quot;: {
+    &quot;config&quot;: &quot;&quot;,
+    &quot;css&quot;: &quot;src/index.css&quot;,
+    &quot;baseColor&quot;: &quot;neutral&quot;,
+    &quot;cssVariables&quot;: true,
+    &quot;prefix&quot;: &quot;&quot;
+  },
+  &quot;aliases&quot;: {
+    &quot;components&quot;: &quot;@/components&quot;,
+    &quot;utils&quot;: &quot;@/lib/utils&quot;,
+    &quot;ui&quot;: &quot;@/components/ui&quot;,
+    &quot;lib&quot;: &quot;@/lib&quot;,
+    &quot;hooks&quot;: &quot;@/hooks&quot;
+  },
+  &quot;iconLibrary&quot;: &quot;lucide&quot;
+}</content>
+    </document>
+
+    <document>
+      <source>DEVELOPMENT.md</source>
+      <tags></tags>
+      <metadata>
+        <size>11009</size>
+        <lastModified>2025-05-24T21:47:08.766Z</lastModified>
+        <extension>md</extension>
+        <directory>Root</directory>
+      </metadata>
+      <content># Development Guide
+
+This guide covers everything you need to know to contribute to the Solana Support platform, from local setup to deployment.
+
+## 🏗 Project Architecture
+
+### Overview
+
+```
+Solana Support Platform
+├── Frontend Dashboard (React + Vite)
+├── Widget Package (NPM distributable)
+├── Backend API (Express.js)
+└── Database (PostgreSQL + Prisma)
+```
+
+### Technology Stack
+
+| Component      | Technologies                                         |
+| -------------- | ---------------------------------------------------- |
+| **Frontend**   | React 19, TypeScript, Vite, TailwindCSS 4, shadcn/ui |
+| **Widget**     | React, TypeScript, Rollup, Solana Web3.js            |
+| **Backend**    | Express.js, TypeScript, Prisma, Joi validation       |
+| **Database**   | PostgreSQL, Prisma ORM                               |
+| **Blockchain** | Solana Web3.js, Wallet Adapter                       |
+| **Deployment** | Vercel (Frontend), Railway (API), Neon.tech (DB)     |
+
+## 🚀 Quick Setup
+
+### Prerequisites
+
+- **Node.js 18+** and npm
+- **PostgreSQL database** (Neon.tech recommended for cloud)
+- **Solana wallet** (Phantom or Solflare for testing)
+- **Git** for version control
+
+### 1. Clone and Install
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/solana-support-platform.git
+cd solana-support-platform
+
+# Install main project dependencies
+npm install
+
+# Install widget dependencies
+cd widget
+npm install
+cd ..
+```
+
+### 2. Environment Setup
+
+```bash
+# Copy environment template
+cp .env.example .env
+```
+
+Edit `.env` with your configuration:
+
+```bash
+# Database (get from Neon.tech)
+DATABASE_URL=&quot;postgresql://username:password@hostname/dbname?sslmode=require&quot;
+
+# Solana Configuration
+VITE_SOLANA_RPC_URL=&quot;https://api.devnet.solana.com&quot;
+VITE_SOLANA_NETWORK=&quot;devnet&quot;
+VITE_DEV_WALLET_ADDRESS=&quot;YOUR_SOLANA_WALLET_ADDRESS&quot;
+
+# Application URLs
+VITE_APP_URL=&quot;http://localhost:5173&quot;
+VITE_API_URL=&quot;http://localhost:3001&quot;
+```
+
+### 3. Database Setup
+
+```bash
+# Generate Prisma client
+npm run db:generate
+
+# Push schema to database (creates tables)
+npm run db:push
+
+# Optional: Open Prisma Studio to view data
+npm run db:studio
+```
+
+### 4. Build Widget
+
+```bash
+cd widget
+npm run build
+cd ..
+```
+
+### 5. Start Development
+
+```bash
+# Start the main dashboard
+npm run dev
+
+# In another terminal, start the API (when implemented)
+cd api
+npm run dev
+```
+
+Visit `http://localhost:5173` to see the dashboard.
+
+## 📁 Project Structure Deep Dive
+
+### Main Application (`/src`)
+
+```
+src/
+├── components/
+│   ├── ui/              # shadcn/ui base components
+│   │   ├── button.tsx
+│   │   ├── card.tsx
+│   │   ├── input.tsx
+│   │   └── ...
+│   ├── Header.tsx       # Main navigation
+│   └── SupportBadge.tsx # Preview component
+├── pages/
+│   ├── ProjectsList.tsx    # Dashboard home
+│   ├── ProjectDetail.tsx   # Individual project view
+│   └── ProjectSettings.tsx # Project configuration
+├── lib/
+│   └── utils.ts         # Utility functions
+├── App.tsx              # Main app with routing
+├── main.tsx             # Application entry point
+└── index.css            # Global styles
+```
+
+### Widget Package (`/widget`)
+
+```
+widget/
+├── src/
+│   ├── SolanaSupport.tsx  # Main widget component
+│   ├── types.ts           # TypeScript interfaces
+│   └── index.ts           # Package exports
+├── dist/                  # Built package (generated)
+├── package.json           # NPM package configuration
+├── rollup.config.js       # Build configuration
+└── tsconfig.json          # TypeScript configuration
+```
+
+### Database (`/prisma`)
+
+```
+prisma/
+└── schema.prisma       # Database schema definition
+```
+
+## 🧩 Component Development
+
+### UI Components
+
+We use **shadcn/ui** for consistent, accessible components:
+
+```tsx
+// Example: Creating a new UI component
+import { cn } from &#39;@/lib/utils&#39;
+
+interface MyComponentProps {
+  children: React.ReactNode
+  variant?: &#39;default&#39; | &#39;secondary&#39;
+  className?: string
+}
+
+export function MyComponent({
+  children,
+  variant = &#39;default&#39;,
+  className,
+}: MyComponentProps) {
+  return (
+    &lt;div
+      className={cn(
+        &#39;base-styles&#39;,
+        variant === &#39;secondary&#39; &amp;&amp; &#39;secondary-styles&#39;,
+        className
+      )}
+    &gt;
+      {children}
+    &lt;/div&gt;
+  )
+}
+```
+
+### Page Components
+
+Follow this pattern for new pages:
+
+```tsx
+// src/pages/NewPage.tsx
+import { useState, useEffect } from &#39;react&#39;
+import { Card, CardContent, CardHeader, CardTitle } from &#39;../components/ui/card&#39;
+
+export default function NewPage() {
+  const [data, setData] = useState(null)
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() =&gt; {
+    // Fetch data
+  }, [])
+
+  if (loading) {
+    return &lt;div&gt;Loading...&lt;/div&gt;
+  }
+
+  return (
+    &lt;div className=&#39;max-w-4xl mx-auto space-y-6&#39;&gt;
+      &lt;h1 className=&#39;text-3xl font-bold&#39;&gt;New Page&lt;/h1&gt;
+      {/* Page content */}
+    &lt;/div&gt;
+  )
+}
+```
+
+## 🎨 Styling Guidelines
+
+### TailwindCSS 4
+
+We use the latest TailwindCSS with custom CSS variables:
+
+```css
+/* Custom properties in src/index.css */
+:root {
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  /* ... */
+}
+```
+
+### Component Styling
+
+```tsx
+// Use cn() utility for conditional classes
+import { cn } from &#39;@/lib/utils&#39;
+
+;&lt;div
+  className={cn(
+    &#39;base-classes&#39;,
+    isActive &amp;&amp; &#39;active-classes&#39;,
+    variant === &#39;large&#39; &amp;&amp; &#39;size-classes&#39;,
+    className
+  )}
+/&gt;
+```
+
+### Responsive Design
+
+```tsx
+// Mobile-first approach
+&lt;div
+  className=&#39;
+  grid gap-4 
+  md:grid-cols-2 
+  lg:grid-cols-3
+  xl:grid-cols-4
+&#39;
+/&gt;
+```
+
+## 🔗 Solana Integration
+
+### Wallet Connection
+
+```tsx
+import { useWallet } from &#39;@solana/wallet-adapter-react&#39;
+
+function MyComponent() {
+  const { connected, publicKey, signTransaction } = useWallet()
+
+  if (!connected) {
+    return &lt;div&gt;Please connect your wallet&lt;/div&gt;
+  }
+
+  // Use wallet functionality
+}
+```
+
+### Transaction Handling
+
+```tsx
+import { Connection, Transaction, SystemProgram } from &#39;@solana/web3.js&#39;
+
+const handleDonation = async () =&gt; {
+  const connection = new Connection(rpcUrl)
+  const transaction = new Transaction().add(
+    SystemProgram.transfer({
+      fromPubkey: publicKey!,
+      toPubkey: recipientKey,
+      lamports: amount * LAMPORTS_PER_SOL,
+    })
+  )
+
+  const signed = await signTransaction!(transaction)
+  const signature = await connection.sendRawTransaction(signed.serialize())
+}
+```
+
+## 🔧 Widget Development
+
+### Building the Widget
+
+```bash
+cd widget
+npm run build    # Creates optimized bundle
+npm run dev      # Watch mode for development
+```
+
+### Testing Widget Locally
+
+```bash
+# Link package locally
+cd widget
+npm link
+
+# Use in main project
+cd ..
+npm link @solana-support/widget
+```
+
+### Widget API
+
+```tsx
+// Full widget configuration
+&lt;SolanaSupport
+  projectId=&#39;required-project-id&#39;
+  apiUrl=&#39;https://api.solana-support.dev&#39; // Optional
+  theme=&#39;default&#39; // &#39;default&#39; | &#39;dark&#39; | &#39;minimal&#39;
+  size=&#39;md&#39; // &#39;sm&#39; | &#39;md&#39; | &#39;lg&#39;
+  showAmount={true} // Show raised amount
+  showGoal={false} // Show progress bar
+  className=&#39;custom-classes&#39; // Additional CSS
+/&gt;
+```
+
+## 🗄 Database Development
+
+### Schema Changes
+
+```bash
+# After modifying prisma/schema.prisma
+npm run db:generate  # Update Prisma client
+npm run db:push      # Apply to database
+```
+
+### Common Patterns
+
+```typescript
+// Using Prisma client
+import { PrismaClient } from &#39;@prisma/client&#39;
+
+const prisma = new PrismaClient()
+
+// Create with relations
+const project = await prisma.project.create({
+  data: {
+    name: &#39;New Project&#39;,
+    walletAddress: &#39;...&#39;,
+    donations: {
+      create: [{ amount: 1.0, donorWallet: &#39;...&#39; }],
+    },
+  },
+  include: {
+    donations: true,
+    _count: {
+      select: { donations: true },
+    },
+  },
+})
+```
+
+## 🧪 Testing
+
+### Component Testing
+
+```tsx
+// Example test structure
+import { render, screen } from &#39;@testing-library/react&#39;
+import { MyComponent } from &#39;./MyComponent&#39;
+
+test(&#39;renders component correctly&#39;, () =&gt; {
+  render(&lt;MyComponent /&gt;)
+  expect(screen.getByText(&#39;Expected Text&#39;)).toBeInTheDocument()
+})
+```
+
+### Widget Testing
+
+```bash
+# Test widget in isolation
+cd widget
+npm run build
+npm pack  # Creates .tgz file for testing
+```
+
+## 🚀 Deployment
+
+### Frontend (Vercel)
+
+```bash
+# Build for production
+npm run build
+
+# Deploy to Vercel
+npx vercel --prod
+```
+
+### Widget (NPM)
+
+```bash
+cd widget
+npm run build
+npm version patch  # Increment version
+npm publish        # Publish to NPM
+```
+
+### Environment Variables
+
+Set these in your deployment platform:
+
+```bash
+# Production
+DATABASE_URL=&quot;postgresql://prod-connection-string&quot;
+VITE_SOLANA_RPC_URL=&quot;https://api.mainnet-beta.solana.com&quot;
+VITE_SOLANA_NETWORK=&quot;mainnet-beta&quot;
+```
+
+## 🐛 Debugging
+
+### Common Issues
+
+**Database Connection**
+
+```bash
+# Test database connection
+npx prisma db push
+```
+
+**Widget Build Errors**
+
+```bash
+# Clear node_modules and rebuild
+cd widget
+rm -rf node_modules dist
+npm install
+npm run build
+```
+
+**Wallet Connection Issues**
+
+- Ensure wallet extension is installed
+- Check network settings (devnet vs mainnet)
+- Verify RPC endpoint is accessible
+
+### Development Tools
+
+```bash
+# Database management
+npm run db:studio
+
+# Type checking
+npx tsc --noEmit
+
+# Linting
+npm run lint
+```
+
+## 📝 Code Style
+
+### TypeScript
+
+```typescript
+// Use interfaces for props
+interface ComponentProps {
+  title: string
+  optional?: boolean
+}
+
+// Use type for unions
+type Theme = &#39;default&#39; | &#39;dark&#39; | &#39;minimal&#39;
+
+// Prefer const assertions
+const themes = [&#39;default&#39;, &#39;dark&#39;, &#39;minimal&#39;] as const
+```
+
+### React Patterns
+
+```tsx
+// Prefer function components
+export default function Component({ prop }: Props) {
+  return &lt;div&gt;{prop}&lt;/div&gt;
+}
+
+// Use proper hooks
+const [state, setState] = useState&lt;Type&gt;(initialValue)
+const value = useMemo(() =&gt; computation, [dep])
+```
+
+### File Naming
+
+- **Components**: `PascalCase.tsx`
+- **Pages**: `PascalCase.tsx`
+- **Utilities**: `camelCase.ts`
+- **Types**: `camelCase.ts`
+
+## 🤝 Contributing Workflow
+
+### 1. Fork &amp; Branch
+
+```bash
+git checkout -b feature/amazing-feature
+```
+
+### 2. Development
+
+- Write code following the style guide
+- Add tests for new functionality
+- Update documentation if needed
+
+### 3. Testing
+
+```bash
+npm run lint     # Check code style
+npm run build    # Ensure builds work
+cd widget &amp;&amp; npm run build  # Test widget build
+```
+
+### 4. Commit &amp; Push
+
+```bash
+git add .
+git commit -m &quot;feat: add amazing feature&quot;
+git push origin feature/amazing-feature
+```
+
+### 5. Pull Request
+
+- Use clear PR title and description
+- Link any related issues
+- Add screenshots for UI changes
+
+## 📚 Resources
+
+- **React Documentation**: [react.dev](https://react.dev)
+- **Solana Web3.js**: [solana-labs.github.io/solana-web3.js](https://solana-labs.github.io/solana-web3.js)
+- **Prisma Documentation**: [prisma.io/docs](https://prisma.io/docs)
+- **TailwindCSS**: [tailwindcss.com](https://tailwindcss.com)
+- **shadcn/ui**: [ui.shadcn.com](https://ui.shadcn.com)
+
+## 💬 Getting Help
+
+- **GitHub Issues**: Report bugs and request features
+- **Discord**: Join our development community
+- **Discussions**: Ask questions and share ideas
+
+---
+
+Happy coding! 🚀
+</content>
+    </document>
+
+    <document>
+      <source>README.md</source>
+      <tags>documentation</tags>
+      <metadata>
+        <size>7561</size>
+        <lastModified>2025-05-24T21:45:52.432Z</lastModified>
+        <extension>md</extension>
+        <directory>Root</directory>
+      </metadata>
+      <content># Solana Support Platform
+
+A comprehensive platform for Solana developers to receive community support through an unobtrusive, embeddable donation widget. Built with React, TypeScript, and Solana Web3.js.
+
+![Solana Support](https://img.shields.io/badge/Solana-Support-9945FF?style=for-the-badge&amp;logo=solana)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&amp;logo=typescript&amp;logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&amp;logo=react&amp;logoColor=61DAFB)
+
+## 🚀 Features
+
+### 🎯 **For Project Owners**
+
+- **Dashboard Management** - Create and manage your funding projects
+- **Real-time Analytics** - Track donations, supporters, and progress
+- **Customizable Goals** - Set funding targets and display progress
+- **Widget Themes** - Choose from multiple professional themes
+- **Embed Code Generation** - One-click integration for any project
+
+### 💎 **For Supporters**
+
+- **One-Click Donations** - Simple SOL donations via wallet connection
+- **Multiple Wallets** - Support for Phantom, Solflare, and more
+- **Donation Messages** - Leave encouraging messages for project owners
+- **Transaction History** - Transparent, on-chain verification
+
+### 🛠 **For Developers**
+
+- **NPM Widget Package** - `@solana-support/widget`
+- **Unobtrusive Design** - Clean, shields.io-style badges
+- **Easy Integration** - Single line of code integration
+- **Customizable** - Multiple sizes, themes, and display options
+- **TypeScript Support** - Full type safety and IDE support
+
+## 📦 Quick Start
+
+### Install the Widget
+
+```bash
+npm install @solana-support/widget
+```
+
+### React Integration
+
+```jsx
+import { SolanaSupport } from &#39;@solana-support/widget&#39;
+
+function MyProject() {
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;My Awesome Solana Project&lt;/h1&gt;
+      &lt;SolanaSupport
+        projectId=&#39;your-project-id&#39;
+        theme=&#39;default&#39;
+        showAmount={true}
+      /&gt;
+    &lt;/div&gt;
+  )
+}
+```
+
+### Markdown Badge
+
+```markdown
+[![Support this project](https://api.solana-support.dev/badge/your-project-id)](https://solana-support.dev/project/your-project-id)
+```
+
+## 🏗 Architecture
+
+```
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   Dashboard     │    │   Backend API   │    │   Database      │
+│   (React/Vite)  │◄──►│   (Express.js)  │◄──►│  (PostgreSQL)   │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+         │
+         ▼
+┌─────────────────┐
+│  NPM Widget     │
+│  (@solana-      │
+│   support/      │
+│   widget)       │
+└─────────────────┘
+```
+
+### Tech Stack
+
+**Frontend:**
+
+- React 19 + TypeScript
+- Vite + TailwindCSS 4
+- shadcn/ui components
+- React Router
+
+**Blockchain:**
+
+- Solana Web3.js
+- Wallet Adapter (Phantom, Solflare)
+- Devnet/Mainnet support
+
+**Backend:**
+
+- Express.js + TypeScript
+- Prisma ORM
+- PostgreSQL (Neon.tech)
+- Joi validation
+
+**Widget:**
+
+- Rollup bundler
+- TypeScript declarations
+- Peer dependencies (React)
+
+## 🎨 Widget Customization
+
+```jsx
+&lt;SolanaSupport
+  projectId=&#39;abc123&#39;
+  theme=&#39;dark&#39; // &#39;default&#39; | &#39;dark&#39; | &#39;minimal&#39;
+  size=&#39;lg&#39; // &#39;sm&#39; | &#39;md&#39; | &#39;lg&#39;
+  showAmount={true} // Display raised amount
+  showGoal={true} // Display funding progress
+  className=&#39;my-widget&#39; // Custom CSS classes
+/&gt;
+```
+
+## 🌐 Live Demo
+
+- **Dashboard**: [solana-support.dev](https://solana-support.dev)
+- **Example Widget**: See it in action on popular Solana projects
+- **Documentation**: [docs.solana-support.dev](https://docs.solana-support.dev)
+
+## 📁 Project Structure
+
+```
+solana-support/
+├── src/                    # Main React dashboard
+│   ├── components/         # UI components
+│   ├── pages/             # Route pages
+│   └── lib/               # Utilities
+├── widget/                # NPM package
+│   ├── src/               # Widget source
+│   └── dist/              # Built package
+├── prisma/                # Database schema
+└── api/                   # Backend API (separate)
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- PostgreSQL database (Neon.tech recommended)
+- Solana wallet (Phantom/Solflare)
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/solana-support-platform.git
+cd solana-support-platform
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env
+# Edit .env with your database URL and settings
+
+# Initialize database
+npm run db:generate
+npm run db:push
+
+# Start development server
+npm run dev
+```
+
+Visit `http://localhost:5173` to see the dashboard.
+
+### Widget Development
+
+```bash
+cd widget
+npm install
+npm run build    # Creates dist/ folder
+npm publish      # Publish to NPM (when ready)
+```
+
+## 🔧 Configuration
+
+### Environment Variables
+
+```bash
+# Database
+DATABASE_URL=&quot;postgresql://user:pass@host/db?sslmode=require&quot;
+
+# Solana
+VITE_SOLANA_RPC_URL=&quot;https://api.devnet.solana.com&quot;
+VITE_SOLANA_NETWORK=&quot;devnet&quot;
+VITE_DEV_WALLET_ADDRESS=&quot;your-wallet-address&quot;
+
+# Application
+VITE_APP_URL=&quot;http://localhost:5173&quot;
+```
+
+### Database Schema
+
+The platform uses Prisma with PostgreSQL:
+
+- **Projects** - Funding projects with goals and settings
+- **Donations** - SOL donations with transaction signatures
+- **DevFees** - Optional platform fees (2% when enabled)
+
+## 🎯 Roadmap
+
+- [x] **MVP Dashboard** - Project creation and management
+- [x] **Widget Package** - Embeddable React component
+- [x] **Solana Integration** - Wallet connection and transactions
+- [ ] **Backend API** - Full REST API implementation
+- [ ] **User Authentication** - Wallet-based auth
+- [ ] **Analytics Dashboard** - Detailed funding analytics
+- [ ] **Multi-token Support** - USDC, other SPL tokens
+- [ ] **Mobile App** - React Native companion app
+- [ ] **Recurring Donations** - Subscription-like support
+- [ ] **NFT Rewards** - Donor recognition system
+
+## 🤝 Contributing
+
+We welcome contributions! Please see [DEVELOPMENT.md](./DEVELOPMENT.md) for detailed setup instructions.
+
+### Quick Contribution Guide
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m &#39;Add amazing feature&#39;`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+### Areas We Need Help
+
+- 🎨 **UI/UX Design** - Making the dashboard even more beautiful
+- 🔒 **Security** - Smart contract audits and security reviews
+- 📱 **Mobile** - React Native app development
+- 🌐 **Internationalization** - Multi-language support
+- 📖 **Documentation** - Tutorials and guides
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- **Solana Foundation** - For building an amazing blockchain
+- **shadcn/ui** - For beautiful, accessible UI components
+- **Vercel** - For hosting and deployment
+- **Neon.tech** - For managed PostgreSQL
+- **Railway** - For backend API hosting
+
+## 🔗 Links
+
+- **Website**: [solana-support.dev](https://solana-support.dev)
+- **NPM Package**: [@solana-support/widget](https://npmjs.com/package/@solana-support/widget)
+- **Documentation**: [docs.solana-support.dev](https://docs.solana-support.dev)
+- **Discord**: [Join our community](https://discord.gg/solana-support)
+- **Twitter**: [@solana_support](https://twitter.com/solana_support)
+
+## 💰 Support This Project
+
+This project is open source and free to use. If you find it valuable, consider supporting its development:
+
+[![Support Solana Support](https://api.solana-support.dev/badge/platform-development)](https://solana-support.dev/project/platform-development)
+
+---
+
+**Built with ❤️ for the Solana community**
+</content>
+    </document>
+    
+  </documents>
+
+</bundle>
