@@ -1,5 +1,5 @@
 {
-  "lastAccessed": "2025-05-24T21:47:16.930Z",
+  "lastAccessed": "2025-05-24T22:07:59.055Z",
   "files": {
     "widget/src/index.ts": {
       "name": "index.ts",
@@ -392,8 +392,8 @@
     "package.json": {
       "name": "package.json",
       "directory": "Root",
-      "lastModified": "2025-05-24T21:34:39.369Z",
-      "isChanged": false,
+      "lastModified": "2025-05-24T22:07:12.131Z",
+      "isChanged": true,
       "isStaged": false,
       "masterBundleId": "master-2025-05-24T21-47-15-411Z",
       "tags": [
@@ -403,8 +403,8 @@
     ".env": {
       "name": ".env",
       "directory": "Root",
-      "lastModified": "2025-05-24T21:32:51.459Z",
-      "isChanged": false,
+      "lastModified": "2025-05-24T22:05:13.009Z",
+      "isChanged": true,
       "isStaged": false,
       "masterBundleId": "master-2025-05-24T21-47-15-411Z",
       "tags": [
@@ -481,6 +481,51 @@
       "directory": "Root",
       "lastModified": "2025-05-24T21:47:08.766Z",
       "isChanged": false,
+      "isStaged": false,
+      "masterBundleId": "master-2025-05-24T21-47-15-411Z",
+      "tags": []
+    },
+    "netlify.toml": {
+      "name": "netlify.toml",
+      "directory": "Root",
+      "lastModified": "2025-05-24T22:02:51.763Z",
+      "isChanged": true,
+      "isStaged": false,
+      "masterBundleId": "master-2025-05-24T21-47-15-411Z",
+      "tags": []
+    },
+    "netlify/functions/project.ts": {
+      "name": "project.ts",
+      "directory": "netlify/functions",
+      "lastModified": "2025-05-24T22:03:40.165Z",
+      "isChanged": true,
+      "isStaged": false,
+      "masterBundleId": "master-2025-05-24T21-47-15-411Z",
+      "tags": []
+    },
+    "netlify/functions/donations.ts": {
+      "name": "donations.ts",
+      "directory": "netlify/functions",
+      "lastModified": "2025-05-24T22:03:38.236Z",
+      "isChanged": true,
+      "isStaged": false,
+      "masterBundleId": "master-2025-05-24T21-47-15-411Z",
+      "tags": []
+    },
+    "netlify/functions/badge.ts": {
+      "name": "badge.ts",
+      "directory": "netlify/functions",
+      "lastModified": "2025-05-24T22:03:51.797Z",
+      "isChanged": true,
+      "isStaged": false,
+      "masterBundleId": "master-2025-05-24T21-47-15-411Z",
+      "tags": []
+    },
+    "src/lib/api.ts": {
+      "name": "api.ts",
+      "directory": "src/lib",
+      "lastModified": "2025-05-24T22:04:11.686Z",
+      "isChanged": true,
       "isStaged": false,
       "masterBundleId": "master-2025-05-24T21-47-15-411Z",
       "tags": []
