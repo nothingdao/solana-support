@@ -1,5 +1,5 @@
 {
-  "lastAccessed": "2025-05-24T22:16:58.526Z",
+  "lastAccessed": "2025-05-24T22:17:58.542Z",
   "files": {
     "widget/src/index.ts": {
       "name": "index.ts",
@@ -479,8 +479,8 @@
     "DEVELOPMENT.md": {
       "name": "DEVELOPMENT.md",
       "directory": "Root",
-      "lastModified": "2025-05-24T21:47:08.766Z",
-      "isChanged": false,
+      "lastModified": "2025-05-24T22:17:14.350Z",
+      "isChanged": true,
       "isStaged": false,
       "masterBundleId": "master-2025-05-24T21-47-15-411Z",
       "tags": []
