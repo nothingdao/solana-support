@@ -1,203 +1,109 @@
 # Development Guide
 
-This guide covers everything you need to know to contribute to the Solana Support platform, from local setup to deployment.
+Complete development setup for the Solana Support platform.
 
-## 🏗 Project Architecture
-
-### Overview
+## 🏗 Architecture
 
 ```
-Solana Support Platform
-├── Frontend Dashboard (React + Vite)
-├── Widget Package (NPM distributable)
-├── Backend API (Express.js)
-└── Database (PostgreSQL + Prisma)
+Solana Support Platform (Netlify Full-Stack)
+├── React Dashboard (Frontend)
+├── Netlify Functions (Backend API)
+├── PostgreSQL Database (Neon.tech)
+└── NPM Widget Package
 ```
 
-### Technology Stack
-
-| Component      | Technologies                                         |
-| -------------- | ---------------------------------------------------- |
-| **Frontend**   | React 19, TypeScript, Vite, TailwindCSS 4, shadcn/ui |
-| **Widget**     | React, TypeScript, Rollup, Solana Web3.js            |
-| **Backend**    | Express.js, TypeScript, Prisma, Joi validation       |
-| **Database**   | PostgreSQL, Prisma ORM                               |
-| **Blockchain** | Solana Web3.js, Wallet Adapter                       |
-| **Deployment** | Vercel (Frontend), Railway (API), Neon.tech (DB)     |
-
-## 🚀 Quick Setup
+## ⚡ Quick Setup
 
 ### Prerequisites
 
-- **Node.js 18+** and npm
-- **PostgreSQL database** (Neon.tech recommended for cloud)
-- **Solana wallet** (Phantom or Solflare for testing)
-- **Git** for version control
+- Node.js 18+
+- PostgreSQL database (Neon.tech)
+- Solana wallet (Phantom/Solflare)
 
-### 1. Clone and Install
+### 1. Clone & Install
 
 ```bash
-# Clone the repository
 git clone https://github.com/yourusername/solana-support-platform.git
 cd solana-support-platform
-
-# Install main project dependencies
 npm install
-
-# Install widget dependencies
-cd widget
-npm install
-cd ..
+npm install -g netlify-cli
 ```
 
 ### 2. Environment Setup
 
 ```bash
-# Copy environment template
 cp .env.example .env
 ```
 
-Edit `.env` with your configuration:
+Edit `.env`:
 
 ```bash
-# Database (get from Neon.tech)
-DATABASE_URL="postgresql://username:password@hostname/dbname?sslmode=require"
-
-# Solana Configuration
+DATABASE_URL="postgresql://user:pass@host/db?sslmode=require"
 VITE_SOLANA_RPC_URL="https://api.devnet.solana.com"
 VITE_SOLANA_NETWORK="devnet"
-VITE_DEV_WALLET_ADDRESS="YOUR_SOLANA_WALLET_ADDRESS"
-
-# Application URLs
-VITE_APP_URL="http://localhost:5173"
-VITE_API_URL="http://localhost:3001"
+VITE_DEV_WALLET_ADDRESS="your-wallet-address"
 ```
 
 ### 3. Database Setup
 
 ```bash
-# Generate Prisma client
-npm run db:generate
-
-# Push schema to database (creates tables)
-npm run db:push
-
-# Optional: Open Prisma Studio to view data
-npm run db:studio
+npm run db:generate  # Generate Prisma client
+npm run db:push      # Create tables
 ```
 
-### 4. Build Widget
+### 4. Development
 
 ```bash
-cd widget
-npm run build
-cd ..
+netlify dev  # Runs frontend + functions at localhost:8888
 ```
 
-### 5. Start Development
-
-```bash
-# Start the main dashboard
-npm run dev
-
-# In another terminal, start the API (when implemented)
-cd api
-npm run dev
-```
-
-Visit `http://localhost:5173` to see the dashboard.
-
-## 📁 Project Structure Deep Dive
-
-### Main Application (`/src`)
+## 📁 Project Structure
 
 ```
 src/
-├── components/
-│   ├── ui/              # shadcn/ui base components
-│   │   ├── button.tsx
-│   │   ├── card.tsx
-│   │   ├── input.tsx
-│   │   └── ...
-│   ├── Header.tsx       # Main navigation
-│   └── SupportBadge.tsx # Preview component
-├── pages/
-│   ├── ProjectsList.tsx    # Dashboard home
-│   ├── ProjectDetail.tsx   # Individual project view
-│   └── ProjectSettings.tsx # Project configuration
-├── lib/
-│   └── utils.ts         # Utility functions
-├── App.tsx              # Main app with routing
-├── main.tsx             # Application entry point
-└── index.css            # Global styles
-```
+├── components/ui/     # shadcn/ui components
+├── pages/            # Route pages
+├── lib/              # Utilities & API client
+└── App.tsx           # Main app
 
-### Widget Package (`/widget`)
+netlify/functions/    # Serverless API
+├── projects.ts       # CRUD operations
+├── donations.ts      # Record donations
+└── badge.ts          # Generate SVG badges
 
-```
-widget/
-├── src/
-│   ├── SolanaSupport.tsx  # Main widget component
-│   ├── types.ts           # TypeScript interfaces
-│   └── index.ts           # Package exports
-├── dist/                  # Built package (generated)
-├── package.json           # NPM package configuration
-├── rollup.config.js       # Build configuration
-└── tsconfig.json          # TypeScript configuration
-```
+widget/               # NPM package
+├── src/             # Widget source
+└── dist/            # Built package
 
-### Database (`/prisma`)
-
-```
 prisma/
-└── schema.prisma       # Database schema definition
+└── schema.prisma    # Database schema
 ```
 
-## 🧩 Component Development
+## 🧩 Development Patterns
 
-### UI Components
+### API Client Usage
 
-We use **shadcn/ui** for consistent, accessible components:
+```typescript
+import { projectsApi } from '@/lib/api'
 
-```tsx
-// Example: Creating a new UI component
-import { cn } from '@/lib/utils'
+// Get all projects
+const projects = await projectsApi.getAll()
 
-interface MyComponentProps {
-  children: React.ReactNode
-  variant?: 'default' | 'secondary'
-  className?: string
-}
-
-export function MyComponent({
-  children,
-  variant = 'default',
-  className,
-}: MyComponentProps) {
-  return (
-    <div
-      className={cn(
-        'base-styles',
-        variant === 'secondary' && 'secondary-styles',
-        className
-      )}
-    >
-      {children}
-    </div>
-  )
-}
+// Create project
+const project = await projectsApi.create({
+  name: 'My Project',
+  walletAddress: 'ABC123...',
+  goal: 100,
+})
 ```
 
-### Page Components
-
-Follow this pattern for new pages:
+### Component Pattern
 
 ```tsx
-// src/pages/NewPage.tsx
 import { useState, useEffect } from 'react'
-import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
-export default function NewPage() {
+export default function MyPage() {
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(true)
 
@@ -205,86 +111,29 @@ export default function NewPage() {
     // Fetch data
   }, [])
 
-  if (loading) {
-    return <div>Loading...</div>
-  }
+  if (loading) return <div>Loading...</div>
 
   return (
     <div className='max-w-4xl mx-auto space-y-6'>
-      <h1 className='text-3xl font-bold'>New Page</h1>
-      {/* Page content */}
+      <h1 className='text-3xl font-bold'>My Page</h1>
+      <Card>
+        <CardHeader>
+          <CardTitle>Content</CardTitle>
+        </CardHeader>
+        <CardContent>{/* Content */}</CardContent>
+      </Card>
     </div>
   )
 }
 ```
 
-## 🎨 Styling Guidelines
-
-### TailwindCSS 4
-
-We use the latest TailwindCSS with custom CSS variables:
-
-```css
-/* Custom properties in src/index.css */
-:root {
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  /* ... */
-}
-```
-
-### Component Styling
-
-```tsx
-// Use cn() utility for conditional classes
-import { cn } from '@/lib/utils'
-
-;<div
-  className={cn(
-    'base-classes',
-    isActive && 'active-classes',
-    variant === 'large' && 'size-classes',
-    className
-  )}
-/>
-```
-
-### Responsive Design
-
-```tsx
-// Mobile-first approach
-<div
-  className='
-  grid gap-4 
-  md:grid-cols-2 
-  lg:grid-cols-3
-  xl:grid-cols-4
-'
-/>
-```
-
-## 🔗 Solana Integration
-
-### Wallet Connection
+### Solana Integration
 
 ```tsx
 import { useWallet } from '@solana/wallet-adapter-react'
-
-function MyComponent() {
-  const { connected, publicKey, signTransaction } = useWallet()
-
-  if (!connected) {
-    return <div>Please connect your wallet</div>
-  }
-
-  // Use wallet functionality
-}
-```
-
-### Transaction Handling
-
-```tsx
 import { Connection, Transaction, SystemProgram } from '@solana/web3.js'
+
+const { connected, publicKey, signTransaction } = useWallet()
 
 const handleDonation = async () => {
   const connection = new Connection(rpcUrl)
@@ -301,263 +150,200 @@ const handleDonation = async () => {
 }
 ```
 
-## 🔧 Widget Development
+## 🎨 Widget Development
 
-### Building the Widget
+### Build Widget
 
 ```bash
 cd widget
-npm run build    # Creates optimized bundle
-npm run dev      # Watch mode for development
+npm install
+npm run build    # Creates dist/
 ```
 
-### Testing Widget Locally
+### Test Locally
 
 ```bash
-# Link package locally
 cd widget
-npm link
+npm link         # Link package locally
 
-# Use in main project
 cd ..
-npm link @solana-support/widget
+npm link @solana-support/widget  # Use in main project
 ```
 
-### Widget API
+### Widget Configuration
 
 ```tsx
-// Full widget configuration
 <SolanaSupport
-  projectId='required-project-id'
-  apiUrl='https://api.solana-support.dev' // Optional
+  projectId='required'
+  apiUrl='/.netlify/functions' // Default
   theme='default' // 'default' | 'dark' | 'minimal'
   size='md' // 'sm' | 'md' | 'lg'
   showAmount={true} // Show raised amount
   showGoal={false} // Show progress bar
-  className='custom-classes' // Additional CSS
+  className='custom-class' // Additional CSS
 />
 ```
 
-## 🗄 Database Development
+## 🗄 Database Operations
 
 ### Schema Changes
 
 ```bash
-# After modifying prisma/schema.prisma
-npm run db:generate  # Update Prisma client
-npm run db:push      # Apply to database
+# Edit prisma/schema.prisma, then:
+npm run db:generate  # Update client
+npm run db:push      # Apply changes
 ```
 
-### Common Patterns
+### Common Queries
 
 ```typescript
-// Using Prisma client
-import { PrismaClient } from '@prisma/client'
-
-const prisma = new PrismaClient()
-
-// Create with relations
+// Create project with relations
 const project = await prisma.project.create({
   data: {
-    name: 'New Project',
+    name: 'Project',
     walletAddress: '...',
     donations: {
       create: [{ amount: 1.0, donorWallet: '...' }],
     },
   },
-  include: {
-    donations: true,
-    _count: {
-      select: { donations: true },
-    },
-  },
+  include: { donations: true },
 })
-```
-
-## 🧪 Testing
-
-### Component Testing
-
-```tsx
-// Example test structure
-import { render, screen } from '@testing-library/react'
-import { MyComponent } from './MyComponent'
-
-test('renders component correctly', () => {
-  render(<MyComponent />)
-  expect(screen.getByText('Expected Text')).toBeInTheDocument()
-})
-```
-
-### Widget Testing
-
-```bash
-# Test widget in isolation
-cd widget
-npm run build
-npm pack  # Creates .tgz file for testing
 ```
 
 ## 🚀 Deployment
 
-### Frontend (Vercel)
+### Netlify Setup
+
+1. Connect GitHub repo to Netlify
+2. Build settings:
+
+   - **Build command**: `npm run build`
+   - **Publish directory**: `dist`
+   - **Functions directory**: `netlify/functions`
+
+3. Environment variables:
 
 ```bash
-# Build for production
-npm run build
-
-# Deploy to Vercel
-npx vercel --prod
+DATABASE_URL=postgresql://...
+VITE_SOLANA_RPC_URL=https://api.devnet.solana.com
+VITE_SOLANA_NETWORK=devnet
+VITE_DEV_WALLET_ADDRESS=your-wallet
 ```
 
-### Widget (NPM)
+### Deploy Process
 
 ```bash
-cd widget
-npm run build
-npm version patch  # Increment version
-npm publish        # Publish to NPM
-```
-
-### Environment Variables
-
-Set these in your deployment platform:
-
-```bash
-# Production
-DATABASE_URL="postgresql://prod-connection-string"
-VITE_SOLANA_RPC_URL="https://api.mainnet-beta.solana.com"
-VITE_SOLANA_NETWORK="mainnet-beta"
+git add .
+git commit -m "Your changes"
+git push origin main  # Auto-deploys to Netlify
 ```
 
 ## 🐛 Debugging
 
 ### Common Issues
 
-**Database Connection**
+**Functions not working locally**:
 
 ```bash
-# Test database connection
-npx prisma db push
+netlify dev --live  # Use live functions
 ```
 
-**Widget Build Errors**
+**Database connection**:
 
 ```bash
-# Clear node_modules and rebuild
+npx prisma studio  # Test connection
+```
+
+**Widget build errors**:
+
+```bash
 cd widget
 rm -rf node_modules dist
-npm install
-npm run build
+npm install && npm run build
 ```
-
-**Wallet Connection Issues**
-
-- Ensure wallet extension is installed
-- Check network settings (devnet vs mainnet)
-- Verify RPC endpoint is accessible
 
 ### Development Tools
 
 ```bash
-# Database management
-npm run db:studio
-
-# Type checking
-npx tsc --noEmit
-
-# Linting
-npm run lint
+npm run db:studio    # Database GUI
+npx tsc --noEmit     # Type check
+npm run lint         # Code linting
 ```
 
 ## 📝 Code Style
 
+### File Naming
+
+- Components: `PascalCase.tsx`
+- Pages: `PascalCase.tsx`
+- Utilities: `camelCase.ts`
+- Functions: `kebab-case.ts`
+
 ### TypeScript
 
 ```typescript
-// Use interfaces for props
+// Interfaces for props
 interface ComponentProps {
   title: string
   optional?: boolean
 }
 
-// Use type for unions
+// Union types
 type Theme = 'default' | 'dark' | 'minimal'
 
-// Prefer const assertions
+// Const assertions
 const themes = ['default', 'dark', 'minimal'] as const
 ```
 
 ### React Patterns
 
 ```tsx
-// Prefer function components
+// Function components
 export default function Component({ prop }: Props) {
   return <div>{prop}</div>
 }
 
-// Use proper hooks
-const [state, setState] = useState<Type>(initialValue)
+// Hooks
+const [state, setState] = useState<Type>(initial)
 const value = useMemo(() => computation, [dep])
 ```
 
-### File Naming
-
-- **Components**: `PascalCase.tsx`
-- **Pages**: `PascalCase.tsx`
-- **Utilities**: `camelCase.ts`
-- **Types**: `camelCase.ts`
-
 ## 🤝 Contributing Workflow
 
-### 1. Fork & Branch
+1. **Fork & Branch**
 
-```bash
-git checkout -b feature/amazing-feature
-```
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
 
-### 2. Development
+2. **Development**
 
-- Write code following the style guide
-- Add tests for new functionality
-- Update documentation if needed
+   - Follow existing patterns
+   - Add tests for new features
+   - Update docs if needed
 
-### 3. Testing
+3. **Testing**
 
-```bash
-npm run lint     # Check code style
-npm run build    # Ensure builds work
-cd widget && npm run build  # Test widget build
-```
+   ```bash
+   npm run lint
+   npm run build
+   netlify dev  # Test functions
+   ```
 
-### 4. Commit & Push
-
-```bash
-git add .
-git commit -m "feat: add amazing feature"
-git push origin feature/amazing-feature
-```
-
-### 5. Pull Request
-
-- Use clear PR title and description
-- Link any related issues
-- Add screenshots for UI changes
+4. **Submit**
+   ```bash
+   git add .
+   git commit -m "feat: add amazing feature"
+   git push origin feature/amazing-feature
+   ```
 
 ## 📚 Resources
 
-- **React Documentation**: [react.dev](https://react.dev)
+- **Netlify Functions**: [docs.netlify.com/functions](https://docs.netlify.com/functions/)
 - **Solana Web3.js**: [solana-labs.github.io/solana-web3.js](https://solana-labs.github.io/solana-web3.js)
-- **Prisma Documentation**: [prisma.io/docs](https://prisma.io/docs)
-- **TailwindCSS**: [tailwindcss.com](https://tailwindcss.com)
+- **Prisma**: [prisma.io/docs](https://prisma.io/docs)
 - **shadcn/ui**: [ui.shadcn.com](https://ui.shadcn.com)
-
-## 💬 Getting Help
-
-- **GitHub Issues**: Report bugs and request features
-- **Discord**: Join our development community
-- **Discussions**: Ask questions and share ideas
 
 ---
 
-Happy coding! 🚀
+**Need help?** Open an issue or join our Discord community!

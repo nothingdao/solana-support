@@ -1,5 +1,5 @@
 {
-  "lastAccessed": "2025-05-24T22:07:59.055Z",
+  "lastAccessed": "2025-05-24T22:16:58.526Z",
   "files": {
     "widget/src/index.ts": {
       "name": "index.ts",
@@ -255,8 +255,8 @@
     "src/pages/ProjectSettings.tsx": {
       "name": "ProjectSettings.tsx",
       "directory": "src/pages",
-      "lastModified": "2025-05-24T21:21:21.404Z",
-      "isChanged": false,
+      "lastModified": "2025-05-24T22:13:32.887Z",
+      "isChanged": true,
       "isStaged": false,
       "masterBundleId": "master-2025-05-24T21-47-15-411Z",
       "tags": [
@@ -370,8 +370,8 @@
     "README.md": {
       "name": "README.md",
       "directory": "Root",
-      "lastModified": "2025-05-24T21:45:52.432Z",
-      "isChanged": false,
+      "lastModified": "2025-05-24T22:16:26.587Z",
+      "isChanged": true,
       "isStaged": false,
       "masterBundleId": "master-2025-05-24T21-47-15-411Z",
       "tags": [
