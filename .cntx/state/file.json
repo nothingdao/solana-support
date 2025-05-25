@@ -1,5 +1,5 @@
 {
-  "lastAccessed": "2025-05-24T22:17:58.542Z",
+  "lastAccessed": "2025-05-24T22:27:58.791Z",
   "files": {
     "widget/src/index.ts": {
       "name": "index.ts",
@@ -403,7 +403,7 @@
     ".env": {
       "name": ".env",
       "directory": "Root",
-      "lastModified": "2025-05-24T22:05:13.009Z",
+      "lastModified": "2025-05-24T22:27:29.119Z",
       "isChanged": true,
       "isStaged": false,
       "masterBundleId": "master-2025-05-24T21-47-15-411Z",
@@ -414,8 +414,8 @@
     ".gitignore": {
       "name": ".gitignore",
       "directory": "Root",
-      "lastModified": "2025-05-24T21:10:50.747Z",
-      "isChanged": false,
+      "lastModified": "2025-05-24T22:27:32.330Z",
+      "isChanged": true,
       "isStaged": false,
       "masterBundleId": "master-2025-05-24T21-47-15-411Z",
       "tags": [

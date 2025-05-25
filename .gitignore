@@ -25,3 +25,6 @@ dist-ssr
 
 # cntx-ui
 .cntx
+
+# Local Netlify folder
+.netlify
