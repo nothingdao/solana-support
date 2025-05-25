@@ -1,4 +1,4 @@
-export interface SolanaSupportProps {
+export interface SolanaFundProps {
   projectId: string
   apiUrl?: string
   theme?: 'default' | 'dark' | 'minimal'

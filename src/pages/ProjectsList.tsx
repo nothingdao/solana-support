@@ -86,7 +86,7 @@ export default function ProjectsList() {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold">Solana Support Projects</h1>
+          <h1 className="text-3xl font-bold">SolanaFund Projects</h1>
           <p className="text-muted-foreground mt-2">
             Discover and support amazing Solana projects
           </p>

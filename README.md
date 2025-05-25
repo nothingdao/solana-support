@@ -1,8 +1,8 @@
-# Solana Support Platform
+# SolanaFund Platform
 
-Embeddable donation widgets for Solana developers. Get community support through clean, unobtrusive badges.
+Embeddable donation badge for Solana developers. Get community support through clean, unobtrusive badges.
 
-![Solana Support](https://img.shields.io/badge/Solana-Support-9945FF?style=for-the-badge&logo=solana)
+![SolanaFund](https://img.shields.io/badge/Solana-Support-9945FF?style=for-the-badge&logo=solana)
 ![Live Demo](https://img.shields.io/badge/Demo-Live-00D9FF?style=for-the-badge)
 
 **🌐 Live Demo**: [solana-support.ndao.computer](https://solana-support.ndao.computer)
@@ -12,15 +12,14 @@ Embeddable donation widgets for Solana developers. Get community support through
 ### Install Widget
 
 ```bash
-npm install @solana-support/widget
+npm install solanafund
 ```
 
 ### React Integration
 
 ```jsx
-import { SolanaSupport } from '@solana-support/widget'
-
-;<SolanaSupport
+import { SolanaFund } from 'solanafund'
+;<SolanaFund
   projectId='your-project-id'
   theme='default'
   showAmount={true}
@@ -36,7 +35,7 @@ import { SolanaSupport } from '@solana-support/widget'
 ## ✨ Features
 
 - **🎯 Dashboard** - Create and manage funding projects
-- **💎 Widget Package** - Embeddable React component (`@solana-support/widget`)
+- **💎 Widget Package** - Embeddable React component (`solanafund`)
 - **🔗 Static Badges** - GitHub README integration
 - **⚡ Solana Native** - Phantom, Solflare wallet support
 - **🎨 Customizable** - Multiple themes and sizes
@@ -53,13 +52,13 @@ import { SolanaSupport } from '@solana-support/widget'
 ## 🎨 Widget Options
 
 ```jsx
-<SolanaSupport
+<SolanaFund
   projectId='abc123'
   theme='dark' // 'default' | 'dark' | 'minimal'
   size='lg' // 'sm' | 'md' | 'lg'
   showAmount={true} // Display raised amount
   showGoal={true} // Display progress bar
-  className='my-widget' // Custom CSS
+  className='my-badge' // Custom CSS
 />
 ```
 
@@ -83,7 +82,7 @@ netlify dev           # Runs frontend + functions
 ```
 solana-support/
 ├── src/                    # React dashboard
-├── widget/                 # NPM package
+├── package/                # NPM package
 ├── netlify/functions/      # Serverless API
 ├── prisma/                 # Database schema
 └── dist/                   # Built app
@@ -123,11 +122,11 @@ MIT License - see [LICENSE](LICENSE) file for details.
 ## 🔗 Links
 
 - **Live App**: [solana-support.ndao.computer](https://solana-support.ndao.computer)
-- **NPM Package**: [@solana-support/widget](https://npmjs.com/package/@solana-support/widget) (coming soon)
-- **GitHub**: [solana-support-platform](https://github.com/yourusername/solana-support-platform)
+- **NPM Package**: [solanafund](https://npmjs.com/package/solanafund)
+- **GitHub**: [solana-support-platform](https://github.com/nothingdao/solanafund-platform)
 
 ---
 
 **Built with ❤️ for the Solana community**
 
-[![Support this project](https://solana-support.ndao.computer/.netlify/functions/badge/platform-development)](https://solana-support.ndao.computer/project/platform-development)
+[![Support this project](https://solanafund.ndao.computer/.netlify/functions/badge/platform-development)](https://solanafund.ndao.computer/project/platform-development)

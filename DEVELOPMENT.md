@@ -1,11 +1,11 @@
 # Development Guide
 
-Complete development setup for the Solana Support platform.
+Complete development setup for the SolanaFund platform.
 
 ## 🏗 Architecture
 
 ```
-Solana Support Platform (Netlify Full-Stack)
+SolanaFund Platform (Netlify Full-Stack)
 ├── React Dashboard (Frontend)
 ├── Netlify Functions (Backend API)
 ├── PostgreSQL Database (Neon.tech)
@@ -71,7 +71,7 @@ netlify/functions/    # Serverless API
 ├── donations.ts      # Record donations
 └── badge.ts          # Generate SVG badges
 
-widget/               # NPM package
+package/               # NPM package
 ├── src/             # Widget source
 └── dist/            # Built package
 
@@ -155,7 +155,7 @@ const handleDonation = async () => {
 ### Build Widget
 
 ```bash
-cd widget
+cd package
 npm install
 npm run build    # Creates dist/
 ```
@@ -163,17 +163,17 @@ npm run build    # Creates dist/
 ### Test Locally
 
 ```bash
-cd widget
+cd package
 npm link         # Link package locally
 
 cd ..
-npm link @solana-support/widget  # Use in main project
+npm link @solanafund/package  # Use in main project
 ```
 
 ### Widget Configuration
 
 ```tsx
-<SolanaSupport
+<SolanaFund
   projectId='required'
   apiUrl='/.netlify/functions' // Default
   theme='default' // 'default' | 'dark' | 'minimal'
@@ -257,7 +257,7 @@ npx prisma studio  # Test connection
 **Widget build errors**:
 
 ```bash
-cd widget
+cd package
 rm -rf node_modules dist
 npm install && npm run build
 ```

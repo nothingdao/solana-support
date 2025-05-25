@@ -119,7 +119,7 @@ export default function ProjectSettings() {
 </a>
 
 <!-- Or use the React component -->
-import { SupportBadge } from '@solana-support/widget';
+import { SupportBadge } from 'solanafund';
 
 <SupportBadge projectId="${project.id}" />`;
   };

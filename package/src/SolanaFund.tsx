@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Connection, PublicKey, Transaction, SystemProgram, LAMPORTS_PER_SOL } from '@solana/web3.js';
-import type { SolanaSupportProps, ProjectData } from './types';
+import type { SolanaFundProps, ProjectData } from './types';
 
-export const SolanaSupport: React.FC<SolanaSupportProps> = ({
+export const SolanaFund: React.FC<SolanaFundProps> = ({
   projectId,
-  apiUrl = 'https://api.solana-support.dev',
+  apiUrl = 'https://solanafund.ndao.computer/.netlify/functions',
   theme = 'default',
   size = 'md',
   showAmount = true,
@@ -229,7 +229,7 @@ export const SolanaSupport: React.FC<SolanaSupportProps> = ({
             </button>
 
             <p className="text-xs text-gray-500 text-center">
-              Powered by Solana Support
+              Powered by SolanaFund
             </p>
           </div>
         </div>
@@ -238,4 +238,4 @@ export const SolanaSupport: React.FC<SolanaSupportProps> = ({
   );
 };
 
-export default SolanaSupport;
+export default SolanaFund;

@@ -1,7 +1,7 @@
 {
-  "name": "@solana-support/widget",
+  "name": "solanafund",
   "version": "1.0.0",
-  "description": "A lightweight React widget for accepting Solana donations in your projects",
+  "description": "Embeddable funding badges for Solana projects",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -20,7 +20,7 @@
     "donations",
     "crypto",
     "react",
-    "widget",
+    "badge",
     "support",
     "funding"
   ],
@@ -51,10 +51,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/solana-support-widget.git"
+    "url": "https://github.com/nothingdao/solanafund-platform.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/solana-support-widget/issues"
+    "url": "https://github.com/nothingdao/solanafund-platform/issues"
   },
-  "homepage": "https://github.com/yourusername/solana-support-widget#readme"
+  "homepage": "https://github.com/bothingdao/solanafund-platform#readme"
 }
