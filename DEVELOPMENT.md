@@ -23,8 +23,8 @@ SolanaFund Platform (Netlify Full-Stack)
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/yourusername/solana-support-platform.git
-cd solana-support-platform
+git clone https://github.com/yourusername/solanafund-platform.git
+cd solanafund-platform
 npm install
 npm install -g netlify-cli
 ```

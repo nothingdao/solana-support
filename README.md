@@ -2,10 +2,10 @@
 
 Embeddable donation badge for Solana developers. Get community support through clean, unobtrusive badges.
 
-![SolanaFund](https://img.shields.io/badge/Solana-Support-9945FF?style=for-the-badge&logo=solana)
+![SolanaFund](https://img.shields.io/badge/SolanaFund-9945FF?style=for-the-badge&logo=solana)
 ![Live Demo](https://img.shields.io/badge/Demo-Live-00D9FF?style=for-the-badge)
 
-**🌐 Live Demo**: [solana-support.ndao.computer](https://solana-support.ndao.computer)
+**🌐 Live Demo**: [solanafund.ndao.computer](https://solanafund.ndao.computer)
 
 ## 🚀 Quick Start
 
@@ -29,7 +29,7 @@ import { SolanaFund } from 'solanafund'
 ### Markdown Badge
 
 ```markdown
-[![Support](https://solana-support.ndao.computer/.netlify/functions/badge/your-project-id)](https://solana-support.ndao.computer/project/your-project-id)
+[![Support](https://solanafund.ndao.computer/.netlify/functions/badge/your-project-id)](https://solanafund.ndao.computer/project/your-project-id)
 ```
 
 ## ✨ Features
@@ -69,8 +69,8 @@ See [DEVELOPMENT.md](./DEVELOPMENT.md) for detailed setup instructions.
 ### Quick Setup
 
 ```bash
-git clone https://github.com/yourusername/solana-support-platform.git
-cd solana-support-platform
+git clone https://github.com/yourusername/solanafund-platform.git
+cd solanafund-platform
 npm install
 cp .env.example .env  # Add your database URL
 npm run db:generate && npm run db:push
@@ -80,7 +80,7 @@ netlify dev           # Runs frontend + functions
 ## 📁 Project Structure
 
 ```
-solana-support/
+solanafund-platform/
 ├── src/                    # React dashboard
 ├── package/                # NPM package
 ├── netlify/functions/      # Serverless API
@@ -121,9 +121,9 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## 🔗 Links
 
-- **Live App**: [solana-support.ndao.computer](https://solana-support.ndao.computer)
+- **Live App**: [solanafund.ndao.computer](https://solanafund.ndao.computer)
 - **NPM Package**: [solanafund](https://npmjs.com/package/solanafund)
-- **GitHub**: [solana-support-platform](https://github.com/nothingdao/solanafund-platform)
+- **GitHub**: [solanafund-platform](https://github.com/nothingdao/solanafund-platform)
 
 ---
 
