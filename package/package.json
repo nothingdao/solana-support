@@ -24,7 +24,7 @@
     "support",
     "funding"
   ],
-  "author": "Your Name",
+  "author": "@whaleen",
   "license": "MIT",
   "peerDependencies": {
     "react": ">=16.8.0",
@@ -51,10 +51,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nothingdao/solanafund-platform.git"
+    "url": "git+https://github.com/nothingdao/solanafund-platform.git"
   },
   "bugs": {
     "url": "https://github.com/nothingdao/solanafund-platform/issues"
   },
-  "homepage": "https://github.com/bothingdao/solanafund-platform#readme"
+  "homepage": "https://solanafund.ndao.computer"
 }
