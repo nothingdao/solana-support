@@ -1,18 +1,18 @@
-# SolanaFund Platform
+# spnsr - Solana Fundraising Platform
 
 Embeddable donation badge for Solana developers. Get community support through clean, unobtrusive badges.
 
 ![SolanaFund](https://img.shields.io/badge/SolanaFund-9945FF?style=for-the-badge&logo=solana)
 ![Live Demo](https://img.shields.io/badge/Demo-Live-00D9FF?style=for-the-badge)
 
-**🌐 Live Demo**: [solanafund.ndao.computer](https://solanafund.ndao.computer)
+**🌐 Live Demo**: [spnsr.ndao.computer](https://spnsr.ndao.computer) <!-- ← Updated -->
 
 ## 🚀 Quick Start
 
 ### Install Widget
 
 ```bash
-npm install solanafund
+npm install spnsr
 ```
 
 ### React Integration
@@ -29,7 +29,7 @@ import { SolanaFund } from 'solanafund'
 ### Markdown Badge
 
 ```markdown
-[![Support](https://solanafund.ndao.computer/.netlify/functions/badge/your-project-id)](https://solanafund.ndao.computer/project/your-project-id)
+[![Sponsor](https://spnsr.ndao.computer/.netlify/functions/badge/your-project-id)](https://spnsr.ndao.computer/project/your-project-id)
 ```
 
 ## ✨ Features
@@ -69,8 +69,8 @@ See [DEVELOPMENT.md](./DEVELOPMENT.md) for detailed setup instructions.
 ### Quick Setup
 
 ```bash
-git clone https://github.com/yourusername/solanafund-platform.git
-cd solanafund-platform
+git clone https://github.com/nothingdao/spnsr.git
+cd spnsr
 npm install
 cp .env.example .env  # Add your database URL
 npm run db:generate && npm run db:push
@@ -80,7 +80,7 @@ netlify dev           # Runs frontend + functions
 ## 📁 Project Structure
 
 ```
-solanafund-platform/
+spnsr/
 ├── src/                    # React dashboard
 ├── package/                # NPM package
 ├── netlify/functions/      # Serverless API
@@ -121,12 +121,12 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## 🔗 Links
 
-- **Live App**: [solanafund.ndao.computer](https://solanafund.ndao.computer)
-- **NPM Package**: [solanafund](https://npmjs.com/package/solanafund)
-- **GitHub**: [solanafund-platform](https://github.com/nothingdao/solanafund-platform)
+- **Live App**: [spnsr.ndao.computer](https://spnsr.ndao.computer)
+- **NPM Package**: [spnsr](https://npmjs.com/package/spnsr)
+- **GitHub**: [spnsr](https://github.com/nothingdao/spnsr)
 
 ---
 
 **Built with ❤️ for the Solana community**
 
-[![Support this project](https://solanafund.ndao.computer/.netlify/functions/badge/platform-development)](https://solanafund.ndao.computer/project/platform-development)
+[![Support this project](https://spnsr.ndao.computer/.netlify/functions/badge/spnsr)](https://spnsr.ndao.computer/project/platform-development)

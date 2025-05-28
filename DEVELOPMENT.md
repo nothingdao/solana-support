@@ -1,11 +1,11 @@
 # Development Guide
 
-Complete development setup for the SolanaFund platform.
+Complete development setup for spnsr
 
 ## 🏗 Architecture
 
 ```
-SolanaFund Platform (Netlify Full-Stack)
+spnsr (Netlify Full-Stack)
 ├── React Dashboard (Frontend)
 ├── Netlify Functions (Backend API)
 ├── PostgreSQL Database (Neon.tech)
@@ -23,8 +23,8 @@ SolanaFund Platform (Netlify Full-Stack)
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/yourusername/solanafund-platform.git
-cd solanafund-platform
+git clone https://github.com/nothingdao/spnsr.git
+cd spnsr
 npm install
 npm install -g netlify-cli
 ```
@@ -167,13 +167,13 @@ cd package
 npm link         # Link package locally
 
 cd ..
-npm link @solanafund/package  # Use in main project
+npm link @spnsr/package  # Use in main project
 ```
 
 ### Widget Configuration
 
 ```tsx
-<SolanaFund
+<Spnsr
   projectId='required'
   apiUrl='/.netlify/functions' // Default
   theme='default' // 'default' | 'dark' | 'minimal'

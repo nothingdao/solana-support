@@ -1,4 +1,5 @@
-export interface SolanaFundProps {
+// 📄 package/src/types.ts (Fix any types)
+export interface SpnsrProps {
   projectId: string
   apiUrl?: string
   theme?: 'default' | 'dark' | 'minimal'
@@ -33,7 +34,7 @@ declare global {
       isPhantom?: boolean
       connect: () => Promise<{ publicKey: { toString(): string } }>
       disconnect: () => Promise<void>
-      signTransaction: (transaction: any) => Promise<any>
+      signTransaction: (transaction: unknown) => Promise<unknown> // Fix: Replace any with unknown
       publicKey?: { toString(): string }
     }
   }

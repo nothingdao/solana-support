@@ -14,6 +14,7 @@ import Header from './components/Header';
 import ProjectsList from './pages/ProjectsList';
 import ProjectDetail from './pages/ProjectDetail';
 import ProjectSettings from './pages/ProjectSettings';
+import CreateProject from './pages/CreateProject'; // ← Add this import
 
 function App() {
   // Configure Solana network
@@ -41,6 +42,7 @@ function App() {
               <main className="container mx-auto px-4 py-8">
                 <Routes>
                   <Route path="/" element={<ProjectsList />} />
+                  <Route path="/create" element={<CreateProject />} /> {/* ← Add this route */}
                   <Route path="/project/:id" element={<ProjectDetail />} />
                   <Route path="/settings/:id" element={<ProjectSettings />} />
                 </Routes>

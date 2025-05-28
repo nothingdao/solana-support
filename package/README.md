@@ -1,28 +1,28 @@
-# SolanaFund
+# spnsr
 
 Embeddable funding badges for Solana projects. Get community support through clean, unobtrusive badges that integrate seamlessly with your project.
 
-[![NPM Version](https://img.shields.io/npm/v/solanafund.svg)](https://www.npmjs.com/package/solanafund)
-[![License](https://img.shields.io/npm/l/solanafund.svg)](https://github.com/yourusername/solanafund-platform/blob/main/LICENSE)
+[![NPM Version](https://img.shields.io/npm/v/spnsr.svg)](https://www.npmjs.com/package/spnsr)
+[![License](https://img.shields.io/npm/l/spnsr.svg)](https://github.com/yourusername/spnsr-platform/blob/main/LICENSE)
 
 ## ⚡ Quick Start
 
 ### Installation
 
 ```bash
-npm install solanafund
+npm install spnsr
 ```
 
 ### Basic Usage
 
 ```jsx
-import { SolanaFund } from 'solanafund'
+import { spnsr } from 'spnsr'
 
 function MyProject() {
   return (
     <div>
       <h1>My Awesome Solana Project</h1>
-      <SolanaFund projectId='your-project-id' />
+      <Spnsr projectId='your-project-id' />
     </div>
   )
 }
@@ -31,7 +31,7 @@ function MyProject() {
 ## 🎨 Customization
 
 ```jsx
-<SolanaFund
+<Spnsr
   projectId='abc123'
   theme='dark' // 'default' | 'dark' | 'minimal'
   size='lg' // 'sm' | 'md' | 'lg'
@@ -43,18 +43,18 @@ function MyProject() {
 
 ## 🔧 Props
 
-| Prop         | Type                               | Default      | Description                     |
-| ------------ | ---------------------------------- | ------------ | ------------------------------- |
-| `projectId`  | `string`                           | **required** | Your project ID from SolanaFund |
-| `theme`      | `'default' \| 'dark' \| 'minimal'` | `'default'`  | Visual theme                    |
-| `size`       | `'sm' \| 'md' \| 'lg'`             | `'md'`       | Badge size                      |
-| `showAmount` | `boolean`                          | `true`       | Show raised SOL amount          |
-| `showGoal`   | `boolean`                          | `false`      | Show funding goal progress      |
-| `className`  | `string`                           | `''`         | Additional CSS classes          |
+| Prop         | Type                               | Default      | Description                |
+| ------------ | ---------------------------------- | ------------ | -------------------------- |
+| `projectId`  | `string`                           | **required** | Your project ID from spnsr |
+| `theme`      | `'default' \| 'dark' \| 'minimal'` | `'default'`  | Visual theme               |
+| `size`       | `'sm' \| 'md' \| 'lg'`             | `'md'`       | Badge size                 |
+| `showAmount` | `boolean`                          | `true`       | Show raised SOL amount     |
+| `showGoal`   | `boolean`                          | `false`      | Show funding goal progress |
+| `className`  | `string`                           | `''`         | Additional CSS classes     |
 
 ## 🎯 Getting Your Project ID
 
-1. Visit [solanafund.ndao.computer](https://solanafund.ndao.computer)
+1. Visit [spnsr.ndao.computer](https://spnsr.ndao.computer)
 2. Connect your Solana wallet
 3. Create your funding project
 4. Copy your project ID from the dashboard
@@ -78,13 +78,13 @@ Clean and subtle, ideal for professional or minimalist projects.
 ### Simple Badge
 
 ```jsx
-<SolanaFund projectId='abc123' />
+<Spnsr projectId='abc123' />
 ```
 
 ### Dark Theme with Progress
 
 ```jsx
-<SolanaFund
+<Spnsr
   projectId='abc123'
   theme='dark'
   showGoal={true}
@@ -95,7 +95,7 @@ Clean and subtle, ideal for professional or minimalist projects.
 ### Minimal Style
 
 ```jsx
-<SolanaFund
+<Spnsr
   projectId='abc123'
   theme='minimal'
   showAmount={false}
@@ -124,22 +124,22 @@ Clean and subtle, ideal for professional or minimalist projects.
 Fully typed with TypeScript for the best developer experience:
 
 ```typescript
-import { SolanaFund, SolanaFundProps } from 'solanafund'
+import { Spnsr, SpnsrProps } from 'spnsr'
 
 const MyComponent: React.FC = () => {
-  const badgeProps: SolanaFundProps = {
+  const badgeProps: SpnsrProps = {
     projectId: 'abc123',
     theme: 'dark',
     size: 'lg',
   }
 
-  return <SolanaFund {...badgeProps} />
+  return <Spnsr {...badgeProps} />
 }
 ```
 
 ## 🌐 Platform
 
-This badge connects to the SolanaFund platform at [solanafund.ndao.computer](https://solanafund.ndao.computer), where you can:
+This badge connects to the spnsr platform at [spnsr.ndao.computer](https://spnsr.ndao.computer), where you can:
 
 - Create and manage funding projects
 - Track donations and supporters
@@ -148,17 +148,17 @@ This badge connects to the SolanaFund platform at [solanafund.ndao.computer](htt
 
 ## 📄 License
 
-MIT License - see [LICENSE](https://github.com/yourusername/solanafund-platform/blob/main/LICENSE) for details.
+MIT License - see [LICENSE](https://github.com/nothingdao/spnsr/blob/main/LICENSE) for details.
 
 ## 🤝 Contributing
 
-Found a bug or want to contribute? Check out our [GitHub repository](https://github.com/yourusername/solanafund-platform).
+Found a bug or want to contribute? Check out our [GitHub repository](https://github.com/nothingdao/spnsr).
 
 ## 💬 Support
 
-- 🌐 **Platform**: [solanafund.ndao.computer](https://solanafund.ndao.computer)
-- 📖 **Documentation**: [GitHub](https://github.com/yourusername/solanafund-platform)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/yourusername/solanafund-platform/issues)
+- 🌐 **Platform**: [spnsr.ndao.computer](https://spnsr.ndao.computer)
+- 📖 **Documentation**: [GitHub](https://github.com/nothingdao/spnsr)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/nothingdao/spnsr/issues)
 
 ---
 

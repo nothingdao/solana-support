@@ -1,5 +1,8 @@
 // API client for Netlify Functions
-const API_BASE = '/.netlify/functions'
+const API_BASE =
+  process.env.NODE_ENV === 'development'
+    ? '/.netlify/functions'
+    : 'https://spnsr.ndao.computer/.netlify/functions' // ← Updated for production
 
 interface ProjectData {
   id: string

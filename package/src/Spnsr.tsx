@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+// 📄 package/src/Spnsr.tsx (Fix the filename issue)
+import { useState, useEffect, useCallback } from 'react';
 import { Connection, PublicKey, Transaction, SystemProgram, LAMPORTS_PER_SOL } from '@solana/web3.js';
-import type { SolanaFundProps, ProjectData } from './types';
+import type { SpnsrProps, ProjectData } from './types';
 
-export const SolanaFund: React.FC<SolanaFundProps> = ({
+export const Spnsr: React.FC<SpnsrProps> = ({
   projectId,
-  apiUrl = 'https://solanafund.ndao.computer/.netlify/functions',
+  apiUrl = 'https://spnsr.ndao.computer/.netlify/functions', // ← Updated
   theme = 'default',
   size = 'md',
   showAmount = true,
@@ -17,13 +18,10 @@ export const SolanaFund: React.FC<SolanaFundProps> = ({
   const [donationAmount, setDonationAmount] = useState('');
   const [donating, setDonating] = useState(false);
 
-  useEffect(() => {
-    fetchProjectData();
-  }, [projectId]);
-
-  const fetchProjectData = async () => {
+  // Fix: Move fetchProjectData outside useEffect and use useCallback
+  const fetchProjectData = useCallback(async () => {
     try {
-      const response = await fetch(`${apiUrl}/api/projects/${projectId}`);
+      const response = await fetch(`${apiUrl}/projects/${projectId}`);
       if (response.ok) {
         const data = await response.json();
         setProject(data);
@@ -33,7 +31,11 @@ export const SolanaFund: React.FC<SolanaFundProps> = ({
     } finally {
       setLoading(false);
     }
-  };
+  }, [apiUrl, projectId]);
+
+  useEffect(() => {
+    fetchProjectData();
+  }, [fetchProjectData]); // Fix: Add fetchProjectData to dependencies
 
   const handleDonate = async () => {
     if (!project || !donationAmount || !window.solana) {
@@ -80,7 +82,7 @@ export const SolanaFund: React.FC<SolanaFundProps> = ({
       const signature = await connection.sendRawTransaction(signed.serialize());
 
       // Record the donation
-      await fetch(`${apiUrl}/api/donations`, {
+      await fetch(`${apiUrl}/donations`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -148,6 +150,7 @@ export const SolanaFund: React.FC<SolanaFundProps> = ({
       <button
         onClick={() => setIsExpanded(!isExpanded)}
         className={`inline-flex items-center space-x-2 ${getSizeStyles()} ${getThemeStyles()} cursor-pointer hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50`}
+        title={`Support ${project.name}`}
       >
         <svg className="w-4 h-4 text-red-500" fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
@@ -173,6 +176,7 @@ export const SolanaFund: React.FC<SolanaFundProps> = ({
               <button
                 onClick={() => setIsExpanded(false)}
                 className="text-gray-400 hover:text-gray-600"
+                type="button"
               >
                 ✕
               </button>
@@ -214,6 +218,7 @@ export const SolanaFund: React.FC<SolanaFundProps> = ({
                   key={amount}
                   onClick={() => setDonationAmount(amount)}
                   className="px-2 py-1 text-xs bg-gray-100 hover:bg-gray-200 rounded transition-colors"
+                  type="button"
                 >
                   {amount} SOL
                 </button>
@@ -224,12 +229,13 @@ export const SolanaFund: React.FC<SolanaFundProps> = ({
               onClick={handleDonate}
               disabled={!donationAmount || donating}
               className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              type="button"
             >
               {donating ? 'Processing...' : `Donate ${donationAmount || '0'} SOL`}
             </button>
 
             <p className="text-xs text-gray-500 text-center">
-              Powered by SolanaFund
+              Powered by spnsr
             </p>
           </div>
         </div>
@@ -238,4 +244,4 @@ export const SolanaFund: React.FC<SolanaFundProps> = ({
   );
 };
 
-export default SolanaFund;
+export default Spnsr;

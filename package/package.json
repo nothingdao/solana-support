@@ -1,7 +1,7 @@
 {
-  "name": "solanafund",
+  "name": "spnsr",
   "version": "1.0.1",
-  "description": "Embeddable funding badges for Solana projects",
+  "description": "Embeddable sponsorship badges for Solana projects",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -51,10 +51,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nothingdao/solanafund-platform.git"
+    "url": "git+https://github.com/nothingdao/spnsr.git"
   },
   "bugs": {
-    "url": "https://github.com/nothingdao/solanafund-platform/issues"
+    "url": "https://github.com/nothingdao/spnsr/issues"
   },
-  "homepage": "https://solanafund.ndao.computer"
+  "homepage": "https://spnsr.ndao.computer"
 }

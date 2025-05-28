@@ -119,7 +119,7 @@ export default function ProjectSettings() {
 </a>
 
 <!-- Or use the React component -->
-import { SupportBadge } from 'solanafund';
+import { SupportBadge } from 'spnsr';
 
 <SupportBadge projectId="${project.id}" />`;
   };

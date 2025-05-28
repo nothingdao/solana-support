@@ -1,5 +1,7 @@
-import type { Handler, HandlerEvent, HandlerContext } from '@netlify/functions'
+// 📄 netlify/functions/project.ts (Fixed ESLint errors)
+import type { Handler, HandlerEvent } from '@netlify/functions'
 import { PrismaClient } from '@prisma/client'
+import { PublicKey } from '@solana/web3.js'
 
 const prisma = new PrismaClient()
 
@@ -10,10 +12,7 @@ const headers = {
   'Content-Type': 'application/json',
 }
 
-export const handler: Handler = async (
-  event: HandlerEvent,
-  context: HandlerContext
-) => {
+export const handler: Handler = async (event: HandlerEvent) => {
   // Handle CORS preflight
   if (event.httpMethod === 'OPTIONS') {
     return {
@@ -29,7 +28,71 @@ export const handler: Handler = async (
 
   try {
     switch (httpMethod) {
-      case 'GET':
+      case 'POST': {
+        // Create new project
+        const projectData = JSON.parse(body || '{}')
+
+        // Validate required fields
+        if (!projectData.name || !projectData.walletAddress) {
+          return {
+            statusCode: 400,
+            headers,
+            body: JSON.stringify({
+              error: 'Name and wallet address are required',
+            }),
+          }
+        }
+
+        // Validate Solana wallet address
+        try {
+          new PublicKey(projectData.walletAddress)
+        } catch {
+          return {
+            statusCode: 400,
+            headers,
+            body: JSON.stringify({
+              error: 'Invalid Solana wallet address',
+            }),
+          }
+        }
+
+        // Check if wallet address already has a project
+        const existingProject = await prisma.project.findUnique({
+          where: { walletAddress: projectData.walletAddress },
+        })
+
+        if (existingProject) {
+          return {
+            statusCode: 400,
+            headers,
+            body: JSON.stringify({
+              error: 'This wallet address already has a project',
+            }),
+          }
+        }
+
+        // Create the project
+        const newProject = await prisma.project.create({
+          data: {
+            name: projectData.name.trim(),
+            description: projectData.description?.trim() || null,
+            walletAddress: projectData.walletAddress,
+            goal: projectData.goal ? parseFloat(projectData.goal) : null,
+            showGoal: projectData.showGoal ?? true,
+            theme: projectData.theme || 'default',
+            devFeeEnabled: projectData.devFeeEnabled ?? false,
+            customMessage: projectData.customMessage?.trim() || null,
+          },
+        })
+
+        return {
+          statusCode: 201,
+          headers,
+          body: JSON.stringify(newProject),
+        }
+      }
+
+      case 'GET': {
         if (projectId && projectId !== 'projects') {
           // Get single project
           const project = await prisma.project.findUnique({
@@ -74,57 +137,9 @@ export const handler: Handler = async (
             body: JSON.stringify(projects),
           }
         }
+      }
 
-      case 'POST':
-        // Create new project
-        const projectData = JSON.parse(body || '{}')
-
-        // Validate required fields
-        if (!projectData.name || !projectData.walletAddress) {
-          return {
-            statusCode: 400,
-            headers,
-            body: JSON.stringify({
-              error: 'Name and wallet address are required',
-            }),
-          }
-        }
-
-        // Check if wallet address already exists
-        const existingProject = await prisma.project.findUnique({
-          where: { walletAddress: projectData.walletAddress },
-        })
-
-        if (existingProject) {
-          return {
-            statusCode: 400,
-            headers,
-            body: JSON.stringify({
-              error: 'Wallet address already has a project',
-            }),
-          }
-        }
-
-        const newProject = await prisma.project.create({
-          data: {
-            name: projectData.name,
-            description: projectData.description,
-            walletAddress: projectData.walletAddress,
-            goal: projectData.goal ? parseFloat(projectData.goal) : null,
-            showGoal: projectData.showGoal ?? true,
-            theme: projectData.theme || 'default',
-            devFeeEnabled: projectData.devFeeEnabled ?? false,
-            customMessage: projectData.customMessage,
-          },
-        })
-
-        return {
-          statusCode: 201,
-          headers,
-          body: JSON.stringify(newProject),
-        }
-
-      case 'PUT':
+      case 'PUT': {
         // Update project
         if (!projectId) {
           return {
@@ -155,6 +170,7 @@ export const handler: Handler = async (
           headers,
           body: JSON.stringify(updatedProject),
         }
+      }
 
       default:
         return {
@@ -168,7 +184,10 @@ export const handler: Handler = async (
     return {
       statusCode: 500,
       headers,
-      body: JSON.stringify({ error: 'Internal server error' }),
+      body: JSON.stringify({
+        error: 'Internal server error',
+        details: error instanceof Error ? error.message : 'Unknown error',
+      }),
     }
   }
 }

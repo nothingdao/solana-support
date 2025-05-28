@@ -1,3 +1,4 @@
+// 📄 src/pages/ProjectsList.tsx (Updated title)
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
@@ -86,9 +87,9 @@ export default function ProjectsList() {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold">SolanaFund Projects</h1>
+          <h1 className="text-3xl font-bold">Projects</h1> {/* ← Updated */}
           <p className="text-muted-foreground mt-2">
-            Discover and support amazing Solana projects
+            Discover and sponsor amazing Solana projects {/* ← Updated */}
           </p>
         </div>
         <div className="flex items-center space-x-2">

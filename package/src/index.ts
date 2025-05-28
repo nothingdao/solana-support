@@ -1,6 +1,7 @@
-export { SolanaFund as default, SolanaFund } from './SolanaFund'
-export type { SolanaFundProps, ProjectData, DonationRequest } from './types'
+// 📄 package/src/index.ts (Fix import paths)
+export { Spnsr as default, Spnsr } from './Spnsr'
+export type { SpnsrProps, ProjectData, DonationRequest } from './types'
 
 // Additional exports for convenience
-export { SolanaFund as SupportBadge } from './SolanaFund'
-export { SolanaFund as SupportWidget } from './SolanaFund'
+export { Spnsr as SponsorBadge } from './Spnsr'
+export { Spnsr as SponsorWidget } from './Spnsr'
