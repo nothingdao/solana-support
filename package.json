@@ -18,7 +18,7 @@
   "scripts": {
     "dev": "vite",
     "dev:functions": "netlify dev",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "build:functions": "netlify build",
     "lint": "eslint .",
     "preview": "vite preview",
