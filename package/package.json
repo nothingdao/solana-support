@@ -1,6 +1,6 @@
 {
   "name": "spnsr",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Embeddable sponsorship badges for Solana projects",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
