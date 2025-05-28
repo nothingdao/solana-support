@@ -1,12 +1,11 @@
-# 📄 netlify.toml (Updated with Node 20)
+# 📄 netlify.toml
 [build]
 publish = "dist"
-command = "npm run build"
+command = "rm -rf node_modules package-lock.json && npm install && npm run build"
 functions = "netlify/functions"
-ignore = "/package/"            # Add this line
 
 [build.environment]
-NODE_VERSION = "20" # ← Updated from "18" to "20"
+NODE_VERSION = "20"
 
 [dev]
 command = "npm run dev"
