@@ -1,4 +1,4 @@
-// 📄 netlify/functions/project.ts (Fixed ESLint errors)
+// 📄 netlify/functions/project.ts
 import type { Handler, HandlerEvent } from '@netlify/functions'
 import { PrismaClient } from '@prisma/client'
 import { PublicKey } from '@solana/web3.js'

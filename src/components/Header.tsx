@@ -1,16 +1,16 @@
-// 📄 src/components/Header.tsx (Updated)
+// 📄 src/components/Header.tsx
 import { Link } from 'react-router-dom';
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 import { Button } from './ui/button';
 import { Plus } from 'lucide-react';
-import { SpnsrLogo } from './SpnsrLogo'; // ← Add this import
+import { SpnsrLogo } from './SpnsrLogo';
 
 export default function Header() {
   return (
     <header className="border-b">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <SpnsrLogo size="md" /> {/* ← Replace old logo */}
+          <SpnsrLogo size="md" />
         </Link>
 
         <nav className="hidden md:flex items-center space-x-6">

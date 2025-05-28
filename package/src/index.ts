@@ -1,5 +1,6 @@
 // 📄 package/src/index.ts (Fix import paths)
-export { Spnsr as default, Spnsr } from './Spnsr'
+export { Spnsr as default } from './Spnsr'
+export { Spnsr } from './Spnsr'
 export type { SpnsrProps, ProjectData, DonationRequest } from './types'
 
 // Additional exports for convenience

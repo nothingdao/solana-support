@@ -1,4 +1,4 @@
-// 📄 src/components/SpnsrLogo.tsx (Simplified Text-Only Version)
+// 📄 src/components/SpnsrLogo.tsx
 
 export const SpnsrLogo = ({
   size = "md",

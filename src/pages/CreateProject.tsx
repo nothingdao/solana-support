@@ -1,4 +1,4 @@
-// 📄 src/pages/CreateProject.tsx (New page)
+// 📄 src/pages/CreateProject.tsx
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useWallet } from '@solana/wallet-adapter-react';

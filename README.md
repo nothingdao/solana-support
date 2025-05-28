@@ -1,132 +1,74 @@
-# spnsr - Solana Fundraising Platform
+# spnsr
 
-Embeddable donation badge for Solana developers. Get community support through clean, unobtrusive badges.
+Donation badges for Solana projects. Embeddable React component and static badges for accepting SOL donations.
 
-![SolanaFund](https://img.shields.io/badge/SolanaFund-9945FF?style=for-the-badge&logo=solana)
-![Live Demo](https://img.shields.io/badge/Demo-Live-00D9FF?style=for-the-badge)
+**Live**: [spnsr.ndao.computer](https://spnsr.ndao.computer)
 
-**🌐 Live Demo**: [spnsr.ndao.computer](https://spnsr.ndao.computer) <!-- ← Updated -->
-
-## 🚀 Quick Start
-
-### Install Widget
+## Install
 
 ```bash
 npm install spnsr
 ```
 
-### React Integration
+## Usage
+
+### React Component
 
 ```jsx
-import { SolanaFund } from 'solanafund'
-;<SolanaFund
-  projectId='your-project-id'
-  theme='default'
-  showAmount={true}
-/>
+import { Spnsr } from 'spnsr'
+;<Spnsr projectId='your-project-id' />
 ```
 
-### Markdown Badge
+### Static Badge
 
 ```markdown
-[![Sponsor](https://spnsr.ndao.computer/.netlify/functions/badge/your-project-id)](https://spnsr.ndao.computer/project/your-project-id)
+[![Support](https://spnsr.ndao.computer/.netlify/functions/badge/your-project-id)](https://spnsr.ndao.computer/project/your-project-id)
 ```
 
-## ✨ Features
-
-- **🎯 Dashboard** - Create and manage funding projects
-- **💎 Widget Package** - Embeddable React component (`solanafund`)
-- **🔗 Static Badges** - GitHub README integration
-- **⚡ Solana Native** - Phantom, Solflare wallet support
-- **🎨 Customizable** - Multiple themes and sizes
-- **📊 Real-time** - Live donation tracking
-
-## 🏗 Tech Stack
-
-- **Frontend**: React 19 + TypeScript + Vite + TailwindCSS
-- **Backend**: Netlify Functions (Serverless)
-- **Database**: PostgreSQL + Prisma ORM
-- **Blockchain**: Solana Web3.js + Wallet Adapter
-- **Hosting**: Netlify (Full-Stack)
-
-## 🎨 Widget Options
+## Component Props
 
 ```jsx
-<SolanaFund
-  projectId='abc123'
-  theme='dark' // 'default' | 'dark' | 'minimal'
-  size='lg' // 'sm' | 'md' | 'lg'
-  showAmount={true} // Display raised amount
-  showGoal={true} // Display progress bar
-  className='my-badge' // Custom CSS
+<Spnsr
+  projectId='abc123' // Required
+  theme='default' // 'default' | 'dark' | 'minimal'
+  size='md' // 'sm' | 'md' | 'lg'
+  showAmount={true} // Show raised amount
+  showGoal={false} // Show progress bar
+  className='custom-class' // Additional CSS
 />
 ```
 
-## 🛠 Development
+## Getting Project ID
 
-See [DEVELOPMENT.md](./DEVELOPMENT.md) for detailed setup instructions.
+1. Go to [spnsr.ndao.computer](https://spnsr.ndao.computer)
+2. Connect Solana wallet
+3. Create project
+4. Copy project ID from dashboard
 
-### Quick Setup
+## How It Works
 
-```bash
-git clone https://github.com/nothingdao/spnsr.git
-cd spnsr
-npm install
-cp .env.example .env  # Add your database URL
-npm run db:generate && npm run db:push
-netlify dev           # Runs frontend + functions
-```
+- Click badge to open donation interface
+- Connects to Phantom, Solflare, and other Solana wallets
+- Donations sent directly to your wallet address
+- Badge updates automatically with new totals
 
-## 📁 Project Structure
+## Development
 
-```
-spnsr/
-├── src/                    # React dashboard
-├── package/                # NPM package
-├── netlify/functions/      # Serverless API
-├── prisma/                 # Database schema
-└── dist/                   # Built app
-```
+See [DEVELOPMENT.md](./DEVELOPMENT.md) for setup instructions.
 
-## 🌐 API Endpoints
+## Tech Stack
 
-- `/.netlify/functions/projects` - CRUD operations
-- `/.netlify/functions/donations` - Record donations
-- `/.netlify/functions/badge/[id]` - Generate SVG badges
+- Frontend: React + TypeScript + Vite
+- Backend: Netlify Functions
+- Database: PostgreSQL + Prisma
+- Blockchain: Solana Web3.js
+- Hosting: Netlify
 
-## 🚀 Deployment
+## Repository
 
-Deploys automatically to Netlify on every push to `main`.
+- **GitHub**: [github.com/nothingdao/spnsr](https://github.com/nothingdao/spnsr)
+- **NPM**: [npmjs.com/package/spnsr](https://npmjs.com/package/spnsr)
 
-**Environment Variables** (Netlify Dashboard):
+## License
 
-```bash
-DATABASE_URL=postgresql://...
-VITE_SOLANA_RPC_URL=https://api.devnet.solana.com
-VITE_SOLANA_NETWORK=devnet
-VITE_DEV_WALLET_ADDRESS=your-wallet-address
-```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open Pull Request
-
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) file for details.
-
-## 🔗 Links
-
-- **Live App**: [spnsr.ndao.computer](https://spnsr.ndao.computer)
-- **NPM Package**: [spnsr](https://npmjs.com/package/spnsr)
-- **GitHub**: [spnsr](https://github.com/nothingdao/spnsr)
-
----
-
-**Built with ❤️ for the Solana community**
-
-[![Support this project](https://spnsr.ndao.computer/.netlify/functions/badge/spnsr)](https://spnsr.ndao.computer/project/platform-development)
+MIT
