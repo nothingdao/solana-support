@@ -29,3 +29,7 @@ dist-ssr
 
 # Local Netlify folder
 .netlify
+
+# Package build artifacts (don't deploy these)
+package/dist/
+package/node_modules/
